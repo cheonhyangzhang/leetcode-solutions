@@ -1,12 +1,4 @@
 {
-    "plugins": [
-        "downloadpdf"
-    ],
-    "pluginsConfig": {
-        "downloadpdf": {
-            "base": "Download heihei",
-            "label": "Download PDF",
-            "multilingual": "false"
-        }
-    }
+    "plugins": [],
+    "pluginsConfig": {}
 }
