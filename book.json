@@ -2,5 +2,11 @@
     "plugins": [
         "downloadpdf"
     ],
-    "pluginsConfig": {}
+    "pluginsConfig": {
+        "downloadpdf": {
+            "base": "Download heihei",
+            "label": "Download PDF",
+            "multilingual": "false"
+        }
+    }
 }
