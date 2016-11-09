@@ -35,7 +35,7 @@ With the help of a hash-table, we could improve running complicity to O(n), but 
 ### O(n2) solution:
 
 
-```
+```java
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
@@ -54,7 +54,7 @@ public class Solution {
 ```
 
 ### O(n) solution:
-```
+```java
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
