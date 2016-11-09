@@ -7,7 +7,7 @@
         "download-pdf": {
             "base": "Base for the PDF button redirection",
             "label": "Download PDF",
-            "multilingual": "false"
+            "multilingual": false
         }
     }
 }
