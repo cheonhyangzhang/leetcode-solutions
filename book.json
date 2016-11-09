@@ -1,6 +1,4 @@
 {
-    "plugins": [
-        "-download-pdf"
-    ],
+    "plugins": [],
     "pluginsConfig": {}
 }
