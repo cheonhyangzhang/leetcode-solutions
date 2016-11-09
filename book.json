@@ -5,9 +5,9 @@
     ],
     "pluginsConfig": {
         "download-pdf": {
-            "base": "Base for the PDF button redirection",
+            "base": "https://github.com/cheonhyangzhang/leetcode-solutions/edit/master/content",
             "label": "Download PDF",
-            "multilingual": false
+            "multilingual": "false"
         }
     }
 }
