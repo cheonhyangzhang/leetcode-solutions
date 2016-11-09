@@ -1,6 +1,7 @@
 {
     "plugins": [
-        "highlight"
+        "highlight",
+        "download-pdf"
     ],
     "pluginsConfig": {}
 }
