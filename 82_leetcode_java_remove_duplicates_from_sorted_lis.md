@@ -24,7 +24,7 @@ Having a fakeHead is most of time a good practice to handle edge cases.
 
 
 
-```
+```java
 /**
  * Definition for singly-linked list.
  * public class ListNode {
