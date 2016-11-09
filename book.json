@@ -1,13 +1,6 @@
 {
     "plugins": [
-        "highlight",
-        "download-pdf"
+        "highlight"
     ],
-    "pluginsConfig": {
-        "download-pdf": {
-            "base": "https://github.com/cheonhyangzhang/leetcode-solutions/edit/master/content",
-            "label": "Download PDF",
-            "multilingual": false
-        }
-    }
+    "pluginsConfig": {}
 }
