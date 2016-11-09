@@ -33,7 +33,7 @@ Similar strategy applies for the case when mid is at point B.
 
 ### Solutions:
 
-```
+```java
 public class Solution {
     public int search(int[] nums, int target) {
         int start = 0, end = nums.length - 1;
