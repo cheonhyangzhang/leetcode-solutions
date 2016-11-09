@@ -37,7 +37,7 @@ With that being said, the worst case would be end up with O(n). which means you 
 
 
 
-```
+```java
 public class Solution {
     public boolean search(int[] nums, int target) {
         int start = 0, end = nums.length - 1;
