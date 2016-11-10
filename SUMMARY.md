@@ -13,4 +13,5 @@
    * [83  Remove Duplicates from Sorted List – Easy](83_leetcode_java_remove_duplicates_from_sorted_lis.md)
    * [86 Partition List – Medium](86_partition_list__medium.md)
    * [88 Merge Sorted Array](88_merge_sorted_array.md)
+   * 7 Reverse Integer – Easy
 
