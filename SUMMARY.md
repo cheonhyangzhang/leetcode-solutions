@@ -9,6 +9,7 @@
    * [6 ZigZag Conversion – Easy](6_zigzag_conversion__easy.md)
    * [7 Reverse Integer – Easy](7_reverse_integer__easy.md)
    * [8 String to Integer (atoi) – Easy](8_string_to_integer_atoi__easy.md)
+   * [9 Palindrome Number – Easy](9_palindrome_number__easy.md)
    * [33 Search in Rotated Sorted Array – Hard](33_leetcode_java_search_in_rotated_sorted_array__h.md)
    * [81 Search in Rotated Sorted Array II](81_leetcode_java_search_in_rotated_sorted_array_ii.md)
    * [82 Remove Duplicates from Sorted List II – Medium](82_leetcode_java_remove_duplicates_from_sorted_lis.md)
@@ -19,5 +20,4 @@
    * [90 Subsets II – Medium](90_subsets_ii__medium.md)
    * [91 Decode Ways – Medium](91_decode_ways__medium.md)
    * [92 Reverse Linked List II – Medium](92_reverse_linked_list_ii__medium.md)
-   * [9 Palindrome Number – Easy](9_palindrome_number__easy.md)
 
