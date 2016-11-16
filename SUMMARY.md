@@ -18,6 +18,7 @@
    * [16 3Sum Closest – Medium](16_3sum_closest__medium.md)
    * [17 Letter Combinations of a Phone Number – Medium](17_letter_combinations_of_a_phone_number__medium.md)
    * [18 4Sum – Medium](18_4sum__medium.md)
+   * [19 Remove Nth Node From End of List – Easy](19_remove_nth_node_from_end_of_list__easy.md)
    * [33 Search in Rotated Sorted Array – Hard](33_leetcode_java_search_in_rotated_sorted_array__h.md)
    * [81 Search in Rotated Sorted Array II](81_leetcode_java_search_in_rotated_sorted_array_ii.md)
    * [82 Remove Duplicates from Sorted List II – Medium](82_leetcode_java_remove_duplicates_from_sorted_lis.md)
@@ -35,5 +36,4 @@
    * [98 Validate Binary Search Tree – Medium](98_validate_binary_search_tree__medium.md)
    * [100  Same Tree – Easy](100_same_tree_easy.md)
    * [101 Symmetric Tree – Easy](101_symmetric_tree__easy.md)
-   * [19 Remove Nth Node From End of List – Easy](19_remove_nth_node_from_end_of_list__easy.md)
 
