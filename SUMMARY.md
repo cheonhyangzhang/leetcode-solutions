@@ -28,5 +28,5 @@
    * [94 Binary Tree Inorder Traversal – Medium](94_binary_tree_inorder_traversal__medium.md)
    * [96Unique Binary Search Trees – Medium](96unique_binary_search_trees__medium.md)
    * [98 Validate Binary Search Tree – Medium](98_validate_binary_search_tree__medium.md)
-   * 95 Unique Binary Search Trees II – Medium
+   * [95 Unique Binary Search Trees II – Medium](95_unique_binary_search_trees_ii__medium.md)
 
