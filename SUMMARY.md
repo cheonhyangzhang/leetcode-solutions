@@ -10,7 +10,7 @@
    * [7 Reverse Integer – Easy](7_reverse_integer__easy.md)
    * [8 String to Integer (atoi) – Easy](8_string_to_integer_atoi__easy.md)
    * [9 Palindrome Number – Easy](9_palindrome_number__easy.md)
-   * [11 LeetCode Java: Container With Most Water – Medium](11_leetcode_java_container_with_most_water__medium.md)
+   * [11  Container With Most Water – Medium](11_leetcode_java_container_with_most_water__medium.md)
    * [33 Search in Rotated Sorted Array – Hard](33_leetcode_java_search_in_rotated_sorted_array__h.md)
    * [81 Search in Rotated Sorted Array II](81_leetcode_java_search_in_rotated_sorted_array_ii.md)
    * [82 Remove Duplicates from Sorted List II – Medium](82_leetcode_java_remove_duplicates_from_sorted_lis.md)
