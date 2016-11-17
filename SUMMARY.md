@@ -22,6 +22,7 @@
    * [20 Valid Parentheses – Easy](20_valid_parentheses__easy.md)
    * [21 Merge Two Sorted Lists – Easy](21_merge_two_sorted_lists__easy.md)
    * [22 Generate Parentheses – Medium](22_generate_parentheses__medium.md)
+   * [24 Swap Nodes in Pairs – Medium](24_swap_nodes_in_pairs__medium.md)
    * [33 Search in Rotated Sorted Array – Hard](33_leetcode_java_search_in_rotated_sorted_array__h.md)
    * [81 Search in Rotated Sorted Array II](81_leetcode_java_search_in_rotated_sorted_array_ii.md)
    * [82 Remove Duplicates from Sorted List II – Medium](82_leetcode_java_remove_duplicates_from_sorted_lis.md)
@@ -41,5 +42,4 @@
    * [101 Symmetric Tree – Easy](101_symmetric_tree__easy.md)
    * [102 Binary Tree Level Order Traversal – Easy](102_binary_tree_level_order_traversal__easy.md)
    * [104 Maximum Depth of Binary Tree – Easy](104_maximum_depth_of_binary_tree__easy.md)
-   * [24 Swap Nodes in Pairs – Medium](24_swap_nodes_in_pairs__medium.md)
 
