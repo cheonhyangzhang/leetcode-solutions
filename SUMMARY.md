@@ -25,6 +25,7 @@
    * [24 Swap Nodes in Pairs – Medium](24_swap_nodes_in_pairs__medium.md)
    * [26 Remove Duplicates from Sorted Array – Easy](26_remove_duplicates_from_sorted_array__easy.md)
    * [27 Remove Element – Easy](27_remove_element__easy.md)
+   * 28 Implement strStr() – Easy
    * [33 Search in Rotated Sorted Array – Hard](33_leetcode_java_search_in_rotated_sorted_array__h.md)
    * [81 Search in Rotated Sorted Array II](81_leetcode_java_search_in_rotated_sorted_array_ii.md)
    * [82 Remove Duplicates from Sorted List II – Medium](82_leetcode_java_remove_duplicates_from_sorted_lis.md)
@@ -47,5 +48,4 @@
    * [105 Construct Binary Tree from Preorder and Inorder Traversal – Medium](105_construct_binary_tree_from_preorder_and_inorde.md)
    * [106 Construct Binary Tree from Inorder and Postorder Traversal – Medium](106_construct_binary_tree_from_inorder_and_postord.md)
    * [107 Binary Tree Level Order Traversal II – Easy](107_binary_tree_level_order_traversal_ii__easy.md)
-   * 28 Implement strStr() – Easy
 
