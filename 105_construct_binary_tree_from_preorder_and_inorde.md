@@ -50,9 +50,6 @@ public class Solution {
         if (prel > prer) {
             return null;
         }
-        if (prel == prer) {
-            return new TreeNode(pre[prel]);
-        }
         TreeNode root = new TreeNode(pre[prel]);
         int rootIndex = inmap.get(pre[prel]);
         int leftnum = rootIndex - inl;
