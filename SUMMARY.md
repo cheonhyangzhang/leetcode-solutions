@@ -39,5 +39,5 @@
    * [101 Symmetric Tree – Easy](101_symmetric_tree__easy.md)
    * [102 Binary Tree Level Order Traversal – Easy](102_binary_tree_level_order_traversal__easy.md)
    * [104 Maximum Depth of Binary Tree – Easy](104_maximum_depth_of_binary_tree__easy.md)
-   * 21 Merge Two Sorted Lists – Easy
+   * [21 Merge Two Sorted Lists – Easy](21_merge_two_sorted_lists__easy.md)
 
