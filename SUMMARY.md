@@ -51,5 +51,5 @@
    * [107 Binary Tree Level Order Traversal II – Easy](107_binary_tree_level_order_traversal_ii__easy.md)
    * [108 Convert Sorted Array to Binary Search Tree – Medium](108_convert_sorted_array_to_binary_search_tree__me.md)
    * [109 Convert Sorted List to Binary Search Tree – Medium](109_convert_sorted_list_to_binary_search_tree__med.md)
-   * 31 Next Permutation – Medium
+   * [31 Next Permutation – Medium](31_next_permutation__medium.md)
 
