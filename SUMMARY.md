@@ -47,6 +47,7 @@
    * [58 Length of Last Word – Easy](58_length_of_last_word__easy.md)
    * [59 Spiral Matrix II – Medium](59_spiral_matrix_ii__medium.md)
    * [60 Permutation Sequence – Medium](60_permutation_sequence__medium.md)
+   * [61 Rotate List – Medium](61_rotate_list__medium.md)
    * [81 Search in Rotated Sorted Array II](81_leetcode_java_search_in_rotated_sorted_array_ii.md)
    * [82 Remove Duplicates from Sorted List II – Medium](82_leetcode_java_remove_duplicates_from_sorted_lis.md)
    * [83  Remove Duplicates from Sorted List – Easy](83_leetcode_java_remove_duplicates_from_sorted_lis.md)
@@ -75,6 +76,5 @@
    * [112 Path Sum – Easy](112_path_sum__easy.md)
    * [113 Path Sum II – Medium](113_path_sum_ii__medium.md)
    * [114 Flatten Binary Tree to Linked List – Medium](114_flatten_binary_tree_to_linked_list__medium.md)
-   * [61 Rotate List – Medium](61_rotate_list__medium.md)
    * [62 Unique Paths – Medium](62_unique_paths__medium.md)
 
