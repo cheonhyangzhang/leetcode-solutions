@@ -85,5 +85,5 @@
    * [116 Populating Next Right Pointers in Each Node – Medium](116_populating_next_right_pointers_in_each_node__m.md)
    * [70 Climbing Stairs – Easy](70_climbing_stairs__easy.md)
    * [71 Simplify Path – Medium](71_simplify_path__medium.md)
-   * 73 Set Matrix Zeroes – Medium
+   * [73 Set Matrix Zeroes – Medium](73_set_matrix_zeroes__medium.md)
 
