@@ -44,12 +44,11 @@ public class Solution {
         return result;
     }
 }
+```
 This solution will avoid unnecessary calculation in the first solution.
-
-1
-2
-3
+```java
 int tmp = digits[i] + toAdd;
 result = (tmp % 10) + result;
 toAdd = tmp / 10;
+```
 when the number given has a lot of 9, then there is no need to do these calculation. Because when you initialize an array of integer in Java, it has default value of 0 already.
