@@ -62,4 +62,5 @@
    * [111Minimum Depth of Binary Tree – Easy](111minimum_depth_of_binary_tree__easy.md)
    * [112 Path Sum – Easy](112_path_sum__easy.md)
    * [43  Multiply Strings – Medium](43_multiply_strings__medium.md)
+   * 46  Permutations – Medium
 
