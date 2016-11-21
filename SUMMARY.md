@@ -86,5 +86,5 @@
    * [113 Path Sum II – Medium](113_path_sum_ii__medium.md)
    * [114 Flatten Binary Tree to Linked List – Medium](114_flatten_binary_tree_to_linked_list__medium.md)
    * [116 Populating Next Right Pointers in Each Node – Medium](116_populating_next_right_pointers_in_each_node__m.md)
-   * 74 Search a 2D Matrix – Medium
+   * [74 Search a 2D Matrix – Medium](74_search_a_2d_matrix__medium.md)
 
