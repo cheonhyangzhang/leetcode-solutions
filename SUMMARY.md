@@ -51,6 +51,7 @@
    * [62 Unique Paths – Medium](62_unique_paths__medium.md)
    * [63 Unique Paths II – Medium](62_unique_paths_ii__medium.md)
    * [64 Minimum Path Sum – Medium](64_minimum_path_sum__medium.md)
+   * [66 Plus One – Easy](66_plus_one__easy.md)
    * [81 Search in Rotated Sorted Array II](81_leetcode_java_search_in_rotated_sorted_array_ii.md)
    * [82 Remove Duplicates from Sorted List II – Medium](82_leetcode_java_remove_duplicates_from_sorted_lis.md)
    * [83  Remove Duplicates from Sorted List – Easy](83_leetcode_java_remove_duplicates_from_sorted_lis.md)
@@ -79,5 +80,4 @@
    * [112 Path Sum – Easy](112_path_sum__easy.md)
    * [113 Path Sum II – Medium](113_path_sum_ii__medium.md)
    * [114 Flatten Binary Tree to Linked List – Medium](114_flatten_binary_tree_to_linked_list__medium.md)
-   * [66 Plus One – Easy](66_plus_one__easy.md)
 
