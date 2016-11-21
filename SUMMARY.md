@@ -71,5 +71,5 @@
    * [113 Path Sum II – Medium](113_path_sum_ii__medium.md)
    * [54 Spiral Matrix – Medium](54_spiral_matrix__medium.md)
    * [55 Jump Game – Medium](55_jump_game__medium.md)
-   * 58 Length of Last Word – Easy
+   * [58 Length of Last Word – Easy](58_length_of_last_word__easy.md)
 
