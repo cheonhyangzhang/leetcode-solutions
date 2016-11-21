@@ -67,5 +67,4 @@
    * [111Minimum Depth of Binary Tree – Easy](111minimum_depth_of_binary_tree__easy.md)
    * [112 Path Sum – Easy](112_path_sum__easy.md)
    * [113 Path Sum II – Medium](113_path_sum_ii__medium.md)
-   * 49 Group Anagrams – Medium
 
