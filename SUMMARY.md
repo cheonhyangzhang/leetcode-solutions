@@ -56,6 +56,7 @@
    * [69 Sqrt(x) – Medium](69_sqrtx__medium.md)
    * [70 Climbing Stairs – Easy](70_climbing_stairs__easy.md)
    * [71 Simplify Path – Medium](71_simplify_path__medium.md)
+   * [73 Set Matrix Zeroes – Medium](73_set_matrix_zeroes__medium.md)
    * [81 Search in Rotated Sorted Array II](81_leetcode_java_search_in_rotated_sorted_array_ii.md)
    * [82 Remove Duplicates from Sorted List II – Medium](82_leetcode_java_remove_duplicates_from_sorted_lis.md)
    * [83  Remove Duplicates from Sorted List – Easy](83_leetcode_java_remove_duplicates_from_sorted_lis.md)
@@ -85,5 +86,4 @@
    * [113 Path Sum II – Medium](113_path_sum_ii__medium.md)
    * [114 Flatten Binary Tree to Linked List – Medium](114_flatten_binary_tree_to_linked_list__medium.md)
    * [116 Populating Next Right Pointers in Each Node – Medium](116_populating_next_right_pointers_in_each_node__m.md)
-   * [73 Set Matrix Zeroes – Medium](73_set_matrix_zeroes__medium.md)
 
