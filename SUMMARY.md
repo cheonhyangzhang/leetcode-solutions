@@ -41,6 +41,7 @@
    * [48 Rotate Image – Medium](48_rotate_image__medium.md)
    * [49  Group Anagrams – Medium](49_group_anagrams__medium.md)
    * [50 Pow(x, n) – Medium](50_powx,_n__medium.md)
+   * [53 Maximum Subarray – Medium](53_maximum_subarray__medium.md)
    * [81 Search in Rotated Sorted Array II](81_leetcode_java_search_in_rotated_sorted_array_ii.md)
    * [82 Remove Duplicates from Sorted List II – Medium](82_leetcode_java_remove_duplicates_from_sorted_lis.md)
    * [83  Remove Duplicates from Sorted List – Easy](83_leetcode_java_remove_duplicates_from_sorted_lis.md)
@@ -68,5 +69,4 @@
    * [111Minimum Depth of Binary Tree – Easy](111minimum_depth_of_binary_tree__easy.md)
    * [112 Path Sum – Easy](112_path_sum__easy.md)
    * [113 Path Sum II – Medium](113_path_sum_ii__medium.md)
-   * [53 Maximum Subarray – Medium](53_maximum_subarray__medium.md)
 
