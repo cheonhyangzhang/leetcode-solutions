@@ -84,4 +84,5 @@
    * [114 Flatten Binary Tree to Linked List – Medium](114_flatten_binary_tree_to_linked_list__medium.md)
    * [116 Populating Next Right Pointers in Each Node – Medium](116_populating_next_right_pointers_in_each_node__m.md)
    * [70 Climbing Stairs – Easy](70_climbing_stairs__easy.md)
+   * 71 Simplify Path – Medium
 
