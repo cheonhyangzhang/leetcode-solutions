@@ -56,5 +56,5 @@
    * [109 Convert Sorted List to Binary Search Tree – Medium](109_convert_sorted_list_to_binary_search_tree__med.md)
    * [110 Balanced Binary Tree – Easy](110_balanced_binary_tree__easy.md)
    * [111Minimum Depth of Binary Tree – Easy](111minimum_depth_of_binary_tree__easy.md)
-   * 36 Valid Sudoku – Easy
+   * [36 Valid Sudoku – Easy](36_valid_sudoku__easy.md)
 
