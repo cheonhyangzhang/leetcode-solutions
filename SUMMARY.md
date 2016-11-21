@@ -61,4 +61,5 @@
    * [110 Balanced Binary Tree – Easy](110_balanced_binary_tree__easy.md)
    * [111Minimum Depth of Binary Tree – Easy](111minimum_depth_of_binary_tree__easy.md)
    * [112 Path Sum – Easy](112_path_sum__easy.md)
+   * 43  Multiply Strings – Medium
 
