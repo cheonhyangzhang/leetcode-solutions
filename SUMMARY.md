@@ -70,4 +70,5 @@
    * [112 Path Sum – Easy](112_path_sum__easy.md)
    * [113 Path Sum II – Medium](113_path_sum_ii__medium.md)
    * [54 Spiral Matrix – Medium](54_spiral_matrix__medium.md)
+   * 55 Jump Game – Medium
 
