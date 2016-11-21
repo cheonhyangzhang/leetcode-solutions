@@ -33,6 +33,7 @@
    * [35 Search Insert Position – Medium](35_search_insert_position__medium.md)
    * [36 Valid Sudoku – Easy](36_valid_sudoku__easy.md)
    * [38 Count and Say – Easy](38_count_and_say__easy.md)
+   * [39  Combination Sum – Medium](39_combination_sum__medium.md)
    * [81 Search in Rotated Sorted Array II](81_leetcode_java_search_in_rotated_sorted_array_ii.md)
    * [82 Remove Duplicates from Sorted List II – Medium](82_leetcode_java_remove_duplicates_from_sorted_lis.md)
    * [83  Remove Duplicates from Sorted List – Easy](83_leetcode_java_remove_duplicates_from_sorted_lis.md)
@@ -58,5 +59,4 @@
    * [109 Convert Sorted List to Binary Search Tree – Medium](109_convert_sorted_list_to_binary_search_tree__med.md)
    * [110 Balanced Binary Tree – Easy](110_balanced_binary_tree__easy.md)
    * [111Minimum Depth of Binary Tree – Easy](111minimum_depth_of_binary_tree__easy.md)
-   * [39  Combination Sum – Medium](39_combination_sum__medium.md)
 
