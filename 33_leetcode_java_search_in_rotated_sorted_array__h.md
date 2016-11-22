@@ -22,7 +22,7 @@ If the sorted array is not rotated, then this is a question of standard binary s
 
 Modify the checking condition when moving start and end pivot in standard binary search. We get the mid element of given start and end. If the element equals the target, then good, we can return the index.
 
-![](IMG_8892.JPG)
+
 
 After we calculate the mid index, let’s see where the mid is at. In the picture above, there are two cases for the mid point. Either at A or at B.
 When mid is at A, we need to find a way to determine if we want to go to the left half or right half. We can see that the easier way is to check the left half, which is nums[start] <=target < nums[mid]. Otherwise, it's falling into the right half.
