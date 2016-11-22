@@ -91,5 +91,5 @@
    * [75 Sort Colors – Medium](75_sort_colors__medium.md)
    * [77 Combinations – Medium](77_combinations__medium.md)
    * [78 Subsets – Medium](78_subsets__medium.md)
-   * 79 Word Search – Medium
+   * [79 Word Search – Medium](79_word_search__medium.md)
 
