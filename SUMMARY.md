@@ -62,6 +62,7 @@
    * [77 Combinations – Medium](77_combinations__medium.md)
    * [78 Subsets – Medium](78_subsets__medium.md)
    * [79 Word Search – Medium](79_word_search__medium.md)
+   * [80 Remove Duplicates from Sorted Array II – Medium](80_remove_duplicates_from_sorted_array_ii__medium.md)
    * [81 Search in Rotated Sorted Array II](81_leetcode_java_search_in_rotated_sorted_array_ii.md)
    * [82 Remove Duplicates from Sorted List II – Medium](82_leetcode_java_remove_duplicates_from_sorted_lis.md)
    * [83  Remove Duplicates from Sorted List – Easy](83_leetcode_java_remove_duplicates_from_sorted_lis.md)
@@ -92,5 +93,4 @@
    * [114 Flatten Binary Tree to Linked List – Medium](114_flatten_binary_tree_to_linked_list__medium.md)
    * [116 Populating Next Right Pointers in Each Node – Medium](116_populating_next_right_pointers_in_each_node__m.md)
    * [118 Pascal’s Triangle – Easy](118_pascals_triangle__easy.md)
-   * [80 Remove Duplicates from Sorted Array II – Medium](80_remove_duplicates_from_sorted_array_ii__medium.md)
 
