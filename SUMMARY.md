@@ -92,5 +92,5 @@
    * [77 Combinations – Medium](77_combinations__medium.md)
    * [78 Subsets – Medium](78_subsets__medium.md)
    * [79 Word Search – Medium](79_word_search__medium.md)
-   * 80 Remove Duplicates from Sorted Array II – Medium
+   * [80 Remove Duplicates from Sorted Array II – Medium](80_remove_duplicates_from_sorted_array_ii__medium.md)
 
