@@ -94,5 +94,5 @@
    * [116 Populating Next Right Pointers in Each Node – Medium](116_populating_next_right_pointers_in_each_node__m.md)
    * [118 Pascal’s Triangle – Easy](118_pascals_triangle__easy.md)
    * [119 Pascal’s Triangle II – Medium](119_pascals_triangle_ii__medium.md)
-   * 120 Triangle – Medium
+   * [120 Triangle – Medium](120_triangle__medium.md)
 
