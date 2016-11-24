@@ -95,4 +95,5 @@
    * [118 Pascal’s Triangle – Easy](118_pascals_triangle__easy.md)
    * [119 Pascal’s Triangle II – Medium](119_pascals_triangle_ii__medium.md)
    * [120 Triangle – Medium](120_triangle__medium.md)
+   * 121 Best Time to Buy and Sell Stock – Medium
 
