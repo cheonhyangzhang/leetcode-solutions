@@ -100,4 +100,5 @@
    * [123 Best Time to Buy and Sell Stock III – Hard](123_best_time_to_buy_and_sell_stock_iii__hard.md)
    * [125 Valid Palindrome – Easy](125_valid_palindrome__easy.md)
    * [127 Word Ladder – Medium](127_word_ladder__medium.md)
+   * 129 Sum Root to Leaf Numbers – Medium
 
