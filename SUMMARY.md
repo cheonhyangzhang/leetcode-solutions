@@ -103,4 +103,5 @@
    * [129 Sum Root to Leaf Numbers – Medium](129_sum_root_to_leaf_numbers__medium.md)
    * [130 Surrounded Regions – Medium](130_surrounded_regions__medium.md)
    * [131 Palindrome Partitioning – Medium](131_palindrome_partitioning__medium.md)
+   * 132 Palindrome Partitioning II – Hard
 
