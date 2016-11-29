@@ -105,5 +105,5 @@
    * [131 Palindrome Partitioning – Medium](131_palindrome_partitioning__medium.md)
    * [132 Palindrome Partitioning II – Hard](132_palindrome_partitioning_ii__hard.md)
 * [References](references.md)
-   * Graph representation
+   * [Graph representation](graph_representation.md)
 
