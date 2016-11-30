@@ -79,7 +79,6 @@
    * [96Unique Binary Search Trees – Medium](96unique_binary_search_trees__medium.md)
    * [98 Validate Binary Search Tree – Medium](98_validate_binary_search_tree__medium.md)
    * [100  Same Tree – Easy](100_same_tree_easy.md)
-   * test
 * Solutions 101 - 150
    * test
 * [Solutions](solutions.md)
