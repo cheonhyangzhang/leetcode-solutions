@@ -51,9 +51,9 @@
    * [61 Rotate List – Medium](61_rotate_list__medium.md)
    * [62 Unique Paths – Medium](62_unique_paths__medium.md)
    * [63 Unique Paths II – Medium](62_unique_paths_ii__medium.md)
+   * [64 Minimum Path Sum – Medium](64_minimum_path_sum__medium.md)
    * test
 * [Solutions](solutions.md)
-   * [64 Minimum Path Sum – Medium](64_minimum_path_sum__medium.md)
    * [66 Plus One – Easy](66_plus_one__easy.md)
    * [67 Add Binary – Easy](67_add_binary__easy.md)
    * [69 Sqrt(x) – Medium](69_sqrtx__medium.md)
