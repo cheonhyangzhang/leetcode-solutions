@@ -42,9 +42,9 @@
    * [49  Group Anagrams – Medium](49_group_anagrams__medium.md)
    * [50 Pow(x, n) – Medium](50_powx,_n__medium.md)
 * [Solutions 51 - 100](solutions_51_-_100.md)
+   * [53 Maximum Subarray – Medium](53_maximum_subarray__medium.md)
    * test
 * [Solutions](solutions.md)
-   * [53 Maximum Subarray – Medium](53_maximum_subarray__medium.md)
    * [54 Spiral Matrix – Medium](54_spiral_matrix__medium.md)
    * [55 Jump Game – Medium](55_jump_game__medium.md)
    * [58 Length of Last Word – Easy](58_length_of_last_word__easy.md)
