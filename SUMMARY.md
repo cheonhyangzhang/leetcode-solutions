@@ -73,9 +73,9 @@
    * [90 Subsets II – Medium](90_subsets_ii__medium.md)
    * [91 Decode Ways – Medium](91_decode_ways__medium.md)
    * [92 Reverse Linked List II – Medium](92_reverse_linked_list_ii__medium.md)
+   * [93 Restore IP Addresses – Medium](93_restore_ip_addresses__medium.md)
    * test
 * [Solutions](solutions.md)
-   * [93 Restore IP Addresses – Medium](93_restore_ip_addresses__medium.md)
    * [94 Binary Tree Inorder Traversal – Medium](94_binary_tree_inorder_traversal__medium.md)
    * [95 Unique Binary Search Trees II – Medium](95_unique_binary_search_trees_ii__medium.md)
    * [96Unique Binary Search Trees – Medium](96unique_binary_search_trees__medium.md)
