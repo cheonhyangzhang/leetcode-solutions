@@ -110,6 +110,5 @@
    * [136 Single Number – Medium](136_single_number__medium.md)
    * [137 Single Number II – Medium](137_single_number_ii__medium.md)
 * [References](references.md)
-   * [1Two Sum – Medium](1_leetcode_java_two_sum__medium.md)
    * [Graph representation](graph_representation.md)
 
