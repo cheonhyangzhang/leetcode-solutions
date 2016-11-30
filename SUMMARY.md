@@ -60,9 +60,9 @@
    * [73 Set Matrix Zeroes – Medium](73_set_matrix_zeroes__medium.md)
    * [74 Search a 2D Matrix – Medium](74_search_a_2d_matrix__medium.md)
    * [75 Sort Colors – Medium](75_sort_colors__medium.md)
+   * [77 Combinations – Medium](77_combinations__medium.md)
    * test
 * [Solutions](solutions.md)
-   * [77 Combinations – Medium](77_combinations__medium.md)
    * [78 Subsets – Medium](78_subsets__medium.md)
    * [79 Word Search – Medium](79_word_search__medium.md)
    * [80 Remove Duplicates from Sorted Array II – Medium](80_remove_duplicates_from_sorted_array_ii__medium.md)
