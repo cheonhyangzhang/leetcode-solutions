@@ -106,6 +106,7 @@
    * [132 Palindrome Partitioning II – Hard](132_palindrome_partitioning_ii__hard.md)
    * [133 Clone Graph – Medium](133_clone_graph__medium.md)
    * [134 Gas Station – Medium](134_gas_station__medium.md)
+   * 136 Single Number – Medium
 * [References](references.md)
    * [Graph representation](graph_representation.md)
 
