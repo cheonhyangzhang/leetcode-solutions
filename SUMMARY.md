@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+   * Solutions 1 - 50
 * [Solutions](solutions.md)
    * [1Two Sum – Medium](1_leetcode_java_two_sum__medium.md)
    * [2 Add Two Numbers – Medium](2_leetcode_java_add_two_numbers__medium.md)
