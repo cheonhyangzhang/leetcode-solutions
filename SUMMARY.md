@@ -82,9 +82,9 @@
 * Solutions 101 - 150
    * [101 Symmetric Tree – Easy](101_symmetric_tree__easy.md)
    * [102 Binary Tree Level Order Traversal – Easy](102_binary_tree_level_order_traversal__easy.md)
+   * [104 Maximum Depth of Binary Tree – Easy](104_maximum_depth_of_binary_tree__easy.md)
    * test
 * [Solutions](solutions.md)
-   * [104 Maximum Depth of Binary Tree – Easy](104_maximum_depth_of_binary_tree__easy.md)
    * [105 Construct Binary Tree from Preorder and Inorder Traversal – Medium](105_construct_binary_tree_from_preorder_and_inorde.md)
    * [106 Construct Binary Tree from Inorder and Postorder Traversal – Medium](106_construct_binary_tree_from_inorder_and_postord.md)
    * [107 Binary Tree Level Order Traversal II – Easy](107_binary_tree_level_order_traversal_ii__easy.md)
