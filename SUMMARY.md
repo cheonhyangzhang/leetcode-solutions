@@ -105,9 +105,9 @@
    * [129 Sum Root to Leaf Numbers – Medium](129_sum_root_to_leaf_numbers__medium.md)
    * [130 Surrounded Regions – Medium](130_surrounded_regions__medium.md)
    * [131 Palindrome Partitioning – Medium](131_palindrome_partitioning__medium.md)
+   * [132 Palindrome Partitioning II – Hard](132_palindrome_partitioning_ii__hard.md)
    * test
 * [Solutions](solutions.md)
-   * [132 Palindrome Partitioning II – Hard](132_palindrome_partitioning_ii__hard.md)
    * [133 Clone Graph – Medium](133_clone_graph__medium.md)
    * [134 Gas Station – Medium](134_gas_station__medium.md)
    * [136 Single Number – Medium](136_single_number__medium.md)
