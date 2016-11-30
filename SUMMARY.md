@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+   * Solutions 1 - 50
    * [1Two Sum – Medium](1_leetcode_java_two_sum__medium.md)
    * Solutions 1 - 50
 * [Solutions](solutions.md)
@@ -111,5 +112,4 @@
    * [137 Single Number II – Medium](137_single_number_ii__medium.md)
 * [References](references.md)
    * [Graph representation](graph_representation.md)
-* Solutions 1 - 50
 
