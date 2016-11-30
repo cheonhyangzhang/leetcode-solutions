@@ -96,8 +96,8 @@
    * [116 Populating Next Right Pointers in Each Node – Medium](116_populating_next_right_pointers_in_each_node__m.md)
    * [118 Pascal’s Triangle – Easy](118_pascals_triangle__easy.md)
    * [119 Pascal’s Triangle II – Medium](119_pascals_triangle_ii__medium.md)
-   * [121 Best Time to Buy and Sell Stock – Medium](121_best_time_to_buy_and_sell_stock__medium.md)
    * [120 Triangle – Medium](120_triangle__medium.md)
+   * [121 Best Time to Buy and Sell Stock – Medium](121_best_time_to_buy_and_sell_stock__medium.md)
    * test
 * [Solutions](solutions.md)
    * [122 Best Time to Buy and Sell Stock II – Medium](122_best_time_to_buy_and_sell_stock_ii__medium.md)
