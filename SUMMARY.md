@@ -31,6 +31,7 @@
    * [34 Search for a Range – Medium](34_search_for_a_range__medium.md)
    * [35 Search Insert Position – Medium](35_search_insert_position__medium.md)
    * [11  Container With Most Water – Medium](11_leetcode_java_container_with_most_water__medium.md)
+* [36 Valid Sudoku – Easy](36_valid_sudoku__easy.md)
 * [Solutions](solutions.md)
    * [36 Valid Sudoku – Easy](36_valid_sudoku__easy.md)
    * [38 Count and Say – Easy](38_count_and_say__easy.md)
