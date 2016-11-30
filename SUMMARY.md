@@ -77,9 +77,9 @@
    * [94 Binary Tree Inorder Traversal – Medium](94_binary_tree_inorder_traversal__medium.md)
    * [95 Unique Binary Search Trees II – Medium](95_unique_binary_search_trees_ii__medium.md)
    * [96Unique Binary Search Trees – Medium](96unique_binary_search_trees__medium.md)
+   * [98 Validate Binary Search Tree – Medium](98_validate_binary_search_tree__medium.md)
    * test
 * [Solutions](solutions.md)
-   * [98 Validate Binary Search Tree – Medium](98_validate_binary_search_tree__medium.md)
    * [100  Same Tree – Easy](100_same_tree_easy.md)
    * [101 Symmetric Tree – Easy](101_symmetric_tree__easy.md)
    * [102 Binary Tree Level Order Traversal – Easy](102_binary_tree_level_order_traversal__easy.md)
