@@ -80,6 +80,7 @@
    * [98 Validate Binary Search Tree – Medium](98_validate_binary_search_tree__medium.md)
    * [100  Same Tree – Easy](100_same_tree_easy.md)
    * test
+* Solutions 101 - 150
 * [Solutions](solutions.md)
    * [101 Symmetric Tree – Easy](101_symmetric_tree__easy.md)
    * [102 Binary Tree Level Order Traversal – Easy](102_binary_tree_level_order_traversal__easy.md)
@@ -113,5 +114,4 @@
    * [137 Single Number II – Medium](137_single_number_ii__medium.md)
 * [References](references.md)
    * [Graph representation](graph_representation.md)
-* Solutions 101 - 150
 
