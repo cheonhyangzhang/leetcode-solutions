@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Solutions 1 - 50](solutions_1_-_50.md)
+   * [1Two Sum – Medium](1_leetcode_java_two_sum__medium.md)
    * [5 Longest Palindromic Substring](5_longest_palindromic_substring.md)
    * [6 ZigZag Conversion – Easy](6_zigzag_conversion__easy.md)
    * [7 Reverse Integer – Easy](7_reverse_integer__easy.md)
@@ -9,7 +10,6 @@
    * [9 Palindrome Number – Easy](9_palindrome_number__easy.md)
    * [11  Container With Most Water – Medium](11_leetcode_java_container_with_most_water__medium.md)
    * [3  Longest Substring Without Repeating Characters](3_leetcode_java_longest_substring_without_repeatin.md)
-   * [1Two Sum – Medium](1_leetcode_java_two_sum__medium.md)
    * [2 Add Two Numbers – Medium](2_leetcode_java_add_two_numbers__medium.md)
 * [Solutions](solutions.md)
    * [12 Integer to Roman – Medium](12_integer_to_roman__medium.md)
