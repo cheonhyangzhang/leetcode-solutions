@@ -103,9 +103,9 @@
    * [125 Valid Palindrome – Easy](125_valid_palindrome__easy.md)
    * [127 Word Ladder – Medium](127_word_ladder__medium.md)
    * [129 Sum Root to Leaf Numbers – Medium](129_sum_root_to_leaf_numbers__medium.md)
+   * [130 Surrounded Regions – Medium](130_surrounded_regions__medium.md)
    * test
 * [Solutions](solutions.md)
-   * [130 Surrounded Regions – Medium](130_surrounded_regions__medium.md)
    * [131 Palindrome Partitioning – Medium](131_palindrome_partitioning__medium.md)
    * [132 Palindrome Partitioning II – Hard](132_palindrome_partitioning_ii__hard.md)
    * [133 Clone Graph – Medium](133_clone_graph__medium.md)
