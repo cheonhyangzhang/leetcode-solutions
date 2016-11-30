@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Solutions 1 - 50](solutions_1_-_50.md)
+   * [5 Longest Palindromic Substring](5_longest_palindromic_substring.md)
    * [6 ZigZag Conversion – Easy](6_zigzag_conversion__easy.md)
    * [7 Reverse Integer – Easy](7_reverse_integer__easy.md)
    * [8 String to Integer (atoi) – Easy](8_string_to_integer_atoi__easy.md)
@@ -10,7 +11,6 @@
    * [3  Longest Substring Without Repeating Characters](3_leetcode_java_longest_substring_without_repeatin.md)
    * [1Two Sum – Medium](1_leetcode_java_two_sum__medium.md)
    * [2 Add Two Numbers – Medium](2_leetcode_java_add_two_numbers__medium.md)
-* [5 Longest Palindromic Substring](5_longest_palindromic_substring.md)
 * [Solutions](solutions.md)
    * [12 Integer to Roman – Medium](12_integer_to_roman__medium.md)
    * [13 Roman to Integer – Easy](13_roman_to_integer__easy.md)
