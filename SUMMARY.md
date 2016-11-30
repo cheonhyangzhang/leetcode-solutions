@@ -1,8 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-* [Solutions 1 - 50](solutions_1_-_50.md)
 * [2 Add Two Numbers – Medium](2_leetcode_java_add_two_numbers__medium.md)
+* [Solutions 1 - 50](solutions_1_-_50.md)
 * [Solutions](solutions.md)
    * [3  Longest Substring Without Repeating Characters](3_leetcode_java_longest_substring_without_repeatin.md)
    * [5 Longest Palindromic Substring](5_longest_palindromic_substring.md)
