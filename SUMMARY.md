@@ -88,9 +88,9 @@
    * [107 Binary Tree Level Order Traversal II – Easy](107_binary_tree_level_order_traversal_ii__easy.md)
    * [108 Convert Sorted Array to Binary Search Tree – Medium](108_convert_sorted_array_to_binary_search_tree__me.md)
    * [109 Convert Sorted List to Binary Search Tree – Medium](109_convert_sorted_list_to_binary_search_tree__med.md)
+   * [110 Balanced Binary Tree – Easy](110_balanced_binary_tree__easy.md)
    * test
 * [Solutions](solutions.md)
-   * [110 Balanced Binary Tree – Easy](110_balanced_binary_tree__easy.md)
    * [111Minimum Depth of Binary Tree – Easy](111minimum_depth_of_binary_tree__easy.md)
    * [112 Path Sum – Easy](112_path_sum__easy.md)
    * [113 Path Sum II – Medium](113_path_sum_ii__medium.md)
