@@ -111,5 +111,5 @@
 * [References](references.md)
    * [Graph representation](graph_representation.md)
 * [1Two Sum – Medium](1_leetcode_java_two_sum__medium.md)
-* Solutions 1 - 50
+* [Solutions 1 - 50](solutions_1_-_50.md)
 
