@@ -12,7 +12,6 @@
 * [9 Palindrome Number – Easy](9_palindrome_number__easy.md)
 * [11  Container With Most Water – Medium](11_leetcode_java_container_with_most_water__medium.md)
 * [Solutions](solutions.md)
-   * [11  Container With Most Water – Medium](11_leetcode_java_container_with_most_water__medium.md)
    * [12 Integer to Roman – Medium](12_integer_to_roman__medium.md)
    * [13 Roman to Integer – Easy](13_roman_to_integer__easy.md)
    * [14 Longest Common Prefix – Easy](14_longest_common_prefix__easy.md)
