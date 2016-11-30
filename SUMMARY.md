@@ -53,9 +53,9 @@
    * [63 Unique Paths II – Medium](62_unique_paths_ii__medium.md)
    * [64 Minimum Path Sum – Medium](64_minimum_path_sum__medium.md)
    * [66 Plus One – Easy](66_plus_one__easy.md)
+   * [67 Add Binary – Easy](67_add_binary__easy.md)
    * test
 * [Solutions](solutions.md)
-   * [67 Add Binary – Easy](67_add_binary__easy.md)
    * [69 Sqrt(x) – Medium](69_sqrtx__medium.md)
    * [70 Climbing Stairs – Easy](70_climbing_stairs__easy.md)
    * [71 Simplify Path – Medium](71_simplify_path__medium.md)
