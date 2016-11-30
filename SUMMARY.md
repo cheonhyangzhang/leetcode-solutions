@@ -47,9 +47,9 @@
    * [55 Jump Game – Medium](55_jump_game__medium.md)
    * [58 Length of Last Word – Easy](58_length_of_last_word__easy.md)
    * [59 Spiral Matrix II – Medium](59_spiral_matrix_ii__medium.md)
+   * [60 Permutation Sequence – Medium](60_permutation_sequence__medium.md)
    * test
 * [Solutions](solutions.md)
-   * [60 Permutation Sequence – Medium](60_permutation_sequence__medium.md)
    * [61 Rotate List – Medium](61_rotate_list__medium.md)
    * [62 Unique Paths – Medium](62_unique_paths__medium.md)
    * [63 Unique Paths II – Medium](62_unique_paths_ii__medium.md)
