@@ -55,9 +55,9 @@
    * [66 Plus One – Easy](66_plus_one__easy.md)
    * [67 Add Binary – Easy](67_add_binary__easy.md)
    * [69 Sqrt(x) – Medium](69_sqrtx__medium.md)
+   * [70 Climbing Stairs – Easy](70_climbing_stairs__easy.md)
    * test
 * [Solutions](solutions.md)
-   * [70 Climbing Stairs – Easy](70_climbing_stairs__easy.md)
    * [71 Simplify Path – Medium](71_simplify_path__medium.md)
    * [73 Set Matrix Zeroes – Medium](73_set_matrix_zeroes__medium.md)
    * [74 Search a 2D Matrix – Medium](74_search_a_2d_matrix__medium.md)
