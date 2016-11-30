@@ -67,9 +67,9 @@
    * [81 Search in Rotated Sorted Array II](81_leetcode_java_search_in_rotated_sorted_array_ii.md)
    * [82 Remove Duplicates from Sorted List II – Medium](82_leetcode_java_remove_duplicates_from_sorted_lis.md)
    * [83  Remove Duplicates from Sorted List – Easy](83_leetcode_java_remove_duplicates_from_sorted_lis.md)
+   * [86 Partition List – Medium](86_partition_list__medium.md)
    * test
 * [Solutions](solutions.md)
-   * [86 Partition List – Medium](86_partition_list__medium.md)
    * [88 Merge Sorted Array](88_merge_sorted_array.md)
    * [89 Gray Code – Medium](89_gray_code__medium.md)
    * [90 Subsets II – Medium](90_subsets_ii__medium.md)
