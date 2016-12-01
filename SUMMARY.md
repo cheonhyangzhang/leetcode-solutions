@@ -111,7 +111,7 @@
    * [136 Single Number – Medium](136_single_number__medium.md)
    * [137 Single Number II – Medium](137_single_number_ii__medium.md)
    * test
-   * 139 Word Break – Medium
+   * [139 Word Break – Medium](139_word_break__medium.md)
 * [Solutions](solutions.md)
 * [References](references.md)
    * [Graph representation](graph_representation.md)
