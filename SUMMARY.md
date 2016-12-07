@@ -114,7 +114,7 @@
    * [140 Word Break II – Hard](140_word_break_ii__hard.md)
    * [141 Linked List Cycle – Medium](141_linked_list_cycle__medium.md)
    * [142 Linked List Cycle II – Medium](142_linked_list_cycle_ii__medium.md)
-   * 143 Reorder List – Medium
+   * [143 Reorder List – Medium](143_reorder_list__medium.md)
 * [Solutions](solutions.md)
 * [References](references.md)
    * [Graph representation](graph_representation.md)
