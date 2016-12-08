@@ -117,7 +117,7 @@
    * [143 Reorder List – Medium](143_reorder_list__medium.md)
    * [144 Binary Tree Preorder Traversal – Medium](144_binary_tree_preorder_traversal__medium.md)
    * [145 Binary Tree Postorder Traversal – Hard](145_binary_tree_postorder_traversal__hard.md)
-   * 146 LRU Cache – Hard
+   * [146 LRU Cache – Hard](146_lru_cache__hard.md)
 * [Solutions](solutions.md)
 * [References](references.md)
    * [Graph representation](graph_representation.md)
