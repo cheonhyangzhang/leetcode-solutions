@@ -119,6 +119,7 @@
    * [145 Binary Tree Postorder Traversal – Hard](145_binary_tree_postorder_traversal__hard.md)
    * [146 LRU Cache – Hard](146_lru_cache__hard.md)
    * [147 Insertion Sort List – Medium](147_insertion_sort_list__medium.md)
+   * 150 Evaluate Reverse Polish Notation – Medium
 * [Solutions](solutions.md)
 * [References](references.md)
    * [Graph representation](graph_representation.md)
