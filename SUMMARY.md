@@ -79,7 +79,7 @@
    * [96Unique Binary Search Trees – Medium](96unique_binary_search_trees__medium.md)
    * [98 Validate Binary Search Tree – Medium](98_validate_binary_search_tree__medium.md)
    * [100  Same Tree – Easy](100_same_tree_easy.md)
-* Solutions 101 - 150
+* [Solutions 101 - 150](solutions_101_-_150.md)
    * [101 Symmetric Tree – Easy](101_symmetric_tree__easy.md)
    * [102 Binary Tree Level Order Traversal – Easy](102_binary_tree_level_order_traversal__easy.md)
    * [104 Maximum Depth of Binary Tree – Easy](104_maximum_depth_of_binary_tree__easy.md)
