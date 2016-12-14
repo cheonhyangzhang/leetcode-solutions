@@ -120,7 +120,7 @@
    * [146 LRU Cache – Hard](146_lru_cache__hard.md)
    * [147 Insertion Sort List – Medium](147_insertion_sort_list__medium.md)
    * [150 Evaluate Reverse Polish Notation – Medium](150_evaluate_reverse_polish_notation__medium.md)
-* Solutions 151 - 200
+* [Solutions 151 - 200](solutions_151_-_200.md)
    * [151 Reverse Words in a String – Medium](151_reverse_words_in_a_string__medium.md)
    * [152 Sort List - Medium](152_sort_list_-_medium.md)
    * [152 Maximum Product Subarray – Medium](152_maximum_product_subarray__medium.md)
