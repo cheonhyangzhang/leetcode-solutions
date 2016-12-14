@@ -125,7 +125,7 @@
    * [152 Sort List - Medium](152_sort_list_-_medium.md)
    * [152 Maximum Product Subarray – Medium](152_maximum_product_subarray__medium.md)
    * [153 Find Minimum in Rotated Sorted Array – Medium](153_find_minimum_in_rotated_sorted_array__medium.md)
-   * 155  Min Stack – Easy
+   * [155  Min Stack – Easy](155_min_stack__easy.md)
 * [Solutions](solutions.md)
 * [References](references.md)
    * [Graph representation](graph_representation.md)
