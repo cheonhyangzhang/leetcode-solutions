@@ -123,7 +123,7 @@
 * Solutions 151 - 200
    * [151 Reverse Words in a String – Medium](151_reverse_words_in_a_string__medium.md)
    * [152 Sort List - Medium](152_sort_list_-_medium.md)
-   * 151 Maximum Product Subarray – Medium
+   * [151 Maximum Product Subarray – Medium](151_maximum_product_subarray__medium.md)
 * [Solutions](solutions.md)
 * [References](references.md)
    * [Graph representation](graph_representation.md)
