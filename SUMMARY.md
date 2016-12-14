@@ -122,7 +122,7 @@
    * [150 Evaluate Reverse Polish Notation – Medium](150_evaluate_reverse_polish_notation__medium.md)
 * Solutions 151 - 200
    * [151 Reverse Words in a String – Medium](151_reverse_words_in_a_string__medium.md)
-   * 152 Sort List - Medium
+   * [152 Sort List - Medium](152_sort_list_-_medium.md)
 * [Solutions](solutions.md)
 * [References](references.md)
    * [Graph representation](graph_representation.md)
