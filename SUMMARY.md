@@ -131,6 +131,7 @@
     * [158 Read N Characters Given Read4 II – Call multiple times Add to List QuestionEditorial Solution – Hard](158-read-n-characters-given-read4-ii-–-call-multiple-times-add-to-list-questioneditorial-solution-–-hard.md)
     * [160 Intersection of Two Linked Lists – Easy](160-intersection-of-two-linked-lists-–-easy.md)
     * [161 One Edit Distance – Medium](161-one-edit-distance-–-medium.md)
+    * [162 Find Peak Element – Medium](162-find-peak-element-–-medium.md)
 * [Solutions](solutions.md)
 * [References](references.md)
     * [Graph representation](graph_representation.md)
