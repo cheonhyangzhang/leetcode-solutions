@@ -140,5 +140,6 @@
     * [254 Factor Combinations - Medium](254-factor-combinations---medium.md)
     * [255 Verify Preorder Sequence in Binary Search Tree - Medium](255-verify-preorder-sequence-in-binary-search-tree---medium.md)
     * [256 Paint House - Medium](256-paint-house---medium.md)
+    * [257 Binary Tree Paths - Easy](257-binary-tree-paths---easy.md)
 * [Solutions](solutions.md)
 
