@@ -133,6 +133,7 @@
     * [160 Intersection of Two Linked Lists – Easy](160-intersection-of-two-linked-lists-–-easy.md)
     * [161 One Edit Distance – Medium](161-one-edit-distance-–-medium.md)
     * [162 Find Peak Element – Medium](162-find-peak-element-–-medium.md)
+    * [250 LeetCode Java: Count Univalue Subtrees – Medium](250-leetcode-java-count-univalue-subtrees-–-medium.md)
 * [Solutions 251 - 300](solutions-251---300.md)
     * [251 LeetCode Java: Count Univalue Subtrees – Medium](251-leetcode-java-count-univalue-subtrees-–-medium.md)
     * [252 LeetCode Java: Meeting Rooms – Easy](252-leetcode-java-meeting-rooms-–-easy.md)
