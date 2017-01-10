@@ -137,7 +137,6 @@
     * [253 Meeting Rooms II - Medium](253-meeting-rooms-ii---medium.md)
     * [254 Factor Combinations - Medium](254-factor-combinations---medium.md)
     * [255 Verify Preorder Sequence in Binary Search Tree - Medium](255-verify-preorder-sequence-in-binary-search-tree---medium.md)
+    * [256 Paint House - Medium](256-paint-house---medium.md)
 * [Solutions](solutions.md)
-* fuck
-* 256. Paint House - Medium
 
