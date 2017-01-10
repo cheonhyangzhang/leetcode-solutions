@@ -138,4 +138,5 @@
     * [254 Factor Combinations - Medium](254-factor-combinations---medium.md)
     * [255 Verify Preorder Sequence in Binary Search Tree - Medium](255-verify-preorder-sequence-in-binary-search-tree---medium.md)
 * [Solutions](solutions.md)
+* 256. Paint House - Medium
 
