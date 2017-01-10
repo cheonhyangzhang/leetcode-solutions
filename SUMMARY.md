@@ -144,4 +144,6 @@
     * [256 Paint House - Medium](256-paint-house---medium.md)
     * [257 Binary Tree Paths - Easy](257-binary-tree-paths---easy.md)
 * [Solutions](solutions.md)
+* Solutions 201 - 250
+    * [248 LeetCode Java: Different Ways to Add Parentheses – Hard](248-leetcode-java-different-ways-to-add-parentheses-–-hard.md)
 
