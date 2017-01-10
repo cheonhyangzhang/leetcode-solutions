@@ -138,6 +138,7 @@
     * [249 LeetCode Java: Group Shifted Strings – Easy](249-leetcode-java-group-shifted-strings-–-easy.md)
     * [250 LeetCode Java: Count Univalue Subtrees – Medium](250-leetcode-java-count-univalue-subtrees-–-medium.md)
     * [201 LeetCode Java : Bitwise AND of Numbers Range – Medium](201-leetcode-java--bitwise-and-of-numbers-range-–-medium.md)
+    * [202 LeetCode Java: Happy Number – Easy](202-leetcode-java-happy-number-–-easy.md)
 * [Solutions 251 - 300](solutions-251---300.md)
     * [251 LeetCode Java: Count Univalue Subtrees – Medium](251-leetcode-java-count-univalue-subtrees-–-medium.md)
     * [252 LeetCode Java: Meeting Rooms – Easy](252-leetcode-java-meeting-rooms-–-easy.md)
