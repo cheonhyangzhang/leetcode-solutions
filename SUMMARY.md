@@ -140,6 +140,7 @@
     * [201 LeetCode Java : Bitwise AND of Numbers Range – Medium](201-leetcode-java--bitwise-and-of-numbers-range-–-medium.md)
     * [202 LeetCode Java: Happy Number – Easy](202-leetcode-java-happy-number-–-easy.md)
     * [203 LeetCode Java: Remove Linked List Elements – Easy](203-leetcode-java-remove-linked-list-elements-–-easy.md)
+    * [204 LeetCode Java: Count Primes – Easy](204-leetcode-java-count-primes-–-easy.md)
 * [Solutions 251 - 300](solutions-251---300.md)
     * [251 LeetCode Java: Count Univalue Subtrees – Medium](251-leetcode-java-count-univalue-subtrees-–-medium.md)
     * [252 LeetCode Java: Meeting Rooms – Easy](252-leetcode-java-meeting-rooms-–-easy.md)
