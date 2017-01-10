@@ -151,5 +151,6 @@
     * [256 Paint House - Medium](256-paint-house---medium.md)
     * [257 Binary Tree Paths - Easy](257-binary-tree-paths---easy.md)
     * [258 Add Digits - Easy](258-add-digits---easy.md)
+    * 259. 3Sum Smaller
 * [Solutions](solutions.md)
 
