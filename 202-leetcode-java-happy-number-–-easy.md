@@ -18,7 +18,7 @@ This is a very straight forward integer problem. Just do the formula addition, a
 
 Do this repeatedly until 1 occurs or same appearing number appears twice. Using a HashSet to keep appearing number is helpful.
 
-###Solutions:
+### Solutions:
 
 ```java
 public class Solution {
@@ -50,6 +50,32 @@ public class Solution {
     }
 }
 ```
-
 Updated:12/31/2016
-Improve log
+Improve logic.
+
+```java
+public class Solution {
+    public boolean isHappy(int n) {
+        HashSet<Integer> data = new HashSet<Integer>();
+        while (true) {
+            int r = process(n);
+            if (r == 1) {
+                return true;
+            }
+            if (data.contains(r)) {
+                return false;
+            }
+            data.add(r);
+            n = r;
+        }
+    }
+    private int process(int n) {
+        int result = 0;
+        while (n != 0) {
+            result += (n % 10) * (n % 10);
+            n = n / 10;
+        }
+        return result;
+    }
+}
+```
