@@ -152,5 +152,6 @@
     * [257 Binary Tree Paths - Easy](257-binary-tree-paths---easy.md)
     * [258 Add Digits - Easy](258-add-digits---easy.md)
     * [260 Single Number III](260-single-number-iii.md)
+    * [261 Graph Valid Tree](261-graph-valid-tree.md)
 * [Solutions](solutions.md)
 
