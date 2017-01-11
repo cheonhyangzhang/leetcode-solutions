@@ -155,5 +155,6 @@
     * [261 Graph Valid Tree](261-graph-valid-tree.md)
     * [263 Ugly Number](263-ugly-number.md)
     * [264 Ugly Number II](264-ugly-number-ii.md)
+    * [266 Palindrome Permutation](266-palindrome-permutation.md)
 * [Solutions](solutions.md)
 
