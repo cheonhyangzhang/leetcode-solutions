@@ -153,5 +153,6 @@
     * [258 Add Digits - Easy](258-add-digits---easy.md)
     * [260 Single Number III](260-single-number-iii.md)
     * [261 Graph Valid Tree](261-graph-valid-tree.md)
+    * [263 Ugly Number](263-ugly-number.md)
 * [Solutions](solutions.md)
 
