@@ -154,5 +154,6 @@
     * [260 Single Number III](260-single-number-iii.md)
     * [261 Graph Valid Tree](261-graph-valid-tree.md)
     * [263 Ugly Number](263-ugly-number.md)
+    * [264 Ugly Number II](264-ugly-number-ii.md)
 * [Solutions](solutions.md)
 
