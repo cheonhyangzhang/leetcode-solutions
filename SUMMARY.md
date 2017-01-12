@@ -158,5 +158,6 @@
     * [266 Palindrome Permutation](266-palindrome-permutation.md)
     * [267 Palindrome Permutation II](267-palindrome-permutation-ii.md)
     * [268 Missing Number](268-missing-number.md)
+    * [270 Closest Binary Search Tree Value](270-closest-binary-search-tree-value.md)
 * [Solutions](solutions.md)
 
