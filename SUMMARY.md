@@ -161,5 +161,6 @@
     * [270 Closest Binary Search Tree Value](270-closest-binary-search-tree-value.md)
     * [271 Encode and Decode Strings](271-encode-and-decode-strings.md)
     * [274 H-Index](274-h-index.md)
+    * [275 H-Index II](275-h-index-ii.md)
 * [Solutions](solutions.md)
 
