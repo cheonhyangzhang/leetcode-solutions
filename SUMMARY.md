@@ -162,5 +162,6 @@
     * [271 Encode and Decode Strings](271-encode-and-decode-strings.md)
     * [274 H-Index](274-h-index.md)
     * [275 H-Index II](275-h-index-ii.md)
+    * [276 Paint Fence](276-paint-fence.md)
 * [Solutions](solutions.md)
 
