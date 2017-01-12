@@ -52,7 +52,3 @@ public class Solution {
     }
 }
 ```
-
-```java
-
-```
