@@ -167,5 +167,6 @@
     * [278 First Bad Version](278-first-bad-version.md)
     * [279 Perfect Squares](279-perfect-squares.md)
     * [280 Wiggle Sort](280-wiggle-sort.md)
+    * [281 Zigzag Iterator](281-zigzag-iterator.md)
 * [Solutions](solutions.md)
 
