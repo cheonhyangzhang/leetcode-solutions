@@ -164,5 +164,6 @@
     * [275 H-Index II](275-h-index-ii.md)
     * [276 Paint Fence](276-paint-fence.md)
     * [277 Find the Celebrity](277-find-the-celebrity.md)
+    * [278 First Bad Version](278-first-bad-version.md)
 * [Solutions](solutions.md)
 
