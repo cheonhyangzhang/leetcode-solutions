@@ -175,5 +175,6 @@
     * [288 Unique Word Abbreviation](288-unique-word-abbreviation.md)
     * [289 Game of Life](289-game-of-life.md)
     * [290 Word Pattern](290-word-pattern.md)
+    * [292 Nim Game](292-nim-game.md)
 * [Solutions](solutions.md)
 
