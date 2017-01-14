@@ -176,5 +176,6 @@
     * [289 Game of Life](289-game-of-life.md)
     * [290 Word Pattern](290-word-pattern.md)
     * [292 Nim Game](292-nim-game.md)
+    * [293 Flip Game](293-flip-game.md)
 * [Solutions](solutions.md)
 
