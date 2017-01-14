@@ -180,5 +180,6 @@
     * [294 Flip Game II](294-flip-game-ii.md)
     * [298 Binary Tree Longest Consecutive Sequence](298-binary-tree-longest-consecutive-sequence.md)
     * [299 Bulls and Cows](299-bulls-and-cows.md)
+    * [300 Longest Increasing Subsequence](300-longest-increasing-subsequence.md)
 * [Solutions](solutions.md)
 
