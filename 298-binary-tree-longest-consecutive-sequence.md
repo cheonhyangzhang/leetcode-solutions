@@ -64,3 +64,51 @@ public class Solution {
     }
 }
 ```
+
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public int longestConsecutive(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int max = 0;
+        Queue<TreeNode> q = new LinkedList<TreeNode>();
+        Queue<Integer> l = new LinkedList<Integer>();
+        q.add(root);
+        l.add(1);
+        while (q.size() > 0) {
+            TreeNode node = q.poll();
+            int len = l.poll();
+            max = Math.max(max, len);
+            if (node.left != null) {
+                if (node.left.val == node.val + 1) {
+                    l.add(len + 1);
+                }
+                else {
+                    l.add(1);
+                }
+                q.add(node.left);
+            }
+            if (node.right != null) {
+                if (node.right.val == node.val + 1) {
+                    l.add(len + 1);
+                }
+                else {
+                    l.add(1);
+                }
+                q.add(node.right);
+            }
+        }
+        return max;
+    }
+}
+```
