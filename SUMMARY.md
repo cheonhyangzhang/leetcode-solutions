@@ -173,5 +173,6 @@
     * [285 Inorder Successor in BST](285-inorder-successor-in-bst.md)
     * [286 Walls and Gates](286-walls-and-gates.md)
     * [288 Unique Word Abbreviation](288-unique-word-abbreviation.md)
+    * [289 Game of Life](289-game-of-life.md)
 * [Solutions](solutions.md)
 
