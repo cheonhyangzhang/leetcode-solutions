@@ -178,5 +178,6 @@
     * [292 Nim Game](292-nim-game.md)
     * [293 Flip Game](293-flip-game.md)
     * [294 Flip Game II](294-flip-game-ii.md)
+    * [298 Binary Tree Longest Consecutive Sequence](298-binary-tree-longest-consecutive-sequence.md)
 * [Solutions](solutions.md)
 
