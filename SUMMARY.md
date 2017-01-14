@@ -169,5 +169,6 @@
     * [280 Wiggle Sort](280-wiggle-sort.md)
     * [281 Zigzag Iterator](281-zigzag-iterator.md)
     * [283 Move Zeroes](283-move-zeroes.md)
+    * [284 Peeking Iterator](284-peeking-iterator.md)
 * [Solutions](solutions.md)
 
