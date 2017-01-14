@@ -171,5 +171,6 @@
     * [283 Move Zeroes](283-move-zeroes.md)
     * [284 Peeking Iterator](284-peeking-iterator.md)
     * [285 Inorder Successor in BST](285-inorder-successor-in-bst.md)
+    * [286 Walls and Gates](286-walls-and-gates.md)
 * [Solutions](solutions.md)
 
