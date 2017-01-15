@@ -183,5 +183,6 @@
     * [300 Longest Increasing Subsequence](300-longest-increasing-subsequence.md)
 * Solutions 301 - 350
     * [303 Range Sum Query - Immutable](303-range-sum-query---immutable.md)
+    * [304 Range Sum Query 2D - Immutable](304-range-sum-query-2d---immutable.md)
 * [Solutions](solutions.md)
 
