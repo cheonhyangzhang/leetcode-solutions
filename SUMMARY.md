@@ -181,5 +181,7 @@
     * [298 Binary Tree Longest Consecutive Sequence](298-binary-tree-longest-consecutive-sequence.md)
     * [299 Bulls and Cows](299-bulls-and-cows.md)
     * [300 Longest Increasing Subsequence](300-longest-increasing-subsequence.md)
+* Solutions 301 - 350
+    * [303 Range Sum Query - Immutable](303-range-sum-query---immutable.md)
 * [Solutions](solutions.md)
 
