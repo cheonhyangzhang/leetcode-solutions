@@ -36,3 +36,42 @@ public class Solution {
     }
 }
 ```
+
+```java
+public class Solution {
+    public int nthSuperUglyNumber(int n, int[] primes) {
+        int[] result = new int[n];
+        result[0] = 1;
+        int[] next = new int[primes.length];
+        
+        HashMap<Integer, List<Integer>> index = new HashMap<Integer, List<Integer>>();
+        PriorityQueue<Integer> q = new PriorityQueue<Integer>();
+        for (int i = 0; i < primes.length; i ++) {
+            q.add(primes[i]);
+            index.put(primes[i], new LinkedList<Integer>());
+            index.get(primes[i]).add(i);
+        }
+        
+        for (int i = 1; i < n; i ++) {
+            int min = q.poll();
+            List<Integer> indexToUpdate = index.get(min);
+            result[i] = min;
+            for (Integer j:indexToUpdate) {
+                next[j] ++;
+                int cand = result[next[j]] * primes[j];
+                if (index.containsKey(cand)) {
+                    index.get(cand).add(j);
+                }
+                else {
+                    index.put(cand, new LinkedList<Integer>());
+                    index.get(cand).add(j);
+                    q.add(cand);
+                }
+            }
+        }
+        
+        
+        return result [n - 1];
+    }
+}
+```
