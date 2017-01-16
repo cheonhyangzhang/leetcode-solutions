@@ -143,6 +143,7 @@
     * [204 LeetCode Java: Count Primes – Easy](204-leetcode-java-count-primes-–-easy.md)
     * [205 LeetCode Java: Isomorphic Strings – Easy](205-leetcode-java-isomorphic-strings-–-easy.md)
     * [206 LeetCode Java: Reverse Linked List -Easy](206-leetcode-java-reverse-linked-list--easy.md)
+    * [207 LeetCode Java: Course Schedule – Medium](207-leetcode-java-course-schedule-–-medium.md)
 * [Solutions 251 - 300](solutions-251---300.md)
     * [251 LeetCode Java: Count Univalue Subtrees – Medium](251-leetcode-java-count-univalue-subtrees-–-medium.md)
     * [252 LeetCode Java: Meeting Rooms – Easy](252-leetcode-java-meeting-rooms-–-easy.md)
