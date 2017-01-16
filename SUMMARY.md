@@ -147,6 +147,7 @@
     * [208 LeetCode Java: Implement Trie \(Prefix Tree\) – Medium](208-leetcode-java-implement-trie-prefix-tree-–-medium.md)
     * [209 LeetCode Java : Minimum Size Subarray Sum – Medium](209-leetcode-java--minimum-size-subarray-sum-–-medium.md)
     * [210 LeetCode Java: Course Schedule II – Medium](210-leetcode-java-course-schedule-ii-–-medium.md)
+    * [211 LeetCode Java: Add and Search Word – Data structure design – Medium](211-leetcode-java-add-and-search-word-–-data-structure-design-–-medium.md)
 * [Solutions 251 - 300](solutions-251---300.md)
     * [251 LeetCode Java: Count Univalue Subtrees – Medium](251-leetcode-java-count-univalue-subtrees-–-medium.md)
     * [252 LeetCode Java: Meeting Rooms – Easy](252-leetcode-java-meeting-rooms-–-easy.md)
