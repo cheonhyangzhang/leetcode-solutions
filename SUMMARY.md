@@ -189,5 +189,6 @@
     * [309 Best Time to Buy and Sell Stock with Cooldown](309-best-time-to-buy-and-sell-stock-with-cooldown.md)
     * [310 Minimum Height Trees](310-minimum-height-trees.md)
     * [311 Sparse Matrix Multiplication](311-sparse-matrix-multiplication.md)
+    * [313 Super Ugly Number](313-super-ugly-number.md)
 * [Solutions](solutions.md)
 
