@@ -200,5 +200,6 @@
     * [318 Maximum Product of Word Lengths](318-maximum-product-of-word-lengths.md)
     * [319 Bulb Switcher](319-bulb-switcher.md)
     * [320 Generalized Abbreviation](320-generalized-abbreviation.md)
+    * [322 Coin Change](322-coin-change.md)
 * [Solutions](solutions.md)
 
