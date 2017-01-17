@@ -198,5 +198,7 @@
     * [313 Super Ugly Number](313-super-ugly-number.md)
     * [314 Binary Tree Vertical Order Traversal](314-binary-tree-vertical-order-traversal.md)
     * [318 Maximum Product of Word Lengths](318-maximum-product-of-word-lengths.md)
+    * [319 Bulb Switcher](319-bulb-switcher.md)
+    * [320 Generalized Abbreviation](320-generalized-abbreviation.md)
 * [Solutions](solutions.md)
 
