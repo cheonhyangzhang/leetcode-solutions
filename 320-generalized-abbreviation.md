@@ -28,3 +28,30 @@ public class Solution {
       }
 }
 ```
+
+```java
+public class Solution {
+      public List<String> generateAbbreviations(String word) {
+            List<String> result = new LinkedList<String>();
+            dfs(result, "", 0, word);
+            return result;
+      }
+      private void dfs(List<String> result, String prefix, int start, String w) {
+            result.add(prefix + w.substring(start));
+            if (start == w.length()) {
+                return;
+            }
+            int i = 0;
+            if (start > 0) {
+                i = start + 1;
+            }
+            for (; i < w.length(); i++) {
+                String next = prefix + w.substring(start, i);   
+                for (int j = 1; j <= w.length() - i; j++) {
+                    dfs(result,  next + j, i + j, w);
+                }
+            }
+         
+      }
+}
+```
