@@ -201,5 +201,6 @@
     * [319 Bulb Switcher](319-bulb-switcher.md)
     * [320 Generalized Abbreviation](320-generalized-abbreviation.md)
     * [322 Coin Change](322-coin-change.md)
+    * [323 Number of Connected Components in an Undirected Graph](323-number-of-connected-components-in-an-undirected-graph.md)
 * [Solutions](solutions.md)
 
