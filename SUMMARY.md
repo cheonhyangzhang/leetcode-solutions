@@ -203,5 +203,6 @@
     * [322 Coin Change](322-coin-change.md)
     * [323 Number of Connected Components in an Undirected Graph](323-number-of-connected-components-in-an-undirected-graph.md)
     * [324 Wiggle Sort II](324-wiggle-sort-ii.md)
+    * [325 Maximum Size Subarray Sum Equals k](325-maximum-size-subarray-sum-equals-k.md)
 * [Solutions](solutions.md)
 
