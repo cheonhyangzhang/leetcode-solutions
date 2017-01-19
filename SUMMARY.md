@@ -206,5 +206,6 @@
     * [325 Maximum Size Subarray Sum Equals k](325-maximum-size-subarray-sum-equals-k.md)
     * [326 Power of Three](326-power-of-three.md)
     * [328 Odd Even Linked List](328-odd-even-linked-list.md)
+    * [331 Verify Preorder Serialization of a Binary Tree](331-verify-preorder-serialization-of-a-binary-tree.md)
 * [Solutions](solutions.md)
 
