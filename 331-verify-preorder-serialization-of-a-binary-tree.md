@@ -95,3 +95,26 @@ public class Solution {
     }
 }
 ```
+
+```java
+public class Solution {
+    private int index = 0;
+    public boolean isValidSerialization(String preorder) {
+        String[] vals = preorder.split(",");
+        if (vals.length % 2 == 0) {
+            return false;
+        }
+        int diff = 1; // outdegree - indegree
+        for (String s:vals) {
+            diff --;
+            if (diff < 0) {
+                return false;
+            }
+            if (!s.equals("#")) {
+                diff += 2;
+            }
+        }
+        return diff == 0;
+    }
+}
+```
