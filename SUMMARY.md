@@ -205,5 +205,6 @@
     * [324 Wiggle Sort II](324-wiggle-sort-ii.md)
     * [325 Maximum Size Subarray Sum Equals k](325-maximum-size-subarray-sum-equals-k.md)
     * [326 Power of Three](326-power-of-three.md)
+    * [328 Odd Even Linked List](328-odd-even-linked-list.md)
 * [Solutions](solutions.md)
 
