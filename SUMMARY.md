@@ -204,5 +204,6 @@
     * [323 Number of Connected Components in an Undirected Graph](323-number-of-connected-components-in-an-undirected-graph.md)
     * [324 Wiggle Sort II](324-wiggle-sort-ii.md)
     * [325 Maximum Size Subarray Sum Equals k](325-maximum-size-subarray-sum-equals-k.md)
+    * [326 Power of Three](326-power-of-three.md)
 * [Solutions](solutions.md)
 
