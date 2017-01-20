@@ -207,5 +207,6 @@
     * [326 Power of Three](326-power-of-three.md)
     * [328 Odd Even Linked List](328-odd-even-linked-list.md)
     * [331 Verify Preorder Serialization of a Binary Tree](331-verify-preorder-serialization-of-a-binary-tree.md)
+    * [332 Reconstruct Itinerary](332-reconstruct-itinerary.md)
 * [Solutions](solutions.md)
 
