@@ -23,34 +23,77 @@ Another possible reconstruction is ["JFK","SFO","ATL","JFK","ATL","SFO"]. But it
 ```java
 public class Solution {
     public List<String> findItinerary(String[][] tickets) {
-        HashMap<String, PriorityQueue<String>> flights = new HashMap<String, PriorityQueue<String>>();
+        HashMap<String, List<String>> flights = new HashMap<String, List<String>>();
+        List<String> remain = new LinkedList<String>();
         for (int i = 0; i < tickets.length; i ++) {
             if (!flights.containsKey(tickets[i][0])) {
-                flights.put(tickets[i][0], new PriorityQueue<String>());
+                flights.put(tickets[i][0], new LinkedList<String>());
             }
             flights.get(tickets[i][0]).add(tickets[i][1]);
+            remain.add(tickets[i][0] + tickets[i][1]);
         }
-        List<String> result = new LinkedList<String>();
-        result.add("JFK");
-        fi(tickets.length + 1, result, "JFK", flights);
-        return result;
+        for (String c:flights.keySet()) {
+            Collections.sort(flights.get(c));
+        }
+        return fi(tickets.length + 1, "JFK", flights, new LinkedList<String>(), remain);
     }
-    private boolean fi(int n, List<String> result, String port, HashMap<String, PriorityQueue<String>> flights) {
-        if (result.size() == n) {
-            return true;
+    private List<String> fi(int n, String port, HashMap<String, List<String>> flights, List<String> curr, List<String> remain) {
+        curr.add(port);
+        if (curr.size() == n) {
+            return new LinkedList<String>(curr);
         }
-        PriorityQueue<String> q = flights.get(port);
-        while (q != null && !q.isEmpty()) {
-            String s = q.poll();
-            result.add(s);
-            boolean finished = fi(n, result, s, flights);
-            if (finished == true) {
-                return true;
+        if (flights.containsKey(port)) {
+            for (String next:flights.get(port)) {
+                if (!remain.contains(port + next)) {
+                    continue;
+                }
+                remain.remove(port + next);
+                List<String> result = fi(n, next, flights, curr, remain);
+                if (result != null) {
+                    return result;
+                }
+                remain.add(port + next);
+            }   
+        }
+        curr.remove(curr.size() - 1);
+        return null;
+    }
+}public class Solution {
+    public List<String> findItinerary(String[][] tickets) {
+        HashMap<String, List<String>> flights = new HashMap<String, List<String>>();
+        List<String> remain = new LinkedList<String>();
+        for (int i = 0; i < tickets.length; i ++) {
+            if (!flights.containsKey(tickets[i][0])) {
+                flights.put(tickets[i][0], new LinkedList<String>());
             }
-            result.remove(result.size() - 1);
-            q.add(s);
+            flights.get(tickets[i][0]).add(tickets[i][1]);
+            remain.add(tickets[i][0] + tickets[i][1]);
         }
-        return false;
+        for (String c:flights.keySet()) {
+            Collections.sort(flights.get(c));
+        }
+        return fi(tickets.length + 1, "JFK", flights, new LinkedList<String>(), remain);
+    }
+    private List<String> fi(int n, String port, HashMap<String, List<String>> flights, List<String> curr, List<String> remain) {
+        curr.add(port);
+        if (curr.size() == n) {
+            return new LinkedList<String>(curr);
+        }
+        if (flights.containsKey(port)) {
+            for (String next:flights.get(port)) {
+                if (!remain.contains(port + next)) {
+                    continue;
+                }
+                remain.remove(port + next);
+                List<String> result = fi(n, next, flights, curr, remain);
+                if (result != null) {
+                    return result;
+                }
+                remain.add(port + next);
+            }   
+        }
+        curr.remove(curr.size() - 1);
+        return null;
     }
 }
 ```
