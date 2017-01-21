@@ -219,5 +219,6 @@
     * [344 Reverse String](344-reverse-string.md)
     * [345 Reverse Vowels of a String](345-reverse-vowels-of-a-string.md)
     * [346 Moving Average from Data Stream](346-moving-average-from-data-stream.md)
+    * [347 Top K Frequent Elements](347-top-k-frequent-elements.md)
 * [Solutions](solutions.md)
 
