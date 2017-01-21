@@ -36,7 +36,7 @@ public class Solution {
 }
 ```
 
-```
+```java
 public class Solution {
     public boolean isPowerOfFour(int num) {
         if (num <= 0) {
