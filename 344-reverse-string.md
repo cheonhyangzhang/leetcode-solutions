@@ -1,4 +1,4 @@
-# 344. Reverse String 
+# 344. Reverse String `
 
 ### Problem:
 
@@ -23,6 +23,23 @@ public class Solution {
             right --;
         }
         return sb.toString();
+    }
+}
+```
+
+```java
+public class Solution {
+    public String reverseString(String s) {
+        int left = 0, right = s.length() - 1;
+        char[] chars = s.toCharArray();
+        while (left < right) {
+            char tmp = chars[left];
+            chars[left] = chars[right];
+            chars[right] = tmp;
+            left ++;
+            right --;
+        }
+        return new String(chars);
     }
 }
 ```
