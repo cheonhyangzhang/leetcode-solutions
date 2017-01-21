@@ -217,5 +217,6 @@
     * [342 Power of Four](342-power-of-four.md)
     * [343 Integer Break](343-integer-break.md)
     * [344 Reverse String](344-reverse-string.md)
+    * [345 Reverse Vowels of a String](345-reverse-vowels-of-a-string.md)
 * [Solutions](solutions.md)
 
