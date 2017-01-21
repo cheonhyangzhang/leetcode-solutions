@@ -218,5 +218,6 @@
     * [343 Integer Break](343-integer-break.md)
     * [344 Reverse String](344-reverse-string.md)
     * [345 Reverse Vowels of a String](345-reverse-vowels-of-a-string.md)
+    * [346 Moving Average from Data Stream](346-moving-average-from-data-stream.md)
 * [Solutions](solutions.md)
 
