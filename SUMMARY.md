@@ -215,5 +215,6 @@
     * [339 Nested List Weight Sum](339-nested-list-weight-sum.md)
     * [341 Flatten Nested List Iterator](341-flatten-nested-list-iterator.md)
     * [342 Power of Four](342-power-of-four.md)
+    * [343 Integer Break](343-integer-break.md)
 * [Solutions](solutions.md)
 
