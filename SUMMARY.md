@@ -212,5 +212,6 @@
     * [334 Increasing Triplet Subsequence](334-increasing-triplet-subsequence.md)
     * [337 House Robber III](337-house-robber-iii.md)
     * [338 Counting Bits](338-counting-bits.md)
+    * [339 Nested List Weight Sum](339-nested-list-weight-sum.md)
 * [Solutions](solutions.md)
 
