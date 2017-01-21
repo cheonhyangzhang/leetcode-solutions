@@ -211,5 +211,6 @@
     * [333 Largest BST Subtree](333-largest-bst-subtree.md)
     * [334 Increasing Triplet Subsequence](334-increasing-triplet-subsequence.md)
     * [337 House Robber III](337-house-robber-iii.md)
+    * [338 Counting Bits](338-counting-bits.md)
 * [Solutions](solutions.md)
 
