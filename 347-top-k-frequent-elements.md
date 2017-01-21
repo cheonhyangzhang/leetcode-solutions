@@ -42,3 +42,44 @@ public class Solution {
     }
 }
 ```
+
+```java
+public class Solution {
+    private class Count {
+        public int num;
+        public int count;
+        public Count(int num, int count) {
+            this.num = num;
+            this.count = count;
+        }
+    }
+    private class CountComparator implements Comparator<Count> {
+        public int compare(Count c1, Count c2)  {
+            return c1.count - c2.count;
+        }
+    }
+    public List<Integer> topKFrequent(int[] nums, int k) {
+        HashMap<Integer, Integer> count = new HashMap<Integer, Integer>();
+        for (int i = 0; i < nums.length; i ++) {
+            if (!count.containsKey(nums[i])) {
+                count.put(nums[i], 0);
+            }
+            count.put(nums[i], count.get(nums[i]) + 1);
+        }
+        PriorityQueue<Count> app = new PriorityQueue<Count>(k + 1, new CountComparator());
+        for (Integer i:count.keySet()) {
+            int val = count.get(i);
+            app.add(new Count(i, val));
+            if (app.size() > k) {
+                app.poll();
+            }
+        }
+        List<Integer> result = new LinkedList<Integer>();
+        for (int i = 0; i < k; i ++) {
+            int num = app.poll().num;
+            result.add(0, num);
+        }
+        return result;
+    }
+}
+```
