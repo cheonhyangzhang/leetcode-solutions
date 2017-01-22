@@ -51,7 +51,6 @@ public class Solution {
         jump[4][6] = jump[6][4] = 5;
         jump[7][9] = jump[9][7] = 8;
         sum += dfs(jump, m, n, 1, 1, visited)*4;
-        System.out.println(sum);
         sum += dfs(jump, m, n, 1, 2, visited)*4;
         sum += dfs(jump, m, n, 1, 5, visited);
         return sum;
