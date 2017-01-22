@@ -222,5 +222,6 @@
     * [347 Top K Frequent Elements](347-top-k-frequent-elements.md)
     * [348 Design Tic-Tac-Toe](348-design-tic-tac-toe.md)
     * [349 Intersection of Two Arrays](349-intersection-of-two-arrays.md)
+    * [350 Intersection of Two Arrays II](350-intersection-of-two-arrays-ii.md)
 * [Solutions](solutions.md)
 
