@@ -221,5 +221,6 @@
     * [346 Moving Average from Data Stream](346-moving-average-from-data-stream.md)
     * [347 Top K Frequent Elements](347-top-k-frequent-elements.md)
     * [348 Design Tic-Tac-Toe](348-design-tic-tac-toe.md)
+    * [349 Intersection of Two Arrays](349-intersection-of-two-arrays.md)
 * [Solutions](solutions.md)
 
