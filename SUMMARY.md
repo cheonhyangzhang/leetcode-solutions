@@ -224,6 +224,7 @@
     * [349 Intersection of Two Arrays](349-intersection-of-two-arrays.md)
     * [350 Intersection of Two Arrays II](350-intersection-of-two-arrays-ii.md)
 * [Solutions](solutions.md)
-* Solutions 351 - 400
+* [Solutions 351 - 400](solutions-351---400.md)
+    * Test
     * [351 Android Unlock Patterns](351-android-unlock-patterns.md)
 
