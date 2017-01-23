@@ -227,4 +227,5 @@
 * [Solutions 351 - 400](solutions-351---400.md)
     * Test
     * [351 Android Unlock Patterns](351-android-unlock-patterns.md)
+    * [353 Design Snake Game](353-design-snake-game.md)
 
