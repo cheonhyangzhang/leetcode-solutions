@@ -94,29 +94,7 @@ public class SnakeGame {
         if (i < 0 || i >= m || j < 0 || j >= n) {
             return true;
         }
-        // System.out.println("die? " + i + ", " + j);
-        // System.out.println(snake.contains(i + "," + j));
-        // System.out.println(!(i == xs.get(xs.size() - 1) && j == ys.get(ys.size() - 1)));
         return snake.contains(i + "," + j) && !(i == xs.get(xs.size() - 1) && j == ys.get(ys.size() - 1));
-    }
-    private void print() {
-        for (int i = 0; i < m; i ++) {
-            for (int j = 0; j < n; j ++) {
-                if (snake.contains(i + "," + j)) {
-                    System.out.print("1, ");
-                }
-                else {
-                    if (i == foodx && j == foody) {
-                        System.out.print("2, ");
-                    }
-                    else {
-                        System.out.print("0, ");
-                    }
-                }
-                
-            }
-            System.out.print("\n");
-        }
     }
     
     /** Moves the snake.
