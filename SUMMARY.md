@@ -229,4 +229,5 @@
     * [353 Design Snake Game](353-design-snake-game.md)
     * [355 Design Twitter](355-design-twitter.md)
     * [356 Line Reflection](356-line-reflection.md)
+    * [357 Count Numbers with Unique Digits](357-count-numbers-with-unique-digits.md)
 
