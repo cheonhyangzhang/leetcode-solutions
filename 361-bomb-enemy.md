@@ -66,3 +66,56 @@ public class Solution {
     }
 }
 ```
+
+```java
+public class Solution {
+    public int maxKilledEnemies(char[][] grid) {
+        if (grid == null || grid.length == 0 || grid[0].length == 0) {
+            return 0;
+        }
+        int max = 0;
+        int[][] maxs = new int[grid.length][grid[0].length];
+        for (int i = 0; i < grid.length; i ++) {
+            int sum = 0;
+            int start = 0;
+            for (int j = 0; j <= grid[0].length; j ++) {
+                if (j < grid[0].length && grid[i][j] == 'E') {
+                    sum ++;
+                }
+                else if (j == grid[0].length || grid[i][j] == 'W') {
+                    for (int k = start; k < j; k ++) {
+                        if (grid[i][k] == 'E') {
+                            continue;
+                        }
+                        maxs[i][k] += sum;
+                        max = Math.max(max, maxs[i][k]);
+                    }
+                    sum = 0;
+                    start = j + 1;
+                }
+            }
+        }
+        for (int j = 0; j < grid[0].length; j ++) {
+            int sum = 0;
+            int start = 0;
+            for (int i = 0; i <= grid.length; i ++) {
+                if (i < grid.length && grid[i][j] == 'E') {
+                    sum ++;
+                }
+                else if (i == grid.length || grid[i][j] == 'W' ) {
+                    for (int k = start; k < i; k ++) {
+                        if (grid[k][j] == 'E') {
+                            continue;
+                        }
+                        maxs[k][j] += sum;
+                        max = Math.max(max, maxs[k][j]);
+                    }
+                    sum = 0;
+                    start = i + 1;
+                }
+            }
+        }
+        return max;
+    }
+}
+```
