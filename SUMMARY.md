@@ -224,6 +224,7 @@
   * [349 Intersection of Two Arrays](349-intersection-of-two-arrays.md)
   * [350 Intersection of Two Arrays II](350-intersection-of-two-arrays-ii.md)
 * [Solutions](solutions.md)
+  * 361 Bomb Enemy
 * [Solutions 351 - 400](solutions-351---400.md)
   * [351 Android Unlock Patterns](351-android-unlock-patterns.md)
   * [353 Design Snake Game](353-design-snake-game.md)
@@ -232,4 +233,5 @@
   * [357 Count Numbers with Unique Digits](357-count-numbers-with-unique-digits.md)
   * [359 Logger Rate Limiter](359-logger-rate-limiter.md)
   * [360 Sort Transformed Array](360-sort-transformed-array.md)
+  * 361 Bomb Enemy
 
