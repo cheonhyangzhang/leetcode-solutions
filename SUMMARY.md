@@ -234,4 +234,5 @@
   * [359 Logger Rate Limiter](359-logger-rate-limiter.md)
   * [360 Sort Transformed Array](360-sort-transformed-array.md)
   * [361 Bomb Enemy](361-bomb-enemy.md)
+  * [362 Design Hit Counter](362-design-hit-counter.md)
 
