@@ -233,5 +233,5 @@
   * [357 Count Numbers with Unique Digits](357-count-numbers-with-unique-digits.md)
   * [359 Logger Rate Limiter](359-logger-rate-limiter.md)
   * [360 Sort Transformed Array](360-sort-transformed-array.md)
-  * 361 Bomb Enemy
+  * [361 Bomb Enemy](361-bomb-enemy.md)
 
