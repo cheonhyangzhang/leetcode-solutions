@@ -236,4 +236,5 @@
   * [361 Bomb Enemy](361-bomb-enemy.md)
   * [362 Design Hit Counter](362-design-hit-counter.md)
   * [364 Nested List Weight Sum II](364-nested-list-weight-sum-ii.md)
+  * [365 Water and Jug Problem](365-water-and-jug-problem.md)
 
