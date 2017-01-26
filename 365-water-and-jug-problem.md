@@ -58,3 +58,43 @@ public class Solution {
       }
 }
 ```
+
+```java
+public class Solution {
+    public boolean canMeasureWater(int x, int y, int z) {
+        return z == 0 || (x + y >= z && z % gcd(x, y) == 0);
+    }
+    private int gcd(int x, int y) {
+        return y == 0 ? x : gcd(y, x % y);
+    }
+}
+```
+
+```java
+public class Solution {
+    public boolean canMeasureWater(int x, int y, int z) {
+        if(x>y)
+            return canMeasureWater(y,x,z);
+        if(z > x+y)
+            return false;
+        Set<Integer> failSet = new HashSet<>();
+
+        int resX = 0;
+        int resY = 0;
+
+        while(true){
+            int res = resX * x + resY * y;
+            if(failSet.contains(res))
+                return false;
+            if(res == z){
+                return true;
+            }else if(res < z){
+                resY++;
+            }else{
+                resX--;
+            }
+            failSet.add(res);
+        }
+    }
+}
+```
