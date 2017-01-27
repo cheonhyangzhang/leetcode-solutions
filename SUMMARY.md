@@ -240,4 +240,5 @@
   * [366 Find Leaves of Binary Tree](366-find-leaves-of-binary-tree.md)
   * [367 Valid Perfect Square](367-valid-perfect-square.md)
   * [368 Largest Divisible Subset](368-largest-divisible-subset.md)
+  * [369 Plus One Linked List](369-plus-one-linked-list.md)
 
