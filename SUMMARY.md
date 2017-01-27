@@ -238,4 +238,5 @@
   * [364 Nested List Weight Sum II](364-nested-list-weight-sum-ii.md)
   * [365 Water and Jug Problem](365-water-and-jug-problem.md)
   * [366 Find Leaves of Binary Tree](366-find-leaves-of-binary-tree.md)
+  * [367 Valid Perfect Square](367-valid-perfect-square.md)
 
