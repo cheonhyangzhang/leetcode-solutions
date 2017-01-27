@@ -52,3 +52,35 @@ public class Solution {
     }
 }
 ```
+
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public ListNode plusOne(ListNode head) {
+        ListNode cur = head, right = null;
+        while (cur != null) {
+            if (cur.val != 9) right = cur;
+            cur = cur.next;
+        }
+        if (right == null) {
+            right = new ListNode(0);
+            right.next = head;
+            head = right;
+        }
+        ++right.val;
+        cur = right.next;
+        while (cur != null) {
+            cur.val = 0;
+            cur = cur.next;
+        }
+        return head;   
+    }
+}
+```
