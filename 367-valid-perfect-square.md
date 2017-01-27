@@ -32,3 +32,31 @@ public class Solution {
     }
 }
 ```
+
+```java
+public class Solution {
+    public boolean isPerfectSquare(int num) {
+        int i = 1;
+        while (num > 0) {
+            num -= i;
+            i += 2;
+        }
+        return num == 0;
+    }
+}
+```
+
+```java
+public class Solution {
+    public boolean isPerfectSquare(int num) {
+        long left = 0, right = num;
+        while (left <= right) {
+            long mid = left + (right - left) / 2, t = mid * mid;
+            if (t == num) return true;
+            else if (t < num) left = mid + 1;
+            else right = mid - 1;
+        }
+        return false;
+    }
+}
+```
