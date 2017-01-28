@@ -243,4 +243,5 @@
   * [369 Plus One Linked List](369-plus-one-linked-list.md)
   * [370 Range Addition](370-range-addition.md)
   * [371 Sum of Two Integers](371-sum-of-two-integers.md)
+  * [372 Super Pow](372-super-pow.md)
 
