@@ -8,6 +8,13 @@ Each operation is represented as a triplet: [startIndex, endIndex, inc] which in
 
 Return the modified array after all k operations were executed.
 
+Hint:
+Thinking of using advanced data structures? You are thinking it too complicated.
+For each update operation, do you really need to update all elements between i and j?
+Update only the first and end element is sufficient.
+The optimal time complexity is O(k + n) and uses O(1) extra space.
+
+
 Example:
 ```
 Given:
