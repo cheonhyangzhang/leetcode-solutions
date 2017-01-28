@@ -18,3 +18,6 @@ b = [1,0]
 
 Result: 1024
 ```
+
+### Solutions:
+
