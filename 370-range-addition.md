@@ -45,3 +45,25 @@ After applying operation [2, 4, 3]:
 After applying operation [0, 2, -2]:
 [-2, 0, 3, 5, 3 ]
 ```
+
+```java
+public class Solution {
+    public int[] getModifiedArray(int length, int[][] updates) {
+        int[] result = new int[length];
+        for (int i = 0; i < updates.length; i ++) {
+            result[updates[i][0]] += updates[i][2];
+            if (updates[i][1] + 1 < length) {
+                result[updates[i][1] + 1] -= updates[i][2];
+            }
+        }
+        int curr = 0;
+        for (int i = 0; i < result.length; i ++) {
+            if (result[i] != 0) {
+                curr += result[i];
+            }
+            result[i] = curr;
+        }
+        return result;
+    }
+}
+```
