@@ -244,4 +244,5 @@
   * [370 Range Addition](370-range-addition.md)
   * [371 Sum of Two Integers](371-sum-of-two-integers.md)
   * [372 Super Pow](372-super-pow.md)
+  * [373 Find K Pairs with Smallest Sums](373-find-k-pairs-with-smallest-sums.md)
 
