@@ -37,3 +37,32 @@ All possible pairs are returned from the sequence:
 [1,3],[2,3]
 ```
 
+### Solutions:
+
+```java
+public class Solution {
+    public List<int[]> kSmallestPairs(int[] nums1, int[] nums2, int k) {
+        int[] index = new int[nums1.length];
+        List<int[]> result = new LinkedList<int[]>();
+        for (int i = 0; i < k; i ++) {
+            int min = Integer.MAX_VALUE;
+            int chosen = -1;
+            for (int j = 0; j < nums1.length; j ++) {
+                if (index[j] >= nums2.length) {
+                    continue;
+                }
+                int tmp = nums1[j] + nums2[index[j]];
+                if (tmp < min) {
+                    min = tmp;
+                    chosen = j;
+                }
+            }
+            if (chosen != -1) {
+                result.add(new int[]{nums1[chosen], nums2[index[chosen]]});
+                index[chosen] ++;
+            }
+        }
+        return result;
+    }
+}
+```
