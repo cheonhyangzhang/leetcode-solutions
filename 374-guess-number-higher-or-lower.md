@@ -31,12 +31,12 @@ Return 6.
 
 public class Solution extends GuessGame {
     public int guessNumber(int n) {
-        long left = 1, right = n;
+        int left = 1, right = n;
         while (left <= n) {
-            long mid = (left + right) / 2;
-            int g = guess((int)mid);
+            int mid = left + (right - left) / 2;
+            int g = guess(mid);
             if (g == 0) {
-                return (int)mid;
+                return mid;
             }
             else if (g == 1) {
                 left = mid + 1;
