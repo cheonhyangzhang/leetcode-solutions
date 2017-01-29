@@ -66,3 +66,43 @@ public class Solution {
     }
 }
 ```
+
+```java
+public class Solution {
+    private class Pair implements Comparable<Pair>{
+        private int i1;
+        private int i2;
+        private int sum;
+        public Pair(int i1, int i2, int sum) {
+            this.i1 = i1;
+            this.i2 = i2;
+            this.sum = sum;
+        }
+        public int compareTo(Pair p) {
+            return this.sum - p.sum;
+        }
+    }
+    public List<int[]> kSmallestPairs(int[] nums1, int[] nums2, int k) {
+        int[] index = new int[nums1.length];
+        List<int[]> result = new LinkedList<int[]>();
+        if (nums1.length == 0 || nums2.length == 0) {
+            return result;
+        }
+        PriorityQueue<Pair> q = new PriorityQueue<Pair>();
+        for (int i = 0; i < nums1.length; i ++) {
+            q.add(new Pair(i, 0, nums1[i] + nums2[0]));
+            index[i] ++;
+        }
+        while (k > 0 && !q.isEmpty()) {
+            Pair p = q.poll();
+            result.add(new int[]{nums1[p.i1], nums2[p.i2]});
+            k --;
+            if (index[p.i1] < nums2.length) {
+                q.add(new Pair(p.i1, index[p.i1], nums1[p.i1] + nums2[index[p.i1]]));
+                index[p.i1] ++;
+            }
+        }
+        return result;
+    }
+}
+```
