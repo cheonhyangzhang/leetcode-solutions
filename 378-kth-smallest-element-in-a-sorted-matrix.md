@@ -59,3 +59,41 @@ public class Solution {
     }
 }
 ```
+
+```java
+public class Solution {
+    public int kthSmallest(int[][] matrix, int k) {
+        int n=matrix.length;
+        int lower = matrix[0][0];
+        int upper = matrix[n-1][n-1];
+        while(lower < upper){
+            int mid = lower + (upper-lower) / 2;
+            int count = count(matrix, mid);
+            if(count<k){
+                lower = mid+1;
+            }else{
+                upper = mid;
+            }
+        }
+     
+        return upper;
+    }
+     
+    private int count(int[][] matrix, int target){
+        int n = matrix.length;
+        int i = m-1;
+        int j = 0;
+        int count = 0;
+     
+        while(i >= 0 && j < n){
+            if(matrix[i][j] <= target){
+                count += i+1;
+                j++;
+            }else{
+                i--;
+            }
+        }
+        return count;
+    }
+}
+```
