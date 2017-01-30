@@ -25,6 +25,18 @@ You end up paying $5 + $7 + $9 = $21.
 ```
 Given a particular n ≥ 1, find out how much money you need to have to guarantee a win.
 
+Hint:
+
+1 The best strategy to play the game is to minimize the maximum loss you could possibly face. Another strategy is to minimize the expected loss. Here, we are interested in the first scenario.
+
+2 Take a small example (n = 3). What do you end up paying in the worst case?
+
+3 Check out this article if you're still stuck.
+
+4 The purely recursive implementation of minimax would be worthless for even a small n. You MUST use dynamic programming.
+
+5 As a follow-up, how would you modify your code to solve the problem of minimizing the expected loss, instead of the worst-case loss?
+
 ### Solutions:
 
 ```java

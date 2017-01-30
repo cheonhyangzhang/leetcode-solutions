@@ -247,4 +247,5 @@
   * [373 Find K Pairs with Smallest Sums](373-find-k-pairs-with-smallest-sums.md)
   * [374 Guess Number Higher or Lower](374-guess-number-higher-or-lower.md)
   * [375 Guess Number Higher or Lower II](375-guess-number-higher-or-lower-ii.md)
+  * [377 Combination Sum IV](377-combination-sum-iv.md)
 
