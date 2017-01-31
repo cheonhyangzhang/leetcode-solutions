@@ -250,4 +250,5 @@
   * [377 Combination Sum IV](377-combination-sum-iv.md)
   * [378 Kth Smallest Element in a Sorted Matrix](378-kth-smallest-element-in-a-sorted-matrix.md)
   * [379 Design Phone Directory](379-design-phone-directory.md)
+  * [380 Insert Delete GetRandom O\(1\)](380-insert-delete-getrandom-o(1).md)
 
