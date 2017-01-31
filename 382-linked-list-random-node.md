@@ -64,3 +64,42 @@ public class Solution {
  */
 ```
 
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    private Random r=null;
+    private ListNode h=null;
+    public Solution(ListNode head) {
+        r = new Random();
+        h = head;
+    }
+ 
+    /** Returns a random node's value. */
+    public int getRandom() {
+        int count=1;
+        ListNode p = h;
+        int result = 0;
+        while(p!=null){
+            if(r.nextInt(count)==0)
+                result= p.val;
+            count++;
+            p = p.next;
+        }
+        return result;
+    }
+}
+
+/**
+ * Your Solution object will be instantiated and called as such:
+ * Solution obj = new Solution(head);
+ * int param_1 = obj.getRandom();
+ */
+ ```
+
