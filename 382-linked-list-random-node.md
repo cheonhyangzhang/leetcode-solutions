@@ -63,3 +63,4 @@ public class Solution {
  * int param_1 = obj.getRandom();
  */
 ```
+
