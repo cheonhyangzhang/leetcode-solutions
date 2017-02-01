@@ -53,12 +53,9 @@ public class Solution {
         int max = 0;
         int curr;
         for (int i = 0; i < tokens.length; i ++) {
-            int count = 0;
             String s = tokens[i];
-            while (s.length() > 1 && s.charAt(0) == '\t') {
-                count ++;
-                s = s.substring(1);
-            }
+            int count = s.lastIndexOf("\t") + 1;
+            s = s.substring(count);
             if (s.indexOf(".") != -1) {
                 //file
                 int cand = s.length();
