@@ -253,4 +253,5 @@
   * [380 Insert Delete GetRandom O\(1\).md\)](380-insert-delete-getrandom-o(1)
   * [382 Linked List Random Node](382-linked-list-random-node.md)
   * [388 Longest Absolute File Path](388-longest-absolute-file-path.md)
+  * [389 Find the Difference](389-find-the-difference.md)
 
