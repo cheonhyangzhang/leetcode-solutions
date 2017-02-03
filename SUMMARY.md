@@ -255,4 +255,5 @@
   * [388 Longest Absolute File Path](388-longest-absolute-file-path.md)
   * [389 Find the Difference](389-find-the-difference.md)
   * [393 UTF-8 Validation](393-utf-8-validation.md)
+  * [394 Decode String](394-decode-string.md)
 
