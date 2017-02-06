@@ -1,4 +1,4 @@
-
+# 402. Remove K Digits
 
 ### Problem:
 Given a non-negative integer num represented as a string, remove k digits from the number so that the new number is the smallest possible.
@@ -23,4 +23,29 @@ Example 3:
 Input: num = "10", k = 2
 Output: "0"
 Explanation: Remove all the digits from the number and it is left with nothing which is 0.
+```
+
+### Solutions:
+
+```java
+public class Solution {
+    public String removeKdigits(String num, int k) {
+        if (num.length() == k) {
+            return "0";
+        }
+        StringBuilder sb = new StringBuilder(num);
+        for (int j = 0; j < k; j ++) {
+            int i = 0;
+            while (i < sb.length() - 1 && sb.charAt(i) <= sb.charAt(i + 1)) {
+                i ++;
+            }
+            sb.delete(i, i + 1);
+        }
+        int i = 0;
+        while (i < sb.length() - 1 && sb.charAt(i) == '0') {
+            i ++;
+        }
+        return sb.toString().substring(i);
+    }
+}
 ```
