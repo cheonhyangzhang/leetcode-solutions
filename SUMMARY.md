@@ -262,4 +262,5 @@
 * Solutions 401 - 450
   * [401 Binary Watch](401-binary-watch.md)
   * [402 Remove K Digits](402-remove-k-digits.md)
+  * [406 Queue Reconstruction by Height](406-queue-reconstruction-by-height.md)
 
