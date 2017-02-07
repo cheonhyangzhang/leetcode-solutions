@@ -91,3 +91,36 @@ public class Solution {
     }
 }
 ```
+
+```
+public class Solution {
+    public int[][] reconstructQueue(int[][] people) {
+        Arrays.sort(people, (new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                if (o1[0] == o2[0]) {
+                    return o1[1] - o2[1];
+                } else {
+                    return o2[0] - o1[0];
+                }
+            }
+        }));
+        for (int i = 1; i < people.length; ++i) {
+            int cnt = 0;
+            for (int j = 0; j < i; ++j) {
+                if (cnt == people[i][1]) {
+                    int[] t = people[i];
+                    for (int k = i - 1; k >= j; --k) {
+                        people[k + 1] = people[k];
+                    }
+                    people[j] = t;
+                    break;
+                }
+                if (people[j][0] >= people[i][0]) 
+                    ++cnt;
+            }
+        }
+        return people;
+    }
+}
+```
