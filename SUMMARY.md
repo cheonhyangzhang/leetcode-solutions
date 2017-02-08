@@ -267,4 +267,5 @@
   * [409 Longest Palindrome](409-longest-palindrome.md)
   * [415 Add Strings](415-add-strings.md)
   * [417 Pacific Atlantic Water Flow](417-pacific-atlantic-water-flow.md)
+  * [418 Sentence Screen Fitting](418-sentence-screen-fitting.md)
 
