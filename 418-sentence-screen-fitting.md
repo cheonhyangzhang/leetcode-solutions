@@ -59,3 +59,5 @@ had--
 
 The character '-' signifies an empty space on the screen.
 ```
+
+### Solutions:
