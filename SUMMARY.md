@@ -269,4 +269,5 @@
   * [417 Pacific Atlantic Water Flow](417-pacific-atlantic-water-flow.md)
   * [418 Sentence Screen Fitting](418-sentence-screen-fitting.md)
   * [421 Maximum XOR of Two Numbers in an Array](421-maximum-xor-of-two-numbers-in-an-array.md)
+  * [422 Valid Word Square](422-valid-word-square.md)
 
