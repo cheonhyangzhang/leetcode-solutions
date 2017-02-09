@@ -92,3 +92,27 @@ public class Solution {
     }
 }
 ```
+
+```java
+public class Solution {
+    public int wordsTyping(String[] sentence, int rows, int cols) {
+        String s = "";
+        for (int i = 0; i < sentence.length; i ++) {
+            s += sentence[i] + " ";
+        }
+        int total = 0, len = s.length();
+        for (int i = 0; i < rows; i ++) {
+            total += cols;
+            if (s.charAt(total % len) == ' ') {
+                total ++;
+            }
+            else {
+                while ((total % len) > 0 && s.charAt((total % len) - 1) != ' ') {
+                    total --;
+                }
+            }
+        }
+        return total / len;
+    }
+}
+```
