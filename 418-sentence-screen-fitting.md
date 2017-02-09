@@ -61,3 +61,34 @@ The character '-' signifies an empty space on the screen.
 ```
 
 ### Solutions:
+
+```java
+public class Solution {
+    public int wordsTyping(String[] sentence, int rows, int cols) {
+        int count = 0;
+        int i = 0, j = 0;
+        int k = 0;
+        while (i < rows) {
+            if (count != 0 && j == 0 && k == 0) {
+                count = count * (rows / i);
+                i = (rows / i) * i; 
+            }
+            if (k == sentence.length) {
+                count ++;
+                k = 0;
+                continue;
+            }
+            if (sentence[k].length() + j > cols) {
+                i ++;
+                j = 0;
+                continue;
+            }
+            else {
+                j = sentence[k].length() + j + 1;
+                k ++;
+            }
+        }
+        return count * (rows / i);
+    }
+}
+```
