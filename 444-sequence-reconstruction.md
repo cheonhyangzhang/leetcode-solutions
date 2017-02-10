@@ -95,3 +95,34 @@ public class Solution {
     }
 }
 ```
+
+```java
+public class Solution {
+    public boolean sequenceReconstruction(int[] org, List<List<Integer>> seqs) {
+        HashMap<Integer, Integer> pre = new HashMap<Integer, Integer>();
+        HashMap<Integer, Integer> index = new HashMap<Integer, Integer>();
+        for (int i = 0; i < org.length; i ++) {
+            index.put(org[i], i);
+        }
+        for (List<Integer> seq:seqs) {
+            for (int i = 0; i < seq.size(); i ++) {
+                if (!index.containsKey(seq.get(i))) {
+                    return false;
+                }
+                if (!pre.containsKey(seq.get(i))) {
+                    pre.put(seq.get(i), i > 0? index.get(seq.get(i - 1)): -1);
+                }
+                else {
+                    pre.put(seq.get(i), Math.max(pre.get(seq.get(i)), i > 0? index.get(seq.get(i - 1)): -1));
+                }
+            }
+        }
+        for (int i = 0; i < org.length; i ++) {
+            if (!pre.containsKey(org[i]) || pre.get(org[i]) != i - 1) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+```
