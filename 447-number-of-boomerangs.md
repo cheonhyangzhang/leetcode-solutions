@@ -16,3 +16,9 @@ Output:
 Explanation:
 The two boomerangs are [[1,0],[0,0],[2,0]] and [[1,0],[2,0],[0,0]]
 ```
+
+### Solutions:
+
+```java
+
+```
