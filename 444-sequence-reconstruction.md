@@ -48,3 +48,50 @@ org: [4,1,5,2,6,3], seqs: [[5,2,6,3],[4,1,5,2]]
 Output:
 true
 ```
+
+### Solutions:
+
+```java
+public class Solution {
+    public boolean sequenceReconstruction(int[] org, List<List<Integer>> seqs) {
+        int[] min = new int[org.length];
+        int[] max = new int[org.length];
+        HashMap<Integer, Integer> index = new HashMap<Integer, Integer>();
+        index.put(Integer.MAX_VALUE, org.length);
+        for (int i = 0; i < org.length; i ++) {
+            min[i] = 0;
+            max[i] = org.length - 1;
+            index.put(org[i], i);
+        }
+        boolean checked = false;
+        for (List<Integer> seq:seqs) {
+            for (int i = 0; i < seq.size(); i ++) {
+                checked = true;
+                int first = seq.get(i);
+                int second = Integer.MAX_VALUE;
+                if (i + 1 < seq.size()) {
+                    second = seq.get(i + 1);
+                }
+                if (!index.containsKey(first) || !index.containsKey(second)) {
+                    return false;
+                }
+                int firstIndex = index.get(first);
+                int secondIndex = index.get(second);
+                max[firstIndex] = Math.min(max[firstIndex], secondIndex - 1);
+                if (secondIndex < org.length) {
+                    min[secondIndex] = Math.max(min[secondIndex], firstIndex + 1);
+                }
+            }
+        }
+        if (org.length == 1 && !checked) {
+            return false;
+        }
+        for (int i = 0; i < org.length; i ++) {
+            if (max[i] != min[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+```
