@@ -13,7 +13,6 @@ Example:
 
 Answer: 16
 Explanation: The perimeter is the 16 yellow stripes in the image below:
-![](/assets/island.png)
 ```
 ![](/assets/island.png)
 
