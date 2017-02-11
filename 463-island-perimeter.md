@@ -17,3 +17,7 @@ Explanation: The perimeter is the 16 yellow stripes in the image below:
 ![](/assets/island.png)
 
 ### Solutions:
+
+```java
+
+```
