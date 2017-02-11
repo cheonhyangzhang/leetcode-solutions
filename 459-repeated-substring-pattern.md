@@ -55,3 +55,25 @@ public class Solution {
     }
 }
 ```
+
+```java
+public class Solution {
+    public boolean repeatedSubstringPattern(String str) {
+        int n = str.length();
+        for (int count = n / 2; count >= 1; count --) {
+            if (n % count == 0) {
+                int num = n / count;
+                StringBuilder sb = new StringBuilder();
+                String cand = str.substring(0, count);
+                for (int j = 0; j < num; j ++) {
+                    sb.append(cand); 
+                }
+                if (sb.toString().equals(str)) 
+                    return true;
+            }
+        }
+        return false;
+    }
+}
+```
+
