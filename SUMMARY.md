@@ -275,4 +275,5 @@
   * [448 Find All Numbers Disappeared in an Array](448-find-all-numbers-disappeared-in-an-array.md)
 * 451 - 500
   * [451 Sort Characters By Frequency](451-sort-characters-by-frequency.md)
+  * [459 Repeated Substring Pattern](459-repeated-substring-pattern.md)
 
