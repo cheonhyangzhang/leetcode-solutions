@@ -278,4 +278,5 @@
   * [469 Convex Polygon](469-convex-polygon.md)
   * [474 Ones and Zeroes](474-ones-and-zeroes.md)
   * [475 Heaters](475-heaters.md)
+  * [481 Magical String](481-magical-string.md)
 
