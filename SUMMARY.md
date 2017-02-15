@@ -223,8 +223,6 @@
   * [348 Design Tic-Tac-Toe](348-design-tic-tac-toe.md)
   * [349 Intersection of Two Arrays](349-intersection-of-two-arrays.md)
   * [350 Intersection of Two Arrays II](350-intersection-of-two-arrays-ii.md)
-* [Solutions](solutions.md)
-  * 361 Bomb Enemy
 * [Solutions 351 - 400](solutions-351---400.md)
   * [351 Android Unlock Patterns](351-android-unlock-patterns.md)
   * [353 Design Snake Game](353-design-snake-game.md)
@@ -273,10 +271,11 @@
   * [444 Sequence Reconstruction](444-sequence-reconstruction.md)
   * [447 Number of Boomerangs](447-number-of-boomerangs.md)
   * [448 Find All Numbers Disappeared in an Array](448-find-all-numbers-disappeared-in-an-array.md)
-* 451 - 500
+* [Solutions 451 - 500](451-500.md)
   * [451 Sort Characters By Frequency](451-sort-characters-by-frequency.md)
   * [459 Repeated Substring Pattern](459-repeated-substring-pattern.md)
   * [463 Island Perimeter](463-island-perimeter.md)
   * [469 Convex Polygon](469-convex-polygon.md)
   * [474 Ones and Zeroes](474-ones-and-zeroes.md)
+  * [475 Heaters](475-heaters.md)
 
