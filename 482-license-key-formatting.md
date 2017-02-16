@@ -30,3 +30,9 @@ Note:
 1. The length of string S will not exceed 12,000, and K is a positive integer.
 2. String S consists only of alphanumerical characters (a-z and/or A-Z and/or 0-9) and dashes(-).
 3. String S is non-empty.
+
+### Solutions:
+
+```java
+
+```
