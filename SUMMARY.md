@@ -282,4 +282,5 @@
   * [482 License Key Formatting](482-license-key-formatting.md)
   * [484 Find Permutation](484-find-permutation.md)
   * [485 Max Consecutive Ones](485-max-consecutive-ones.md)
+  * [486 Predict the Winner](486-predict-the-winner.md)
 
