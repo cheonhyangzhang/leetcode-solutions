@@ -29,5 +29,37 @@ Note:
 ### Solutions:
 
 ```java
-
+public class Solution {
+    public int[] findPermutation(String s) {
+        int[] down = new int[s.length() + 1];
+        int count = 0;
+        for (int i = s.length() - 1; i >= 0; i --) {
+            if (s.charAt(i) == 'D') {
+                count ++;
+            }
+            else {
+                down[i+1] = count;
+                count = 0;
+            }
+        }
+        down[0] = count;
+        int next = 1;
+        int j = 0;
+        while ( j < down.length) {
+            if (down[j] != 0) {
+                int repeat = down[j];
+                down[j] = next + repeat;
+                next = down[j] + 1;
+                for (int k = 1; k <= repeat; k ++) {
+                    down[j + k] = down[j] - k;
+                }
+                j = j + repeat + 1;
+            }
+            else {
+                down[j++] = next++;
+            }
+        }
+        return down;
+    }
+}
 ```
