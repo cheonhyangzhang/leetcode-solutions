@@ -281,4 +281,5 @@
   * [481 Magical String](481-magical-string.md)
   * [482 License Key Formatting](482-license-key-formatting.md)
   * [484 Find Permutation](484-find-permutation.md)
+  * [485 Max Consecutive Ones](485-max-consecutive-ones.md)
 
