@@ -34,5 +34,30 @@ Note:
 ### Solutions:
 
 ```java
-
+public class Solution {
+    public String licenseKeyFormatting(String S, int K) {
+        S = S.toUpperCase();
+        StringBuilder sb = new StringBuilder("");
+        int i = S.length() - 1;
+        int j = 0;        
+        while (i >= 0) {
+            char c = S.charAt(i);
+            if (c == '-') {
+                i --;
+                continue;
+            }
+            sb.insert(0, c);
+            j ++;
+            if (j == K) {
+                sb.insert(0, '-');
+                j = 0;
+            }
+            i --;
+        }
+        if (sb.length() > 0 && sb.charAt(0) == '-') {
+            sb.deleteCharAt(0);
+        }
+        return sb.toString();
+    }
+}
 ```
