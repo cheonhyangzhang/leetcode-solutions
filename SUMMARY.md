@@ -283,4 +283,5 @@
   * [484 Find Permutation](484-find-permutation.md)
   * [485 Max Consecutive Ones](485-max-consecutive-ones.md)
   * [486 Predict the Winner](486-predict-the-winner.md)
+  * [487 Max Consecutive Ones II](487-max-consecutive-ones-ii.md)
 
