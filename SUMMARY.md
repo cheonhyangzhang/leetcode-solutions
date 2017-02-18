@@ -41,6 +41,7 @@
   * [48 Rotate Image – Medium](48_rotate_image__medium.md)
   * [49  Group Anagrams – Medium](49_group_anagrams__medium.md)
   * [50 Pow\(x, n\) – Medium](50_powx,_n__medium.md)
+  * 490 The Maze
 * [Solutions 51 - 100](solutions_51_-_100.md)
   * [53 Maximum Subarray – Medium](53_maximum_subarray__medium.md)
   * [54 Spiral Matrix – Medium](54_spiral_matrix__medium.md)
@@ -284,4 +285,5 @@
   * [485 Max Consecutive Ones](485-max-consecutive-ones.md)
   * [486 Predict the Winner](486-predict-the-winner.md)
   * [487 Max Consecutive Ones II](487-max-consecutive-ones-ii.md)
+  * [490 The Maze](490-the-maze.md)
 
