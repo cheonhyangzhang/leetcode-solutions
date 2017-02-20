@@ -62,3 +62,30 @@ public class Solution {
     }
 }
 ```
+
+[0,0] -> [0,1], [1,0] -> [2,0],[1,1],[0,2] -> [1,2],[2,1] -> [2,2]
+```java
+public class Solution {
+    public int[] findDiagonalOrder(int[][] matrix) {
+        if (matrix == null || matrix.length == 0) {
+            int[] result = new int[0];
+            return result;
+        }
+        int[] result = new int[matrix.length * matrix[0].length];
+        int m = matrix.length, n = matrix[0].length, k = 0;
+        for (int i = 0; i < m + n - 1; ++i) {
+            int low = Math.max(0, i - n + 1), high = Math.min(i, m - 1);
+            if (i % 2 == 0) {
+                for (int j = high; j >= low; --j) {
+                    result[k++] = matrix[j][i - j];
+                }
+            } else {
+                for (int j = low; j <= high; ++j) {
+                    result[k++] = matrix[j][i - j];
+                }
+            }
+        }
+        return result;
+    }
+}
+```
