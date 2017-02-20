@@ -287,4 +287,5 @@
   * [487 Max Consecutive Ones II](487-max-consecutive-ones-ii.md)
   * [490 The Maze](490-the-maze.md)
   * [494 Target Sum](494-target-sum.md)
+  * [498 Diagonal Traverse](498-diagonal-traverse.md)
 
