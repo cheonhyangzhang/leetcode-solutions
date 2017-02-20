@@ -288,4 +288,6 @@
   * [490 The Maze](490-the-maze.md)
   * [494 Target Sum](494-target-sum.md)
   * [498 Diagonal Traverse](498-diagonal-traverse.md)
+* [Solutions 501 - 550](solutions-501-550.md)
+  * [501 Find Mode in Binary Search Tree](solutions-501-550/501-find-mode-in-binary-search-tree.md)
 
