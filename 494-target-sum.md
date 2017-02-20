@@ -25,3 +25,48 @@ Note:
 1. The length of the given array is positive and will not exceed 20.
 2. The sum of elements in the given array will not exceed 1000.
 3. Your output answer is guaranteed to be fitted in a 32-bit integer.
+
+
+### Solutions:
+
+```java
+public class Solution {
+    public int findTargetSumWays(int[] nums, int S) {
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+        HashMap<Integer, Integer> count = new HashMap<Integer, Integer>();
+        for (int i = 0; i < nums.length; i ++) {
+            HashMap<Integer, Integer> newCount = new HashMap<Integer, Integer>();
+            if (i == 0) {
+                if (nums[i] == 0) {
+                    newCount.put(0, 2);
+                }
+                else {
+                    newCount.put(nums[i], 1);
+                    newCount.put(-nums[i], 1);
+                }
+            }
+            else {
+                for (Integer sum:count.keySet()) {
+                    int plus = count.get(sum);
+                    if (newCount.containsKey(sum + nums[i])) {
+                        plus += newCount.get(sum + nums[i]);
+                    }
+                    newCount.put(sum + nums[i], plus);
+                    int minus = count.get(sum);
+                    if (newCount.containsKey(sum - nums[i])) {
+                        minus += newCount.get(sum - nums[i]);
+                    }
+                    newCount.put(sum - nums[i], minus);
+                }
+            }
+            count = newCount;
+        }
+        if (count.containsKey(S)) {
+            return count.get(S);
+        }
+        return 0;
+    }
+}
+```
