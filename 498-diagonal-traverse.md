@@ -23,5 +23,42 @@ Note:
 ### Solutions:
 
 ```java
-
+public class Solution {
+    public int[] findDiagonalOrder(int[][] matrix) {
+        if (matrix == null || matrix.length == 0) {
+            int[] result = new int[0];
+            return result;
+        }
+        int[] result = new int[matrix.length * matrix[0].length];
+        int[][] move = new int[2][2];
+        move[0] = new int[]{-1, 1};
+        move[1] = new int[]{1, -1};
+        int dir = 0;
+        int i = 0, j = 0;
+        for (int k = 0; k < result.length; k ++) {
+            result[k] = matrix[i][j];
+            i += move[dir][0];
+            j += move[dir][1];
+            if (i == matrix.length) {
+                i = matrix.length - 1;
+                j = j + 2;
+                dir = dir ^ 1;
+            }
+            if (j == matrix[0].length) {
+                j = matrix[0].length - 1;
+                i = i + 2;
+                dir = dir ^ 1;
+            }
+            if (i == -1) {
+                i = 0;
+                dir = dir ^ 1;
+            }
+            if (j == -1) {
+                j = 0;
+                dir = dir ^ 1;
+            }
+        }
+        return result;
+    }
+}
 ```
