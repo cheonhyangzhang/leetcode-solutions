@@ -60,7 +60,6 @@ public class Solution {
         return reach(maze, start[0], start[1] , destination, visited);
     }
     private boolean reach(int[][] maze, int i, int j, int[] dest, int[][] visited) {
-        System.out.println("visit : " + i + ", " + j);
         if (i == dest[0] && j == dest[1]) {
             return true;
         }
