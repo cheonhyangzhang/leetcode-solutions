@@ -290,4 +290,5 @@
   * [498 Diagonal Traverse](498-diagonal-traverse.md)
 * [Solutions 501 - 550](solutions-501-550.md)
   * [501 Find Mode in Binary Search Tree](solutions-501-550/501-find-mode-in-binary-search-tree.md)
+  * [503 Next Greater Element II](solutions-501-550/503-next-greater-element-ii.md)
 
