@@ -5,6 +5,7 @@
   * [1Two Sum – Medium](1_leetcode_java_two_sum__medium.md)
   * [2 Add Two Numbers – Medium](2_leetcode_java_add_two_numbers__medium.md)
   * [3  Longest Substring Without Repeating Characters](3_leetcode_java_longest_substring_without_repeatin.md)
+  * [4 Median of Two Sorted Arrays](4-median-of-two-sorted-arrays.md)
   * [5 Longest Palindromic Substring](5_longest_palindromic_substring.md)
   * [6 ZigZag Conversion – Easy](6_zigzag_conversion__easy.md)
   * [7 Reverse Integer – Easy](7_reverse_integer__easy.md)
@@ -41,7 +42,6 @@
   * [48 Rotate Image – Medium](48_rotate_image__medium.md)
   * [49  Group Anagrams – Medium](49_group_anagrams__medium.md)
   * [50 Pow\(x, n\) – Medium](50_powx,_n__medium.md)
-  * 490 The Maze
 * [Solutions 51 - 100](solutions_51_-_100.md)
   * [53 Maximum Subarray – Medium](53_maximum_subarray__medium.md)
   * [54 Spiral Matrix – Medium](54_spiral_matrix__medium.md)
