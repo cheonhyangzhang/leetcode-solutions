@@ -294,4 +294,5 @@
   * [505 The Maze II](solutions-501-550/505-the-maze-ii.md)
   * [506 Relative Ranks](solutions-501-550/506-relative-ranks.md)
   * [520 Detect Capital](solutions-501-550/520-detect-capital.md)
+  * [526 Beautiful Arrangement](solutions-501-550/526-beautiful-arrangement.md)
 
