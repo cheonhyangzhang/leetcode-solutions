@@ -11,6 +11,7 @@
   * [7 Reverse Integer – Easy](7_reverse_integer__easy.md)
   * [8 String to Integer \(atoi\) – Easy](8_string_to_integer_atoi__easy.md)
   * [9 Palindrome Number – Easy](9_palindrome_number__easy.md)
+  * [10 Regular Expression Matching](10-regular-expression-matching.md)
   * [11  Container With Most Water – Medium](11_leetcode_java_container_with_most_water__medium.md)
   * [12 Integer to Roman – Medium](12_integer_to_roman__medium.md)
   * [13 Roman to Integer – Easy](13_roman_to_integer__easy.md)
