@@ -24,6 +24,7 @@
   * [20 Valid Parentheses – Easy](20_valid_parentheses__easy.md)
   * [21 Merge Two Sorted Lists – Easy](21_merge_two_sorted_lists__easy.md)
   * [22 Generate Parentheses – Medium](22_generate_parentheses__medium.md)
+  * [23 Merge k Sorted Lists](23-merge-k-sorted-lists.md)
   * [24 Swap Nodes in Pairs – Medium](24_swap_nodes_in_pairs__medium.md)
   * [26 Remove Duplicates from Sorted Array – Easy](26_remove_duplicates_from_sorted_array__easy.md)
   * [27 Remove Element – Easy](27_remove_element__easy.md)
