@@ -51,7 +51,7 @@
   * [54 Spiral Matrix – Medium](54_spiral_matrix__medium.md)
   * [55 Jump Game – Medium](55_jump_game__medium.md)
   * [56 Merge Intervals](56-merge-intervals.md)
-    * [57 Insert Interval](56-merge-intervals/57-insert-interval.md)
+  * [57 Insert Interval](56-merge-intervals/57-insert-interval.md)
   * [58 Length of Last Word – Easy](58_length_of_last_word__easy.md)
   * [59 Spiral Matrix II – Medium](59_spiral_matrix_ii__medium.md)
   * [60 Permutation Sequence – Medium](60_permutation_sequence__medium.md)
