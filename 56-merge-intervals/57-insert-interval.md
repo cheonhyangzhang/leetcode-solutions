@@ -17,5 +17,42 @@ This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
 ### Solutions:
 
 ```java
-
+/**
+ * Definition for an interval.
+ * public class Interval {
+ *     int start;
+ *     int end;
+ *     Interval() { start = 0; end = 0; }
+ *     Interval(int s, int e) { start = s; end = e; }
+ * }
+ */
+public class Solution {
+    public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
+        List<Interval> result = new LinkedList<Interval>();
+        for (Interval inter:intervals) {
+            if (newInterval.start > inter.end || newInterval.end < inter.start) {
+                //no overlap
+                result.add(inter);
+                continue;
+            }
+            newInterval.start = Math.min(newInterval.start, inter.start);
+            newInterval.end = Math.max(newInterval.end, inter.end);
+        }
+        int i = 0;
+        for (Interval inter:result) {
+            if (newInterval.start < inter.start) {
+                break;
+            }
+            i ++;
+        }
+        if (i < result.size()) {
+            result.add(i, newInterval);
+        }
+        else {
+            result.add(newInterval);
+        }
+        
+        return result;
+    }
+}
 ```
