@@ -92,13 +92,13 @@ public class Solution {
         }
     }
     public List<String> findWords(char[][] board, String[] words) {
-        List<String> result = new LinkedList<String>();
+        Set<String> result = new HashSet<String>();
         PrefixTree pt = new PrefixTree();
         for (int i = 0; i < words.length; i ++) {
             pt.add(words[i]);
         }
         if (board == null || board.length == 0 || board[0].length == 0) {
-            return result;
+            return new LinkedList<String>(result);
         }
         boolean[][] visited = new boolean[board.length][board[0].length];
         for (int i = 0; i < board.length; i ++) {
@@ -106,38 +106,28 @@ public class Solution {
                 dfs(pt, i, j, board, visited, "", result);
             }
         }
-        return result;
+        return new LinkedList<String>(result);
     }
-    private void dfs(PrefixTree pt, int i, int j, char[][] board, boolean[][] visited, String s, List<String> result) {
+    private void dfs(PrefixTree pt, int i, int j, char[][] board, boolean[][] visited, String s, Set<String> result) {
+        if (i < 0 || i >= visited.length || j < 0 || j >= visited[0].length) {
+            return;
+        }
+        if (visited[i][j] == true) {
+            return;
+        }
         s += board[i][j];
         if (!pt.hasPrefix(s)) {
             return;
         }
         if (pt.hasWord(s)) {
-            if (!result.contains(s)) {
-                result.add(s);
-            }
+            result.add(s);
         }
         visited[i][j] = true;
-        if (validMove(i - 1, j, visited)) {
-            dfs(pt, i - 1, j, board, visited, s, result);
-        }
-        if (validMove(i, j - 1, visited)) {
-            dfs(pt, i, j - 1, board, visited, s, result);
-        }
-        if (validMove(i + 1, j, visited)) {
-            dfs(pt, i + 1, j, board, visited, s, result);
-        }
-        if (validMove(i, j + 1, visited)) {
-            dfs(pt, i, j + 1, board, visited, s, result);
-        }
+        dfs(pt, i - 1, j, board, visited, s, result);
+        dfs(pt, i, j - 1, board, visited, s, result);
+        dfs(pt, i + 1, j, board, visited, s, result);
+        dfs(pt, i, j + 1, board, visited, s, result);
         visited[i][j] = false;
-    }
-    private boolean validMove(int i, int j, boolean[][] visited) {
-        if (i >= 0 && i < visited.length && j >= 0 && j < visited[0].length && visited[i][j] == false) {
-            return true;
-        }
-        return false;
     }
 }
 ```
