@@ -143,6 +143,7 @@
   * [162 Find Peak Element – Medium](162-find-peak-element-–-medium.md)
 * [Solutions 201 - 250](solutions-201---250.md)
   * 247 LeetCode Java: Strobogrammatic Number II – Medium
+    * [212 Word Search II](212-word-search-ii.md)
   * [248 LeetCode Java: Different Ways to Add Parentheses – Hard](248-leetcode-java-different-ways-to-add-parentheses-–-hard.md)
   * [249 LeetCode Java: Group Shifted Strings – Easy](249-leetcode-java-group-shifted-strings-–-easy.md)
   * [250 LeetCode Java: Count Univalue Subtrees – Medium](250-leetcode-java-count-univalue-subtrees-–-medium.md)
@@ -257,7 +258,7 @@
   * [377 Combination Sum IV](377-combination-sum-iv.md)
   * [378 Kth Smallest Element in a Sorted Matrix](378-kth-smallest-element-in-a-sorted-matrix.md)
   * [379 Design Phone Directory](379-design-phone-directory.md)
-  * [380 Insert Delete GetRandom O\(1\).md\)](380-insert-delete-getrandom-o(1)
+  * [380 Insert Delete GetRandom O\(1\).md\)](380-insert-delete-getrandom-o\(1)
   * [382 Linked List Random Node](382-linked-list-random-node.md)
   * [388 Longest Absolute File Path](388-longest-absolute-file-path.md)
   * [389 Find the Difference](389-find-the-difference.md)
