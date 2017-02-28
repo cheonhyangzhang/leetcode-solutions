@@ -23,5 +23,122 @@ You may assume that all inputs are consist of lowercase letters a-z.
 ### Solutions:
 
 ```java
-
+public class Solution {
+    private class Node {
+        public char c;
+        public boolean isLeaf;
+        public List<Node> children;
+        public Node (char c, boolean isLeaf) {
+            this.c = c;
+            this.isLeaf = isLeaf;
+            this.children = new LinkedList<Node>();
+        }
+    }
+    private class PrefixTree {
+        public Node root;
+        public PrefixTree() {
+            root = new Node('0', false);
+        }
+        public void add(String s) {
+            Node node = root;
+            for (int i = 0; i < s.length(); i ++) {
+                char c = s.charAt(i);
+                boolean found = false;
+                for (Node n:node.children) {
+                    if (n.c == c) {
+                        node = n;
+                        found = true;
+                        break;
+                    }
+                }
+                if (found == false) {
+                    Node tmp = new Node(c, false);
+                    node.children.add(tmp);
+                    node = tmp;
+                }
+                if (i == s.length() - 1) {
+                    node.isLeaf = true;
+                }
+            }
+        }
+        public Node findNode(String s) {
+            Node node = null;
+            for (int i = 0; i < s.length(); i ++) {
+                if (node == null) {
+                    node = root;
+                }
+                char c = s.charAt(i);
+                boolean found = false;
+                for (Node n:node.children) {
+                    if (n.c == c) {
+                        node = n;
+                        found = true;
+                        break;
+                    }
+                }
+                if (found == false) {
+                    return null;
+                }
+            }
+            return node;
+        }
+        public boolean hasPrefix(String s) {
+            Node n = findNode(s);
+            return n != null;
+        }
+        public boolean hasWord(String s) {
+            Node n = findNode(s);
+            return n != null && n.isLeaf == true;
+        }
+    }
+    public List<String> findWords(char[][] board, String[] words) {
+        List<String> result = new LinkedList<String>();
+        PrefixTree pt = new PrefixTree();
+        for (int i = 0; i < words.length; i ++) {
+            pt.add(words[i]);
+        }
+        if (board == null || board.length == 0 || board[0].length == 0) {
+            return result;
+        }
+        boolean[][] visited = new boolean[board.length][board[0].length];
+        for (int i = 0; i < board.length; i ++) {
+            for (int j = 0; j < board[0].length; j ++) {
+                dfs(pt, i, j, board, visited, "", result);
+            }
+        }
+        return result;
+    }
+    private void dfs(PrefixTree pt, int i, int j, char[][] board, boolean[][] visited, String s, List<String> result) {
+        s += board[i][j];
+        if (!pt.hasPrefix(s)) {
+            return;
+        }
+        if (pt.hasWord(s)) {
+            if (!result.contains(s)) {
+                result.add(s);
+            }
+        }
+        visited[i][j] = true;
+        if (validMove(i - 1, j, visited)) {
+            dfs(pt, i - 1, j, board, visited, s, result);
+        }
+        if (validMove(i, j - 1, visited)) {
+            dfs(pt, i, j - 1, board, visited, s, result);
+        }
+        if (validMove(i + 1, j, visited)) {
+            dfs(pt, i + 1, j, board, visited, s, result);
+        }
+        if (validMove(i, j + 1, visited)) {
+            dfs(pt, i, j + 1, board, visited, s, result);
+        }
+        visited[i][j] = false;
+    }
+    private boolean validMove(int i, int j, boolean[][] visited) {
+        if (i >= 0 && i < visited.length && j >= 0 && j < visited[0].length && visited[i][j] == false) {
+            return true;
+        }
+        return false;
+    }
+}
 ```
+
