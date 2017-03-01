@@ -36,7 +36,7 @@ public class Solution {
 }
 ```
 
-···java
+```java
 public class Solution {
     public String shortestPalindrome(String s) {
         if (s.equals("")) {
