@@ -154,7 +154,7 @@
   * [210 LeetCode Java: Course Schedule II – Medium](210-leetcode-java-course-schedule-ii-–-medium.md)
   * [211 LeetCode Java: Add and Search Word – Data structure design – Medium](211-leetcode-java-add-and-search-word-–-data-structure-design-–-medium.md)
   * [212 Word Search II](212-word-search-ii.md)
-    * [214 Shortest Palindrome](212-word-search-ii/214-shortest-palindrome.md)
+  * [214 Shortest Palindrome](212-word-search-ii/214-shortest-palindrome.md)
   * 247 LeetCode Java: Strobogrammatic Number II – Medium
   * [248 LeetCode Java: Different Ways to Add Parentheses – Hard](248-leetcode-java-different-ways-to-add-parentheses-–-hard.md)
   * [249 LeetCode Java: Group Shifted Strings – Easy](249-leetcode-java-group-shifted-strings-–-easy.md)
