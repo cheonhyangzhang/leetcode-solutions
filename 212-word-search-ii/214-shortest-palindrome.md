@@ -35,3 +35,48 @@ public class Solution {
     }
 }
 ```
+
+···java
+public class Solution {
+    public String shortestPalindrome(String s) {
+        if (s.equals("")) {
+            return "";
+        }
+        char[] str = s.toCharArray();
+        int left = (s.length() - 1) / 2;
+        int right = s.length() / 2;
+        int mid1 = 0;
+        int mid2 = 0;
+        while (left >= 0) {
+            int i = left;
+            int j = right;
+            while (i >= 0 && str[i] == str[j]) {
+                i --;
+                j ++;
+            }
+            if (i == -1) {
+                mid1 = left;
+                mid2 = right;
+                break;
+            }
+            if (left == right) {
+                left --;
+            }
+            else {
+                right --;
+            }
+        }
+        String second = s.substring(mid2);
+        
+        String first = new StringBuilder(second).reverse().toString();
+        if (mid1 == mid2) {
+            first = first.substring(0, first.length() - 1);
+        }
+        return first + second;
+    }
+}
+```
+
+```java
+
+```
