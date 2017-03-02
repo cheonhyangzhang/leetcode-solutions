@@ -156,6 +156,7 @@
   * [212 Word Search II](212-word-search-ii.md)
   * [214 Shortest Palindrome](212-word-search-ii/214-shortest-palindrome.md)
   * 247 LeetCode Java: Strobogrammatic Number II – Medium
+    * [218 The Skyline Problem](218-the-skyline-problem.md)
   * [248 LeetCode Java: Different Ways to Add Parentheses – Hard](248-leetcode-java-different-ways-to-add-parentheses-–-hard.md)
   * [249 LeetCode Java: Group Shifted Strings – Easy](249-leetcode-java-group-shifted-strings-–-easy.md)
   * [250 LeetCode Java: Count Univalue Subtrees – Medium](250-leetcode-java-count-univalue-subtrees-–-medium.md)
