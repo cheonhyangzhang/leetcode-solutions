@@ -27,5 +27,28 @@ Could you solve it in linear time?
 ### Solutions:
 
 ```java
+public class Solution {
+    public int[] maxSlidingWindow(int[] nums, int k) {
+        if (nums == null || nums.length == 0) {
+            return new int[0];
+        }
+        int[] res = new int[nums.length - k + 1];
+        PriorityQueue<Integer> q = new PriorityQueue<Integer>(Collections.reverseOrder());
+        for (int i = 0; i < k; i ++) {
+            q.add(nums[i]);
+        }
+        res[0] = q.peek();
+        for (int j = k; j < nums.length; j ++) {
+            int remove = nums[j - k];
+            q.add(nums[j]);
+            q.remove((Integer)remove);
+            res[j - k + 1] = q.peek();
+        }
+        return res;
+    }
+}
+```
+
+```java
 
 ```
