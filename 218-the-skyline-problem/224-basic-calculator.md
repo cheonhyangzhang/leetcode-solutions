@@ -83,5 +83,44 @@ public class Solution {
 ```
 
 ```java
-
+public class Solution {
+    public int calculate(String s) {
+        int res = 0, sign = 1;
+        Stack<Integer> pre = new Stack<Integer>();
+        for (int i = 0; i < s.length(); i ++) {
+            char c = s.charAt(i);
+            if (c == ' ') {
+                continue;
+            }
+            if (c == '+') {
+                sign = 1;
+                continue;
+            }
+            if (c == '-') {
+                sign = -1;
+                continue;
+            }
+            if (c == '(') {
+                pre.push(res);
+                pre.push(sign);
+                res = 0;
+                sign = 1;
+                continue;
+            }
+            if (c == ')') {
+                res = res * pre.pop();
+                res = pre.pop() + res;
+                continue;
+            }
+            int count = 0;
+            while (i < s.length() && s.charAt(i) >= '0' && s.charAt(i) <= '9') {
+                count = count * 10 + (s.charAt(i) - '0');
+                i ++;
+            }
+            i --;
+            res = res + sign * count;
+        }
+        return res;
+    }
+}
 ```
