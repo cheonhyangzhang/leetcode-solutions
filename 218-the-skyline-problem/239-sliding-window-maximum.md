@@ -50,5 +50,26 @@ public class Solution {
 ```
 
 ```java
-
+public class Solution {
+    public int[] maxSlidingWindow(int[] nums, int k) {
+        if (nums == null || nums.length == 0) {
+            return new int[0];
+        }
+        int[] res = new int[nums.length - k + 1];
+        LinkedList<Integer> q = new LinkedList<Integer>();
+        for (int i = 0; i < nums.length; i ++) {
+            if (!q.isEmpty() && q.peek() == i - k) {
+                q.removeFirst();
+            }
+            while (!q.isEmpty() && nums[q.peekLast()] < nums[i]) {
+                q.removeLast();
+            }
+            q.add(i);
+            if (i + 1 >= k) {
+                res[i + 1 - k] = nums[q.peekFirst()];
+            }
+        }
+        return res;
+    }
+}
 ```
