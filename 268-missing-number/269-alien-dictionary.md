@@ -121,3 +121,68 @@ public class Solution {
     }
 }
 ```
+
+```java
+public class Solution {
+    public String alienOrder(String[] words) {
+        HashSet<Character> cand = new HashSet<Character>();
+        HashMap<Character, HashSet<Character>> less = new HashMap<Character, HashSet<Character>>();
+        int[] inDegree = new int[26];
+        for (int i = 0; i < words.length; i ++) {
+            String word = words[i];
+            for (int j = 0; j < word.length(); j ++) {
+                cand.add(word.charAt(j));
+            }
+            if (i > 0) {
+                String s1 = words[i - 1];
+                String s2 = words[i];
+                int i1 = 0;
+                int i2 = 0;
+                while (i1 < s1.length() && i2 < s2.length()) {
+                    char c1 = s1.charAt(i1);
+                    char c2 = s2.charAt(i2);
+                    if (c1 != c2) {
+                        update(c1, c2, less, inDegree);
+                        break;
+                    }
+                    i1 ++;
+                    i2 ++;
+                }
+            }
+        }
+        Queue<Character> q = new LinkedList<Character>();
+        for (int i = 0; i < inDegree.length; i ++) {
+            char c = (char)(i + 'a');
+            if (inDegree[i] == 0 && cand.contains(c)) {
+                q.add(c);
+            }
+        }
+        StringBuilder sb = new StringBuilder();
+        while (!q.isEmpty()) {
+            Character dest = q.poll();
+            sb.append(dest);
+            if (less.containsKey(dest)) {
+                for (Character c:less.get(dest)) {
+                    inDegree[c - 'a'] --;
+                    if (inDegree[c - 'a'] == 0) {
+                        q.add(c);
+                    }
+                }
+            }
+        }
+        if (sb.length() != cand.size()) {
+            return "";
+        }
+        return sb.toString();
+    }
+    private void update(char c1, char c2, HashMap<Character, HashSet<Character>> less, int[] inDegree) {
+        if (!less.containsKey(c1)) {
+            less.put(c1, new HashSet<Character>());
+        }            
+        if (!less.get(c1).contains(c2)) {
+            less.get(c1).add(c2);
+            inDegree[c2 - 'a'] ++;
+        }
+    }
+}
+```
