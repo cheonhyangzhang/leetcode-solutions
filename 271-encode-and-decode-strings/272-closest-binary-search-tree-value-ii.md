@@ -11,6 +11,7 @@ Follow up:
 Assume that the BST is balanced, could you solve it in less than O(n) runtime (where n = total nodes)?
 
 ### Solutions
+Worst case O(n)
 ```java
 /**
  * Definition for a binary tree node.
@@ -75,6 +76,121 @@ public class Solution {
 }
 ```
 
+O(n)
 ```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    private class Node implements Comparable<Node>{
+        public double diff;
+        public TreeNode node;
+        public Node(double diff, TreeNode node) {
+            this.diff = diff;
+            this.node = node;
+        }
+        public int compareTo(Node n) {
+            double tmp = this.diff - n.diff;
+            if (tmp > 0) {
+                return 1;
+            }
+            else if (tmp < 0) {
+                return -1;
+            }
+            else {
+                return 0;
+            }
+        }
+    }
+    public List<Integer> closestKValues(TreeNode root, double target, int k) {
+        LinkedList<Integer> result = new LinkedList<Integer>();
+        PriorityQueue<Node> q = new PriorityQueue<Node>(Collections.reverseOrder());
+        inorder(root, q, target, k);
+        while (!q.isEmpty()) {
+            result.add(q.poll().node.val);
+        }
+        return result;
+    }
+    private void inorder(TreeNode node, PriorityQueue<Node> q, double target, int k) {
+        if (node == null) {
+            return;
+        }
+        inorder(node.left, q, target, k);
+        q.add(new Node(Math.abs(node.val - target), node));
+        if (q.size() > k) {
+            q.poll();
+        }
+        inorder(node.right, q, target, k);
+    }
+}
+```
 
+O(k + log(n))
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public List<Integer> closestKValues(TreeNode root, double target, int k) {
+        LinkedList<Integer> result = new LinkedList<Integer>();
+        Stack<TreeNode> pre = new Stack<TreeNode>();
+        Stack<TreeNode> suc = new Stack<TreeNode>();
+        while(root != null) {
+            if (root.val < target) {
+                pre.push(root);
+                root = root.right;
+            }
+            else {
+                suc.push(root);
+                root = root.left;
+            }
+        }
+        while (k > 0) {
+            if (suc.isEmpty() || !pre.isEmpty() && target - pre.peek().val < suc.peek().val - target) {
+                result.add(pre.peek().val);
+                getPre(pre);
+            }
+            else {
+                result.add(suc.peek().val);
+                getSuc(suc);
+            }
+            k --;
+        }
+        return result;
+    }
+    private void getPre(Stack<TreeNode> pre) {
+        TreeNode node = pre.pop();
+        if (node.left != null) {
+            pre.push(node.left);
+            node = node.left;
+            while (node.right != null) {
+                pre.push(node.right);
+                node = node.right;
+            }
+        }
+    }
+    private void getSuc(Stack<TreeNode> suc) {
+        TreeNode node = suc.pop();
+        if (node.right != null) {
+            suc.push(node.right);
+            node = node.right;
+            while (node.left != null) {
+                suc.push(node.left);
+                node = node.left;
+            }
+        }
+    }
+}
 ```
