@@ -87,3 +87,39 @@ public class MedianFinder {
  * double param_2 = obj.findMedian();
  */
 ```
+
+```java
+public class MedianFinder {
+    PriorityQueue<Integer> left;
+    PriorityQueue<Integer> right;
+    /** initialize your data structure here. */
+    public MedianFinder() {
+        left = new PriorityQueue<Integer>(Collections.reverseOrder());
+        right = new PriorityQueue<Integer>();
+    }
+    
+    public void addNum(int num) {
+        left.add(num);
+        right.add(left.poll());
+        if (left.size() < right.size()) {
+            left.add(right.poll());
+        }
+    }
+    
+    public double findMedian() {
+        if (left.size() == right.size()) {
+            return (double)(left.peek() + right.peek()) / 2;
+        }
+        else {
+            return left.peek();
+        }
+    }
+}
+
+/**
+ * Your MedianFinder object will be instantiated and called as such:
+ * MedianFinder obj = new MedianFinder();
+ * obj.addNum(num);
+ * double param_2 = obj.findMedian();
+ */
+```
