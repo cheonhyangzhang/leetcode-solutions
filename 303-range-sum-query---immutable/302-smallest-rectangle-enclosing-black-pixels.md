@@ -26,9 +26,7 @@ public class Solution {
         }
         int m = image.length, n = image[0].length;
         int[] border = new int[] {m, -1, n, -1};
-        System.out.println(border[0] + "," + border[1] + "," + border[2] + "," + border[3]);
         dfs(image, x, y, border);
-        System.out.println(border[0] + "," + border[1] + "," + border[2] + "," + border[3]);
         return (border[1] - border[0] + 1) * (border[3] - border[2] + 1);
     }
     private void dfs(char[][] image, int x, int y, int[] border) {
