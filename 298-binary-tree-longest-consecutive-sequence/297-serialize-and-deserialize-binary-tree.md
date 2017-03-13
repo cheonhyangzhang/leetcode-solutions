@@ -19,6 +19,8 @@ Note: Do not use class member/global/static variables to store states. Your seri
 
 ### Solutions:
 
+BFS
+
 ```java
 /**
  * Definition for a binary tree node.
@@ -90,4 +92,8 @@ public class Codec {
 // Your Codec object will be instantiated and called as such:
 // Codec codec = new Codec();
 // codec.deserialize(codec.serialize(root));
+```
+
+```java
+
 ```
