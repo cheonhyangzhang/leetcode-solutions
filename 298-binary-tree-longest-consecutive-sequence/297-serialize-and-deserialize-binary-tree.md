@@ -36,31 +36,28 @@ public class Codec {
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
         StringBuilder sb = new StringBuilder();
-        if (root == null) {
-            return "";
-        }
         Queue<TreeNode> q = new LinkedList<TreeNode>();
         q.add(root);
         while (!q.isEmpty()) {
             TreeNode node = q.poll();
             if (node == null) {
-                sb.append("#,");
+                sb.append("# ");
             }
             else {
-                sb.append(node.val + ",");
+                sb.append(node.val + " ");
                 q.add(node.left);
                 q.add(node.right);
             }
         }
-        return sb.toString();
+        return sb.toString().trim();
     }
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        if (data.equals("")) {
+        if (data.equals("#")) {
             return null;
         }
-        String[] nodes = data.split(",");
+        String[] nodes = data.split(" ");
         TreeNode root = null;
         Queue<TreeNode> q = new LinkedList<TreeNode>();
         for (int i = 0; i < nodes.length; i ++) {
