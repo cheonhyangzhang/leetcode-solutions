@@ -202,8 +202,8 @@
   * [293 Flip Game](293-flip-game.md)
   * [294 Flip Game II](294-flip-game-ii.md)
   * [295 Find Median from Data Stream](295-find-median-from-data-stream.md)
+  * [297 Serialize and Deserialize Binary Tree](298-binary-tree-longest-consecutive-sequence/297-serialize-and-deserialize-binary-tree.md)
   * [298 Binary Tree Longest Consecutive Sequence](298-binary-tree-longest-consecutive-sequence.md)
-    * [297 Serialize and Deserialize Binary Tree](298-binary-tree-longest-consecutive-sequence/297-serialize-and-deserialize-binary-tree.md)
   * [299 Bulls and Cows](299-bulls-and-cows.md)
   * [300 Longest Increasing Subsequence](300-longest-increasing-subsequence.md)
 * Solutions 301 - 350
