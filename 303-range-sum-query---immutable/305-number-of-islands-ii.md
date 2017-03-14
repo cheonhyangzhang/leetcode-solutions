@@ -134,3 +134,5 @@ public class Solution {
     
 }
 ```
+
+Solutions can be even easier if by using an array int[m*n] and each slot is storing the root of each node. However, this one is not having the rank info. We can have a second array int[m*n] to store the rank. 
