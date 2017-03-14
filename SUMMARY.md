@@ -208,8 +208,9 @@
   * [300 Longest Increasing Subsequence](300-longest-increasing-subsequence.md)
 * Solutions 301 - 350
   * [302 Smallest Rectangle Enclosing Black Pixels](303-range-sum-query---immutable/302-smallest-rectangle-enclosing-black-pixels.md)
-  * [304 Range Sum Query 2D - Immutable](304-range-sum-query-2d---immutable.md)
   * [303 Range Sum Query - Immutable](303-range-sum-query---immutable.md)
+  * [304 Range Sum Query 2D - Immutable](304-range-sum-query-2d---immutable.md)
+  * [305 Number of Islands II](303-range-sum-query---immutable/305-number-of-islands-ii.md)
   * [306 Additive Number](306-additive-number.md)
   * [307 Range Sum Query - Mutable](307-range-sum-query---mutable.md)
   * [309 Best Time to Buy and Sell Stock with Cooldown](309-best-time-to-buy-and-sell-stock-with-cooldown.md)
