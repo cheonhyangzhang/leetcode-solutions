@@ -47,5 +47,90 @@ Can you do it in time complexity O(k log mn), where k is the length of the posit
 ### Solutions:
 
 ```java
-
+public class Solution {
+    private class Node {
+        public Node parent;
+        public int rank;
+        public Node() {
+            parent = null;
+            rank = -1;
+        }
+    }
+    HashMap<String,Node> nodes;
+    public List<Integer> numIslands2(int m, int n, int[][] positions) {
+        List<Integer> result = new LinkedList<Integer>();
+        nodes = new HashMap<String, Node>();
+        int num = 0;
+        for (int i = 0; i < positions.length; i ++) {
+            int x = positions[i][0];
+            int y = positions[i][1];
+            Node added = makeset(x, y);
+            num ++;
+            if (x - 1 >= 0 && nodes.containsKey((x-1) + "," + y)) {
+                Node node = nodes.get((x-1) + "," + y);
+                boolean tmp = union(added, node);
+                if (tmp) {
+                    num --; 
+                }
+            }
+            if (x + 1 < m && nodes.containsKey((x+1) + "," + y)) {
+                Node node = nodes.get((x+1) + "," + y);
+                boolean tmp = union(added, node);
+                if (tmp) {
+                    num --; 
+                }
+            }
+            if (y - 1 >= 0 && nodes.containsKey(x + "," + (y - 1))) {
+                Node node = nodes.get(x + "," + (y - 1));
+                boolean tmp = union(added, node);
+                if (tmp) {
+                    num --; 
+                }
+            }
+            if (y + 1 < n && nodes.containsKey(x + "," + (y + 1))) {
+                Node node = nodes.get(x + "," + (y + 1));
+                boolean tmp = union(added, node);
+                if (tmp) {
+                    num --; 
+                }
+            }
+            result.add(num);
+        }
+        return result;
+    }
+    private boolean union(Node n1, Node n2) {
+        Node root1 = find(n1);
+        Node root2 = find(n2);
+        if (root1 == root2) {
+            return false;
+        }
+        if (root1.rank < root2.rank) {
+            root1.parent = root2;
+        }
+        else if (root1.rank > root2.rank) {
+            root2.parent = root1;
+        }
+        else {
+            root2.parent = root1;
+            root1.rank += 1;
+        }
+        return true;
+    }
+    private Node find(Node n) {
+        if (n.parent == n) {
+            return n;
+        }
+        else {
+            return find(n.parent);
+        }
+    }
+    private Node makeset(int x, int y) {
+        Node n = new Node();
+        n.parent = n;
+        n.rank = 0;
+        nodes.put(x +","+ y, n);
+        return n;
+    }
+    
+}
 ```
