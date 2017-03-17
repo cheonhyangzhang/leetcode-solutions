@@ -29,5 +29,57 @@ You may assume that row1 ≤ row2 and col1 ≤ col2.
 ### Solutions:
 
 ```java
+public class NumMatrix {
+    int[][] sums;
+    int[][] matrix;
+    int m;
+    int n;
+    public NumMatrix(int[][] matrix) {
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
+            return;
+        }
+        m = matrix.length;
+        n = matrix[0].length;
+        sums = new int[m + 1][n + 1];
+        this.matrix = new int[m][n];
+        for (int i = 0; i < m; i ++) {
+            for (int j = 0; j < n; j ++) {
+                update(i, j, matrix[i][j]);        
+            }
+        }
+    }
+    
+    public void update(int row, int col, int val) {
+        int diff = val - matrix[row][col];
+        for (int i = row + 1; i < m + 1; i = i + (i&(-i))) {
+            for (int j = col + 1; j < n + 1; j = j + (j&(-j))) {
+                sums[i][j] += diff;
+            }
+        }
+        matrix[row][col] = val;
+    }
+    private int getSum(int x, int y) {
+        int sum = 0;
+        for (int i = x; i > 0; i = i - (i&(-i))) {
+            for (int j = y; j > 0; j = j - (j&(-j))) {
+                sum += sums[i][j];
+            }
+        }
+        return sum;
+    }
+    public int sumRegion(int row1, int col1, int row2, int col2) {
+        return getSum(row2 + 1, col2 + 1) - getSum(row1, col2 + 1) - getSum(row2 + 1, col1) + getSum(row1, col1);
+    }
+}
+
+/**
+ * Your NumMatrix object will be instantiated and called as such:
+ * NumMatrix obj = new NumMatrix(matrix);
+ * obj.update(row,col,val);
+ * int param_2 = obj.sumRegion(row1,col1,row2,col2);
+ */
+```
+
+```java
 
 ```
