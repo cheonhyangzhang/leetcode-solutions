@@ -58,48 +58,43 @@ public class NumArray {
 
 ```java
 public class NumArray {
-    private int[] sums;
-    private int[] nums;
+    int[] sums;
+    int[] nums;
     public NumArray(int[] nums) {
-        this.nums = nums;
         sums = new int[nums.length + 1];
+        this.nums = new int[nums.length];
         for (int i = 0; i < nums.length; i ++) {
-            add(i + 1, nums[i]);
+            update(i, nums[i]);
         }
     }
-    private void add(int pos, int val) {
-        while (pos < sums.length) {
-            sums[pos] += val;
-            pos += lowBit(pos);
+    
+    public void update(int i, int val) {
+        int diff = val - nums[i];
+        int j = i + 1;
+        while (j < sums.length) {
+            sums[j] += diff;
+            j = j + (j&(-j));
         }
-    }
-    private int lowBit(int pos) {
-        return pos & (-pos);
-    }
-    private int sum(int pos) {
-        int result = 0;
-        while (pos > 0) {
-            result +=sums[pos];
-            pos -= lowBit(pos);
-        }
-        return result;
-    }
-
-    void update(int i, int val) {
-        int delta = val - nums[i];
         nums[i] = val;
-        add(i + 1, delta);
     }
-
+    private int getSum(int i) {
+        int sum = 0;
+        while (i > 0) {
+            sum += sums[i];
+            i = i - (i&(-i));
+        }
+        return sum;
+    }
+    
     public int sumRange(int i, int j) {
-        return sum(j + 1) - sum(i);
+        return getSum(j + 1) - getSum(i);
     }
 }
 
-
-// Your NumArray object will be instantiated and called as such:
-// NumArray numArray = new NumArray(nums);
-// numArray.sumRange(0, 1);
-// numArray.update(1, 10);
-// numArray.sumRange(1, 2);
+/**
+ * Your NumArray object will be instantiated and called as such:
+ * NumArray obj = new NumArray(nums);
+ * obj.update(i,val);
+ * int param_2 = obj.sumRange(i,j);
+ */
 ```
