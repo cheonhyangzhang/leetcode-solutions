@@ -217,6 +217,7 @@
   * [309 Best Time to Buy and Sell Stock with Cooldown](309-best-time-to-buy-and-sell-stock-with-cooldown.md)
   * [310 Minimum Height Trees](310-minimum-height-trees.md)
   * [311 Sparse Matrix Multiplication](311-sparse-matrix-multiplication.md)
+    * [312 Burst Balloons](311-sparse-matrix-multiplication/312-burst-balloons.md)
   * [313 Super Ugly Number](313-super-ugly-number.md)
   * [314 Binary Tree Vertical Order Traversal](314-binary-tree-vertical-order-traversal.md)
   * [318 Maximum Product of Word Lengths](318-maximum-product-of-word-lengths.md)
