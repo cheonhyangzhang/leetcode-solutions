@@ -220,6 +220,7 @@
   * [312 Burst Balloons](311-sparse-matrix-multiplication/312-burst-balloons.md)
   * [313 Super Ugly Number](313-super-ugly-number.md)
   * [314 Binary Tree Vertical Order Traversal](314-binary-tree-vertical-order-traversal.md)
+  * [315 Count of Smaller Numbers After Self](303-range-sum-query---immutable/315-count-of-smaller-numbers-after-self.md)
   * [318 Maximum Product of Word Lengths](318-maximum-product-of-word-lengths.md)
   * [319 Bulb Switcher](319-bulb-switcher.md)
   * [320 Generalized Abbreviation](320-generalized-abbreviation.md)
