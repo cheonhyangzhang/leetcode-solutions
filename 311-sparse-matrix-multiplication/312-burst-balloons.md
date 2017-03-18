@@ -76,3 +76,36 @@ public class Solution {
     }
 }
 ```
+
+```
+public class Solution {
+    public int maxCoins(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+        int[][] maxs = new int[nums.length][nums.length];
+        for (int k = 1; k <= nums.length; k ++) {
+            for (int i = 0; i + k - 1 < nums.length; i ++) {
+                int max = Integer.MIN_VALUE;
+                int left = i - 1 >= 0 ? nums[i - 1] : 1;
+                int right = i + k < nums.length ? nums[i + k] : 1;
+                for (int j = i; j <= i + k - 1; j ++) {
+                    int tmp = 0;
+                    if (j - 1 >= i) {
+                        tmp += maxs[i][j - 1];
+                    }
+                    if (j + 1 <= i + k - 1) {
+                        tmp += maxs[j + 1][i + k - 1];
+                    }
+                    tmp += left * nums[j] * right;
+                    max = Math.max(max, tmp);
+                }
+                maxs[i][i + k - 1] = max;
+            }
+        }    
+        
+        return maxs[0][nums.length - 1];
+    }
+    
+}
+```
