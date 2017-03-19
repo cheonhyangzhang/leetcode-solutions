@@ -17,6 +17,29 @@ Return the array [2, 1, 1, 0].
 
 ### Solutions:
 
-```java
+Binary search insert
 
+```java
+public class Solution {
+    public List<Integer> countSmaller(int[] nums) {
+        List<Integer> result = new LinkedList<Integer>();
+        ArrayList<Integer> cand = new ArrayList<Integer>();
+        for (int i = nums.length - 1; i >= 0; i --) {
+            int left = 0, right = cand.size();
+            while(left < right) {
+                int mid = (right - left) / 2 + left;
+                if (cand.get(mid) < nums[i]) {
+                    left = mid + 1;
+                }
+                else {
+                    right = mid;
+                }
+            }
+            result.add(0, right);
+            cand.add(right, nums[i]);
+        }
+        return result;
+    }
+}
 ```
+
