@@ -42,4 +42,47 @@ public class Solution {
     }
 }
 ```
+Binary Search Tree
+```java
+public class Solution {
+    private class Node {
+        public int val;
+        public int cnt;
+        public int leftSum;
+        public Node left;
+        public Node right;
+        public Node(int val) {
+            cnt = 1;
+            leftSum = 0;
+            this.val = val;
+        }
+    }
+    public List<Integer> countSmaller(int[] nums) {
+        List<Integer> res = new LinkedList<>();
+        Node root = null;
+        for(int i = nums.length - 1; i >= 0; i --) {
+            root = helper(res, nums[i], root, 0);
+        }
+        return res;
+    }
+    private Node helper(List<Integer> res, int val, Node root, int preNum) {
+        if(root == null) {
+            res.add(0, preNum);
+            return new Node(val);
+        }
+        if(root.val == val) {
+            root.cnt ++;
+            res.add(0, preNum + root.leftSum);
+        }
+        else if(root.val > val) {
+            root.leftSum ++;
+            root.left = helper(res, val, root.left, preNum);
+        }
+        else {
+            root.right = helper(res, val, root.right, preNum + root.leftSum + root.cnt);
+        }    
+        return root;
+    }
+}
+```
 
