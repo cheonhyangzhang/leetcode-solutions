@@ -86,3 +86,46 @@ public class Solution {
 }
 ```
 
+Binary Indexed tree
+```java
+public class Solution {
+    public List<Integer> countSmaller(int[] nums) {
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < nums.length; i ++) {
+            if (nums[i] < min) {
+                min = nums[i];
+            }
+            if (nums[i] > max) {
+                max = nums[i];
+            }
+        }
+        int diff = 1 - min;
+        for (int i = 0; i < nums.length; i ++) {
+            nums[i] += diff;
+        }
+        max += diff;
+        List<Integer> result = new LinkedList<Integer>();
+        int[] sums = new int[max + 1];
+        for (int i = nums.length - 1; i >= 0; i --) {
+            result.add(0, getSum(sums, nums[i] - 1));
+            update(sums, nums[i]);
+        }
+        return result;
+    }
+    private int getSum(int[] sums, int index) {
+        int sum = 0;
+        while (index > 0) {
+            sum += sums[index];
+            index -= index & (-index);
+        }
+        return sum;
+    }
+    private void update(int[] sums, int val) {
+        while (val < sums.length) {
+            sums[val] += 1;
+            val += val&(-val);
+        };
+    }
+}
+```
