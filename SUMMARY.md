@@ -227,6 +227,7 @@
   * [319 Bulb Switcher](319-bulb-switcher.md)
   * [320 Generalized Abbreviation](320-generalized-abbreviation.md)
   * [322 Coin Change](322-coin-change.md)
+    * [321 Create Maximum Number](322-coin-change/321-create-maximum-number.md)
   * [323 Number of Connected Components in an Undirected Graph](323-number-of-connected-components-in-an-undirected-graph.md)
   * [324 Wiggle Sort II](324-wiggle-sort-ii.md)
   * [325 Maximum Size Subarray Sum Equals k](325-maximum-size-subarray-sum-equals-k.md)
