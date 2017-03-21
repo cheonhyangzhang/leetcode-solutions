@@ -97,3 +97,50 @@ public class Solution {
     }
 }
 ```
+
+```java
+public class Solution {
+    public int shortestDistance(int[][] grid) {
+        if (grid == null || grid.length == 0 || grid[0].length == 0) {
+            return -1;
+        }
+        int result = Integer.MAX_VALUE, look = 0;
+        int[][] sums = new int[grid.length][grid[0].length];
+        int[][] dirs = new int[][]{{0,-1},{-1,0},{0,1},{1,0}};
+        for (int i = 0; i < grid.length; i ++) {
+            for (int j = 0; j < grid[0].length; j ++) {
+                if (grid[i][j] == 1) {
+                    result = Integer.MAX_VALUE;
+                    Queue<Integer> xs = new LinkedList<Integer>();
+                    Queue<Integer> ys = new LinkedList<Integer>();
+                    Queue<Integer> dis = new LinkedList<Integer>();
+                    xs.add(i);
+                    ys.add(j);
+                    dis.add(0);
+                    while (!xs.isEmpty()) {
+                        int x = xs.poll();
+                        int y = ys.poll();
+                        int d = dis.poll();
+                        for (int k = 0; k < dirs.length; k ++) {
+                            int nX = x + dirs[k][0];
+                            int nY = y + dirs[k][1];
+                            if (nX >= 0 && nX < grid.length && nY >= 0 && nY < grid[0].length && grid[nX][nY] == look) {
+                                grid[nX][nY] --;
+                                sums[nX][nY] += d + 1;
+                                xs.add(nX);
+                                ys.add(nY);
+                                dis.add(d + 1);
+                                result = Math.min(result, sums[nX][nY]);
+                            }
+                        }
+                    }
+                    look --;
+                }
+            }
+        }
+        
+        
+        return result == Integer.MAX_VALUE ? -1 : result;
+    }
+}
+```
