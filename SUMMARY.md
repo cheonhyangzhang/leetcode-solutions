@@ -235,6 +235,7 @@
   * [327 Count of Range Sum](303-range-sum-query---immutable/327-count-of-range-sum.md)
   * [328 Odd Even Linked List](328-odd-even-linked-list.md)
   * [329 Longest Increasing Path in a Matrix](303-range-sum-query---immutable/329-longest-increasing-path-in-a-matrix.md)
+  * [330 Patching Array](303-range-sum-query---immutable/330-patching-array.md)
   * [331 Verify Preorder Serialization of a Binary Tree](331-verify-preorder-serialization-of-a-binary-tree.md)
   * [332 Reconstruct Itinerary](332-reconstruct-itinerary.md)
   * [333 Largest BST Subtree](333-largest-bst-subtree.md)
