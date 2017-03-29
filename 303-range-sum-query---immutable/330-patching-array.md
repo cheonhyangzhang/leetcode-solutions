@@ -24,6 +24,68 @@ Return 0.
 
 ### Solutions:
 
-```java
+Memory exceeded solution
 
+```java
+public class Solution {
+    public int minPatches(int[] nums, int n) {
+        boolean[] has = new boolean[n];
+        int[] toFill = new int[1];
+        toFill[0] = n;
+        for (int i = 0; i < nums.length; i ++) {
+            if (nums[i] <= n) {
+                addElement(nums[i], has, nums, toFill, n);
+            }
+        }
+        int start = 0;
+        int count = 0;
+        while (toFill[0] != 0) {
+            while (has[start] == true) {
+                start ++;
+            }
+            addElement(start + 1, has, nums, toFill, n);
+            count ++;
+        }
+        return count;
+    }
+    private void addElement(int add, boolean[] has, int[] nums, int[] toFill, int n) {
+        Queue<Integer> added = new LinkedList<Integer>();
+        for (int j = 0; j < n; j ++) {
+            if (has[j] == true && j + add < n && has[j + add] == false) {
+                added.add(j + add);
+            }
+        }
+        while (!added.isEmpty()) {
+            has[added.poll()] = true;
+            toFill[0] --;
+        }
+        if (has[add - 1] == false) {
+            has[add - 1] = true;
+            toFill[0] --;
+        }
+    }
+}
+```
+
+Greedy working solution
+
+```java
+public class Solution {
+    public int minPatches(int[] nums, int n) {
+        long miss = 1;
+        int count = 0;
+        int i = 0;
+        while (miss <= n) {
+            if (i < nums.length && nums[i] <= miss) {
+                miss += nums[i];
+                i ++;
+            }
+            else {
+                miss += miss;
+                count ++;
+            }
+        }
+        return count;
+    }
+}
 ```
