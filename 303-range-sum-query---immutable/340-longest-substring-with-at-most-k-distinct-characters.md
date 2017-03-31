@@ -20,31 +20,21 @@ public class Solution {
         }
         for (int i = 0; i < s.length(); i ++) {
             char c = s.charAt(i);
-            if (count.size() < k) {
-                if (!count.containsKey(c)) {
-                    count.put(c, 1);
-                }        
-                else {
-                    count.put(c, count.get(c) + 1);
-                }
-                max = Math.max(max, i - start + 1);
-                continue;
-            }
-            if (count.containsKey(c)) {
-                count.put(c, count.get(c) + 1);
+            if (!count.containsKey(c)) {
+                count.put(c, 1);
             }
             else {
-                while (count.size() == k) {
-                    char tmp = s.charAt(start);
-                    if (count.get(tmp) == 1) {
-                        count.remove(tmp);
-                    }
-                    else {
-                        count.put(tmp, count.get(tmp) - 1);
-                    }
-                    start ++;
+                count.put(c, count.get(c) + 1);
+            }
+            while (count.size() > k) {
+                char tmp = s.charAt(start);
+                if (count.get(tmp) == 1) {
+                    count.remove(tmp);
                 }
-                count.put(c, 1);
+                else {
+                    count.put(tmp, count.get(tmp) - 1);
+                }
+                start ++;
             }
             max = Math.max(max, i - start + 1);
         }
