@@ -244,6 +244,7 @@
   * [337 House Robber III](337-house-robber-iii.md)
   * [338 Counting Bits](338-counting-bits.md)
   * [339 Nested List Weight Sum](339-nested-list-weight-sum.md)
+  * [340 Longest Substring with At Most K Distinct Characters](303-range-sum-query---immutable/340-longest-substring-with-at-most-k-distinct-characters.md)
   * [341 Flatten Nested List Iterator](341-flatten-nested-list-iterator.md)
   * [342 Power of Four](342-power-of-four.md)
   * [343 Integer Break](343-integer-break.md)
