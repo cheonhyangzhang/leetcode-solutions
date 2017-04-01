@@ -263,6 +263,7 @@
   * [356 Line Reflection](356-line-reflection.md)
   * [357 Count Numbers with Unique Digits](357-count-numbers-with-unique-digits.md)
   * [359 Logger Rate Limiter](359-logger-rate-limiter.md)
+    * [358 Rearrange String k Distance Apart](359-logger-rate-limiter/358-rearrange-string-k-distance-apart.md)
   * [360 Sort Transformed Array](360-sort-transformed-array.md)
   * [361 Bomb Enemy](361-bomb-enemy.md)
   * [362 Design Hit Counter](362-design-hit-counter.md)
