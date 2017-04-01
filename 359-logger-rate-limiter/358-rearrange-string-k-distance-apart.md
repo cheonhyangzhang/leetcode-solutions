@@ -86,3 +86,55 @@ public class Solution {
     }
 }
 ```
+
+```java
+public class Solution {
+    public String rearrangeString(String s, int k) {
+        if (k == 0) {
+            return s;
+        }
+        int[] count = new int[26];
+        for(int i=0; i < s.length(); i++){
+            count[s.charAt(i) - 'a'] ++;
+        }
+        PriorityQueue<Character> q = new PriorityQueue<Character>(new Comparator<Character>(){
+            public int compare(Character c1, Character c2){
+                if (count[c1 - 'a'] != count[c2 - 'a']) {
+                    return count[c2 - 'a'] - count[c1 - 'a'];
+                }
+                else {
+                    return c1 - c2;
+                }
+            }
+        });
+     
+        for (int i = 0; i < 26; i ++) {
+            if (count[i] != 0) {
+                q.add((char) (i + 'a'));
+            }
+        }
+        StringBuilder sb = new StringBuilder();
+        int len = s.length();
+        while(!q.isEmpty()){
+            int cnt = Math.min(k, len);
+            ArrayList<Character> tmp = new ArrayList<Character>();
+            for(int i=0; i < cnt; i++){
+                if(q.isEmpty())
+                    return "";
+                char c = q.poll();
+                sb.append(c);
+                count[c - 'a'] --;
+                if(count[c - 'a'] > 0){
+                    tmp.add(c);
+                }
+                len--;
+            }
+     
+            for(char c: tmp)
+                q.add(c);
+        }
+     
+        return sb.toString();
+    }
+}
+```
