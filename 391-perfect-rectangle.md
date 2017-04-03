@@ -104,7 +104,95 @@ public class Solution {
     }
 }
 ```
-
+Working solution
 ```java
-
+public class Solution {
+    public boolean isRectangleCover(int[][] rectangles) {
+        int blox = Integer.MAX_VALUE, bloy = Integer.MAX_VALUE, trix = Integer.MIN_VALUE, triy = Integer.MIN_VALUE;
+        int area = 0;
+        HashMap<String, Integer> data = new HashMap<String, Integer>();
+        for (int i = 0; i < rectangles.length; i ++) {
+            int[] rect = rectangles[i];
+            blox = Math.min(blox, rect[0]);
+            bloy = Math.min(bloy, rect[1]);
+            trix = Math.max(trix, rect[2]);
+            triy = Math.max(triy, rect[3]);
+            area += (rect[2] - rect[0]) * (rect[3] - rect[1]);
+            if (!isValid(data, rect[0] + "," + rect[1], 1)) {
+                return false;    
+            }
+            if (!isValid(data, rect[0] + "," + rect[3], 2)) {
+                return false;    
+            }
+            if (!isValid(data, rect[2] + "," + rect[1], 4)) {
+                return false;    
+            }
+            if (!isValid(data, rect[2] + "," + rect[3], 8)) {
+                return false;    
+            }
+        }
+        int count = 0;
+        for (String s:data.keySet()) {
+            int val = data.get(s);
+            if (val == 1 || val == 2 || val == 4 || val == 8) {
+                count ++;
+            }
+        }
+        return count == 4 && (trix - blox) * (triy - bloy) == area;
+    }
+    private boolean isValid(HashMap<String, Integer> data, String key, int mask) {
+        if (data.containsKey(key) && (data.get(key)&mask) != 0) {
+            return false;
+        }
+        int val = 0;
+        if (data.containsKey(key)) {
+            val = data.get(key);
+        }
+        val = val | mask;
+        data.put(key, val);
+        return true;
+    }
+}
+```
+Another working solutions.
+```java
+public class Solution {
+    public boolean isRectangleCover(int[][] rectangles) {
+        int blox = Integer.MAX_VALUE, bloy = Integer.MAX_VALUE, trix = Integer.MIN_VALUE, triy = Integer.MIN_VALUE;
+        int area = 0;
+        Set<String> points = new HashSet<String>();
+        for (int i = 0; i < rectangles.length; i ++) {
+            int[] rect = rectangles[i];
+            blox = Math.min(blox, rect[0]);
+            bloy = Math.min(bloy, rect[1]);
+            trix = Math.max(trix, rect[2]);
+            triy = Math.max(triy, rect[3]);
+            area += (rect[2] - rect[0]) * (rect[3] - rect[1]);
+            String[] ps = new String[4];
+            ps[0] = rect[0] + "," + rect[1];
+            ps[1] = rect[0] + "," + rect[3];
+            ps[2] = rect[2] + "," + rect[1];
+            ps[3] = rect[2] + "," + rect[3];
+            for (int j = 0; j < ps.length; j ++) {
+                if (points.contains(ps[j])) {
+                    points.remove(ps[j]);
+                }
+                else {
+                    points.add(ps[j]);
+                }
+            }
+        }
+        String[] ps = new String[4];
+        ps[0] = blox + "," + bloy;
+        ps[1] = blox + "," + triy;
+        ps[2] = trix + "," + bloy;
+        ps[3] = trix + "," + triy;
+        for (int i = 0; i < ps.length; i ++) {
+            if (!points.contains(ps[i])) {
+                return false;
+            }
+        }
+        return points.size() == 4 && (trix - blox) * (triy - bloy) == area;
+    }
+}
 ```
