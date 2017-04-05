@@ -306,6 +306,7 @@
   * [418 Sentence Screen Fitting](418-sentence-screen-fitting.md)
   * [421 Maximum XOR of Two Numbers in an Array](421-maximum-xor-of-two-numbers-in-an-array.md)
   * [422 Valid Word Square](422-valid-word-square.md)
+  * [425 Word Squares](425-word-squares.md)
   * [444 Sequence Reconstruction](444-sequence-reconstruction.md)
   * [447 Number of Boomerangs](447-number-of-boomerangs.md)
   * [448 Find All Numbers Disappeared in an Array](448-find-all-numbers-disappeared-in-an-array.md)
