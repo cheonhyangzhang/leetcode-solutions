@@ -19,3 +19,9 @@ Examples:
 
 "apple", ["plain", "amber", "blade"] -> "1p3" (other valid answers include "ap3", "a3e", "2p2", "3le", "3l1").
 ```
+
+### Solutions:
+
+```java
+
+```
