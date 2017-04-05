@@ -23,5 +23,85 @@ Examples:
 ### Solutions:
 
 ```java
-
+public class Solution {
+    public String minAbbreviation(String target, String[] dictionary) {
+        if (dictionary.length == 0) {
+            return target.length() + "";
+        }
+        PriorityQueue<String> q = new PriorityQueue<String>(new Comparator<String>(){
+           public int compare(String s1, String s2) {
+               return getLen(s1) - getLen(s2);
+           } 
+        });
+        dfs(q, "", 0, target);
+        while (!q.isEmpty()) {
+            String s = q.poll();
+            boolean found = false;
+            for (int i = 0; i < dictionary.length; i ++) {
+                if (isValid(s, dictionary[i])) {
+                    found = true;
+                    break;
+                }
+            }
+            if (found == false) {
+                return s;
+            }
+        }
+        return "";
+    }
+    private int getLen(String s) {
+        int count = 0;
+        boolean num = false;
+        for (int i = 0; i < s.length(); i ++) {
+           char c = s.charAt(i);
+           if (c >= '0' && c <= '9') {
+               if (num == false) {
+                   count ++;
+                   num = true;
+               }
+           }
+           else {
+               num = false;
+               count ++;
+           }
+        }
+        return count;
+    }
+    private boolean isValid(String abbr, String s) {
+        int count = 0;
+        int i = 0, j = 0;
+        for (; i < abbr.length() && j < s.length(); i ++) {
+            char c = abbr.charAt(i);
+            if (c >= '0' && c <= '9') {
+                count = count * 10 + (c - '0');
+            }
+            else {
+                j = j + count;
+                count = 0;
+                if (j >= s.length() || c != s.charAt(j)) {
+                    return false;
+                }
+                j ++;
+            }
+        }
+        return i == abbr.length() && j + count == s.length();
+    }
+    private void dfs(PriorityQueue<String> q, String prefix, int start, String w) {
+        q.add(prefix + w.substring(start));
+        if (start == w.length()) {
+            return;
+        }
+        int i = 0;
+        if (start > 0) {
+            i = start + 1;
+        }
+        while (i < w.length()) {
+            String next = prefix + w.substring(start, i);
+            for (int j = 1; j + i <= w.length(); j ++) {
+                dfs(q, next + j, i + j, w);
+            } 
+            i ++;
+        }
+    }
+}
 ```
