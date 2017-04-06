@@ -313,6 +313,7 @@
 * [Solutions 451 - 500](451-500.md)
   * [451 Sort Characters By Frequency](451-sort-characters-by-frequency.md)
   * [459 Repeated Substring Pattern](459-repeated-substring-pattern.md)
+  * [460 LFU Cache](460-lfu-cache.md)
   * [463 Island Perimeter](463-island-perimeter.md)
   * [469 Convex Polygon](469-convex-polygon.md)
   * [474 Ones and Zeroes](474-ones-and-zeroes.md)
