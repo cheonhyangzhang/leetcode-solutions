@@ -317,6 +317,7 @@
   * [463 Island Perimeter](463-island-perimeter.md)
   * [465 Optimal Account Balancing](463-island-perimeter/465-optimal-account-balancing.md)
   * [469 Convex Polygon](469-convex-polygon.md)
+  * [471 Encode String with Shortest Length](471-encode-string-with-shortest-length.md)
   * [474 Ones and Zeroes](474-ones-and-zeroes.md)
   * [475 Heaters](475-heaters.md)
   * [481 Magical String](481-magical-string.md)
