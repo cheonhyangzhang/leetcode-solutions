@@ -44,5 +44,49 @@ Therefore, person #1 only need to give person #0 $4, and all debt is settled.
 ### Solutions:
 
 ```java
-
+public class Solution {
+    public int minTransfers(int[][] transactions) {
+        int[][] trans = transactions;
+        HashMap<Integer, Integer> debts = new HashMap<Integer, Integer>();
+        for (int i = 0; i < trans.length; i ++) {
+            int give = trans[i][0];
+            int get = trans[i][1];
+            int money = trans[i][2];
+            if (!debts.containsKey(give)) {
+                debts.put(give, 0);
+            }
+            if (!debts.containsKey(get)) {
+                debts.put(get, 0);
+            }
+            debts.put(give, debts.get(give) + money);
+            debts.put(get, debts.get(get) - money);
+        }
+        int[] debtsArr = new int[debts.size()];
+        int index = 0;
+        for (Integer no:debts.keySet()) {
+            debtsArr[index ++] = debts.get(no);
+        }
+        return process(debtsArr, 0, 0);
+    }
+    private int process(int[] debts, int start, int count) {
+        int min = Integer.MAX_VALUE;
+        while (start < debts.length && debts[start] == 0) {
+            start ++;
+        }
+        for (int i = start + 1; i < debts.length; i ++) {
+            if (debts[i] == 0) {
+                continue;
+            }
+            if ((debts[start] > 0 && debts[i] < 0) || (debts[start] < 0 && debts[i] > 0)) {
+                debts[i] += debts[start];
+                min = Math.min(min, process(debts, start + 1, count + 1));
+                debts[i] -= debts[start];
+            }
+        }
+        if (min == Integer.MAX_VALUE) {
+            return count;
+        }
+        return min;
+    }
+}
 ```
