@@ -320,6 +320,7 @@
   * [471 Encode String with Shortest Length](471-encode-string-with-shortest-length.md)
   * [474 Ones and Zeroes](474-ones-and-zeroes.md)
   * [475 Heaters](475-heaters.md)
+  * [480 Sliding Window Median](480-sliding-window-median.md)
   * [481 Magical String](481-magical-string.md)
   * [482 License Key Formatting](482-license-key-formatting.md)
   * [484 Find Permutation](484-find-permutation.md)
