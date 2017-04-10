@@ -323,6 +323,7 @@
   * [480 Sliding Window Median](480-sliding-window-median.md)
   * [481 Magical String](481-magical-string.md)
   * [482 License Key Formatting](482-license-key-formatting.md)
+  * [483 Smallest Good Base](483-smallest-good-base.md)
   * [484 Find Permutation](484-find-permutation.md)
   * [485 Max Consecutive Ones](485-max-consecutive-ones.md)
   * [486 Predict the Winner](486-predict-the-winner.md)
