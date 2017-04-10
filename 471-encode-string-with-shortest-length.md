@@ -44,3 +44,34 @@ Explanation: "abbbabbbc" occurs twice, but "abbbabbbc" can also be encoded to "2
 ```
 
 ### Solutions:
+
+```java
+public class Solution {
+    public String encode(String s) {
+        String[][] dp = new String[s.length()][s.length()];
+        for (int l = 1; l <= s.length(); l ++) {
+            for (int i = 0; i + l <= s.length(); i ++) {
+                int j = i + l - 1;
+                dp[i][j] = s.substring(i, j + 1);
+                for (int k = i; k < j ; k ++) {
+                    String cand = dp[i][k] + dp[k + 1][j];
+                    if (cand.length() < dp[i][j].length()) {
+                        dp[i][j] = cand;
+                    }
+                }
+                String range = s.substring(i, j + 1);
+                String drange = range + range;
+                int cut = drange.indexOf(range, 1);
+                if (cut != -1 && cut < range.length()) {
+                    String cand = range.length() / cut + "[" + dp[i][i + cut - 1] +"]"; 
+                    if (cand.length() < dp[i][j].length()) {
+                        dp[i][j] = cand;
+                    }
+                }
+            }
+        }
+        String res = dp[0][dp.length - 1];
+        return res;
+    }
+}
+```
