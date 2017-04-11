@@ -34,5 +34,32 @@ The string representing n is always valid and will not have leading zeros.
 ### Solutions:
 
 ```java
-
+public class Solution {
+    public String smallestGoodBase(String n) {
+        long num = Long.parseLong(n);
+        for (long length = (long)(Math.log(num + 1) / Math.log(2)); length >= 2; length --) {
+            // System.out.println(length);
+            long left = 2, right = (long)Math.pow(num, 1.0 / (double)(length - 1)) + 1;
+            // System.out.println(left + " - " + right);
+            while (left <= right) {
+                long mid = (right - left) / 2 + left;
+                long sum = 0;
+                for (int i = 0; i < length; i ++) {
+                    sum = sum * mid + 1;
+                }
+                // System.out.println("Sum : " + sum);
+                if (sum == num) {
+                    return mid + "";
+                }
+                else if (sum < num) {
+                    left = mid + 1;
+                }
+                else {
+                    right = mid - 1;
+                }
+            }
+        }
+        return (num - 1) + "";
+    }
+}
 ```
