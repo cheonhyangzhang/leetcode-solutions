@@ -329,6 +329,7 @@
   * [486 Predict the Winner](486-predict-the-winner.md)
   * [487 Max Consecutive Ones II](487-max-consecutive-ones-ii.md)
   * [490 The Maze](490-the-maze.md)
+  * [493 Reverse Pairs](493-reverse-pairs.md)
   * [494 Target Sum](494-target-sum.md)
   * [498 Diagonal Traverse](498-diagonal-traverse.md)
 * [Solutions 501 - 550](solutions-501-550.md)
