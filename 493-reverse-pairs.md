@@ -23,5 +23,60 @@ All the numbers in the input array are in the range of 32-bit integer.
 ### Solutions:
 
 ```java
+public class Solution {
+    public int reversePairs(int[] nums) {
+        HashMap<Integer, Integer> index = new HashMap<Integer, Integer>();
+        int[] sorted = new int[nums.length];
+        int[] bit = new int[nums.length + 1];
+        for (int i = 0; i < nums.length; i ++) {
+            sorted[i] = nums[i];
+        }
+        Arrays.sort(sorted);
+        for (int i = 0; i < sorted.length; i ++) {
+            index.put(sorted[i], i + 1);
+        }
+        int res = 0;
+        for (int i = nums.length - 1; i >= 0; i --) {
+            int j = index(sorted, (double) nums[i]/2.0);
+            int tmp = getSum(bit, j);
+            res += tmp;
+            update(bit, index.get(nums[i]));
+        }
+        return res;
+    }
+    private int index(int[] sorted, double val) {
+        int left = 0, right = sorted.length - 1;
+        while (left <= right) {
+            int mid = (right - left) / 2 + left;
+            if (sorted[mid] >= val) {
+                right = mid - 1;
+            }
+            else {
+                left = mid + 1;
+            }
+        }
+        return right + 1;
+    }
+    private int getSum(int[] bit, int i) {
+        int res = 0;
+        while (i > 0) {
+            res += bit[i];
+            i -= (i&(-i));
+        }
+        return res;
+    }
+    private void update(int[] bit, int i) {
+        while (i < bit.length) {
+            bit[i] ++;
+            i += (i&(-i));
+        }
+    }
+}
+```
+
+
+### Solutions:
+
+```java
 
 ```
