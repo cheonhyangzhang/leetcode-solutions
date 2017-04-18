@@ -80,3 +80,46 @@ public class Solution {
 }
 ```
 
+```java
+public class Solution {
+    public int findLUSlength(String[] strs) {
+        int max = 0;
+        Arrays.sort(strs, new Comparator<String>() {
+           public int compare(String s1, String s2) {
+                if (s2.length() != s1.length()) {
+                    return s2.length() - s1.length();   
+                }
+                return s1.compareTo(s2);
+           } 
+        });
+        Set<String> pres = new HashSet<String>();
+        for (int i = 0; i < strs.length; i ++) {
+            if (i == strs.length - 1 || !strs[i].equals(strs[i + 1])) {
+                boolean valid = true;
+                for (String pre:pres) {
+                    if (isSub(strs[i], pre)) {
+                        valid = false;
+                        break;
+                    }
+                }
+                if (valid == true) {
+                    return strs[i].length();
+                }
+            }
+            pres.add(strs[i]);
+        }
+        return -1;
+    }
+    private boolean isSub(String s, String l) {
+        int j = 0;
+        for (int i = 0; i < l.length(); i ++) {
+            char c = l.charAt(i);
+            if (j == s.length()) {
+                break;
+            }
+            if (c == s.charAt(j)) j ++;
+        }
+        return j == s.length();
+    }
+}
+```
