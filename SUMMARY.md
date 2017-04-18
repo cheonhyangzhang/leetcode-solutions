@@ -341,5 +341,6 @@
   * [520 Detect Capital](solutions-501-550/520-detect-capital.md)
   * [521 Longest Uncommon Subsequence I](solutions-501-550/520-detect-capital/521-longest-uncommon-subsequence-i.md)
   * [522 Longest Uncommon Subsequence II](solutions-501-550/526-beautiful-arrangement/522-longest-uncommon-subsequence-ii.md)
+  * [524 Longest Word in Dictionary through Deleting](solutions-501-550/524-longest-word-in-dictionary-through-deleting.md)
   * [526 Beautiful Arrangement](solutions-501-550/526-beautiful-arrangement.md)
 
