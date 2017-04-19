@@ -30,5 +30,38 @@ Note:
 ### Solutions:
 
 ```java
-
+public class Solution {
+    public String findLongestWord(String s, List<String> d) {
+        Collections.sort(d, new Comparator<String>() {
+           public int compare(String s1, String s2) {
+               if (s1.length() != s2.length()) {
+                   return s2.length() - s1.length();
+               }
+               return s1.compareTo(s2);
+           } 
+        });
+        for (String str:d) {
+            if (str.length() > s.length()) {
+                continue;
+            }
+            if (isSub(str, s)) {
+                return str;
+            }
+        }
+        return "";
+    }
+    private boolean isSub(String s, String l) {
+        int j = 0;
+        for (int i = 0; i < l.length(); i ++) {
+            char c = l.charAt(i);
+            if (j == s.length()) {
+                break;
+            }
+            if (s.charAt(j) == c) {
+                j ++;
+            }
+        }
+        return j == s.length();
+    }
+}
 ```
