@@ -342,6 +342,7 @@
   * [521 Longest Uncommon Subsequence I](solutions-501-550/520-detect-capital/521-longest-uncommon-subsequence-i.md)
   * [522 Longest Uncommon Subsequence II](solutions-501-550/526-beautiful-arrangement/522-longest-uncommon-subsequence-ii.md)
   * [524 Longest Word in Dictionary through Deleting](solutions-501-550/524-longest-word-in-dictionary-through-deleting.md)
-  * [527 Word Abbreviation](solutions-501-550/527-word-abbreviation.md)
   * [526 Beautiful Arrangement](solutions-501-550/526-beautiful-arrangement.md)
+  * [527 Word Abbreviation](solutions-501-550/527-word-abbreviation.md)
+  * [530 Minimum Absolute Difference in BST](solutions-501-550/530-minimum-absolute-difference-in-bst.md)
 
