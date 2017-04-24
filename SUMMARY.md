@@ -345,4 +345,5 @@
   * [526 Beautiful Arrangement](solutions-501-550/526-beautiful-arrangement.md)
   * [527 Word Abbreviation](solutions-501-550/527-word-abbreviation.md)
   * [530 Minimum Absolute Difference in BST](solutions-501-550/530-minimum-absolute-difference-in-bst.md)
+  * [531 Lonely Pixel I](solutions-501-550/531-lonely-pixel-i.md)
 
