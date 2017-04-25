@@ -21,5 +21,34 @@ Note:
 ### Solutions:
 
 ```java
+public class Solution {
+    public int findLonelyPixel(char[][] picture) {
+        if (picture == null || picture.length == 0 || picture[0].length == 0) {
+            return 0;
+        }
+        int[] row = new int[picture.length];
+        int[] column = new int[picture[0].length];
+        for (int i = 0; i < picture.length; i ++) {
+            for (int j = 0; j < picture[0].length; j ++) {
+                if (picture[i][j] == 'B') {
+                    row[i] ++;
+                    column[j] ++;
+                }
+            }
+        }
+        int count = 0;
+        for (int i = 0; i < picture.length; i ++) {
+            for (int j = 0; j < picture[0].length; j ++) {
+                if (picture[i][j] == 'B' && row[i] == 1 && column[j] == 1) {
+                    count ++;
+                }
+            }
+        }
+        return count;
+    }
+}
+```
+
+```java
 
 ```
