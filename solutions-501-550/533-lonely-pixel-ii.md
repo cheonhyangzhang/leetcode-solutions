@@ -37,5 +37,55 @@ Note:
 ### Solutions:
 
 ```java
-
+public class Solution {
+    public int findBlackPixel(char[][] picture, int N) {
+        char[][] pic = picture;
+        if (pic == null || pic.length == 0 || pic[0].length == 0) {
+            return 0;
+        }
+        int[] row = new int[pic.length];
+        int[] col = new int[pic[0].length];
+        for (int i = 0; i < pic.length; i ++) {
+            for (int j = 0; j < pic[0].length; j ++) {
+                if (pic[i][j] == 'B') {
+                    row[i] ++;
+                    col[j] ++;
+                }
+            }
+        }
+        HashMap<String, List<Integer>> rows = new HashMap<String, List<Integer>>();
+        for (int i = 0; i < pic.length; i ++) {
+            if (row[i] != N) {
+                continue;
+            }
+            String arow = new String(pic[i]);
+            if (!rows.containsKey(arow)) {
+                rows.put(arow, new LinkedList<Integer>());
+            }
+            rows.get(arow).add(i);
+        }
+        int count = 0;
+        for (String key:rows.keySet()) {
+            List<Integer> rowIndex = rows.get(key);
+            int selected = rowIndex.size();
+            if (selected != N) {
+                continue;
+            }
+            int i = rowIndex.get(0);
+            int add = 0;
+            for (int j = 0; j < pic[0].length; j ++) {
+                if (pic[i][j] != 'B') {
+                    continue;
+                }
+                int total = col[j];
+                if (total != selected) {
+                    continue;
+                }
+                add ++;
+            }
+            count += add * selected;
+        }
+        return count;
+    }
+}
 ```
