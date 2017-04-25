@@ -74,11 +74,7 @@ public class Solution {
             int i = rowIndex.get(0);
             int add = 0;
             for (int j = 0; j < pic[0].length; j ++) {
-                if (pic[i][j] != 'B') {
-                    continue;
-                }
-                int total = col[j];
-                if (total != selected) {
+                if (pic[i][j] != 'B' || col[j] != N) {
                     continue;
                 }
                 add ++;
