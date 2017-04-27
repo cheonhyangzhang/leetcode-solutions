@@ -28,6 +28,4 @@ Questions:
 
 ### Solutions:
 
-```java
-
-```
+No coding required.
