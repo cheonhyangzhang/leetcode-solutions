@@ -346,4 +346,5 @@
   * [541 Reverse String II](solutions-501-550/541-reverse-string-ii.md)
   * [542 01 Matrix](solutions-501-550/542-01-matrix.md)
   * [543 Diameter of Binary Tree](solutions-501-550/543-diameter-of-binary-tree.md)
+  * [544 Output Contest Matches](solutions-501-550/544-output-contest-matches.md)
 
