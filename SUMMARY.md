@@ -344,4 +344,5 @@
   * [534 Design TinyURL](solutions-501-550/534-design-tinyurl.md)
   * [535 Encode and Decode TinyURL](solutions-501-550/535-encode-and-decode-tinyurl.md)
   * [541 Reverse String II](solutions-501-550/541-reverse-string-ii.md)
+  * [542 01 Matrix](solutions-501-550/542-01-matrix.md)
 
