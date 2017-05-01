@@ -41,3 +41,21 @@ Since the third round will generate the final winner, you need to output the ans
 Note:
 1. The n is in range [2, 2^12].
 2. We ensure that the input n can be converted into the form 2^k, where k is a positive integer.
+
+### Solutions:
+
+```java
+public class Solution {
+    public String findContestMatch(int n) {
+        return process(2, n, 1);
+    }
+    private String process(int length, int n, int seed) {
+        if (length > n) {
+            return seed + "";
+        }
+        String left = process(length * 2, n, seed);
+        String right = process(length * 2, n, length - (seed - 1));
+        return "(" + left + "," + right + ")";
+    }
+}
+```
