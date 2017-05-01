@@ -40,4 +40,4 @@ Since the third round will generate the final winner, you need to output the ans
 
 Note:
 1. The n is in range [2, 2^12].
-2. We ensure that the input n can be converted into the form 2k, where k is a positive integer.
+2. We ensure that the input n can be converted into the form 2^k, where k is a positive integer.
