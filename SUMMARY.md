@@ -345,4 +345,5 @@
   * [535 Encode and Decode TinyURL](solutions-501-550/535-encode-and-decode-tinyurl.md)
   * [541 Reverse String II](solutions-501-550/541-reverse-string-ii.md)
   * [542 01 Matrix](solutions-501-550/542-01-matrix.md)
+  * [543 Diameter of Binary Tree](solutions-501-550/543-diameter-of-binary-tree.md)
 
