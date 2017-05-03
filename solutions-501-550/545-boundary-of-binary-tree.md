@@ -135,3 +135,65 @@ public class Solution {
     }
 }
 ```
+
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public List<Integer> boundaryOfBinaryTree(TreeNode root) {
+        List<Integer> res = new LinkedList<Integer>();
+        if (root == null) {
+            return res;
+        }
+        res.add(root.val);
+        left(root.left, res);
+        right(root.right, res);
+        return res;
+    }
+    private void left(TreeNode node, List<Integer> res) {
+        if (node == null) {
+            return;
+        }
+        res.add(node.val);
+        if (node.left != null) {
+            left(node.left, res);
+            inorder(node.right, res);
+        }
+        else {
+            left(node.right, res);
+        }
+    }
+    private void right(TreeNode node, List<Integer> res) {
+        if (node == null) {
+            return;
+        }
+        if (node.right != null) {
+            inorder(node.left, res);
+            right(node.right, res);
+        }
+        else {
+            right(node.left, res);
+        }
+        res.add(node.val);
+    }
+    private void inorder(TreeNode node, List<Integer> res) {
+        if (node == null) {
+            return;
+        }
+        if (node.left == null && node.right == null) {
+            res.add(node.val);
+        }
+        else {
+            inorder(node.left, res);
+            inorder(node.right, res);
+        }
+    }
+}
+```
