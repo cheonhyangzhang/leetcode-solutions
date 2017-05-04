@@ -348,4 +348,5 @@
   * [543 Diameter of Binary Tree](solutions-501-550/543-diameter-of-binary-tree.md)
   * [544 Output Contest Matches](solutions-501-550/544-output-contest-matches.md)
   * [545 Boundary of Binary Tree](solutions-501-550/545-boundary-of-binary-tree.md)
+  * [549 Binary Tree Longest Consecutive Sequence II](solutions-501-550/549-binary-tree-longest-consecutive-sequence-ii.md)
 
