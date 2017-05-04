@@ -20,3 +20,9 @@ Example 2:
 Input: "PPALLL"
 Output: False
 ```
+
+### Solutions:
+
+```java
+
+```
