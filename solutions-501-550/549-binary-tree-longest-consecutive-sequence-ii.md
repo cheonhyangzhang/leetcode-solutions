@@ -28,5 +28,61 @@ Note: All the values of tree nodes are in the range of [-1e7, 1e7].
 
 ### Solutions:
 ```java
-
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    private class Node {
+        private int incr;
+        private int decr;
+        public Node() {
+            incr = 0;
+            decr = 0;
+        }
+    }
+    public int longestConsecutive(TreeNode root) {
+        int[] res = new int[1];
+        res[0] = 0;
+        process(root, res);
+        return res[0];
+    }
+    private Node process(TreeNode node, int[] res) {
+        if (node == null) {
+            return new Node();
+        }
+        Node left = process(node.left, res);
+        Node right = process(node.right, res);
+        Node curr = new Node();
+        int sum_incr = 1;
+        int sum_decr = 1;
+        if (node.left != null) {
+            if (node.left.val == node.val - 1) {
+                curr.decr = Math.max(curr.decr, left.decr + 1);
+                sum_incr += left.decr + 1;
+            }
+            if (node.left.val == node.val + 1) {
+                curr.incr = Math.max(curr.incr, left.incr + 1);
+                sum_decr += left.incr + 1;
+            }
+        }
+        if (node.right != null) {
+            if (node.right.val == node.val - 1) {
+                curr.decr = Math.max(curr.decr, right.decr + 1);
+                sum_decr += right.decr + 1;
+            }
+            if (node.right.val == node.val + 1) {
+                curr.incr = Math.max(curr.incr, right.incr + 1);
+                sum_incr += right.incr + 1;
+            }
+        }
+        res[0] = Math.max(res[0], Math.max(sum_incr, sum_decr));
+        return curr;
+    }
+}
 ```
