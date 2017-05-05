@@ -24,5 +24,38 @@ Output: False
 ### Solutions:
 
 ```java
+public class Solution {
+    public boolean checkRecord(String s) {
+        boolean hasA = false;
+        int countL = 0;
+        for (int i = 0; i < s.length(); i ++) {
+            char c = s.charAt(i);
+            if (c == 'A') {
+                if (hasA == true) {
+                    return false;
+                }
+                hasA = true;
+            }
+            if (c == 'L') {
+                countL ++;
+                if (countL == 3) {
+                    return false;
+                }
+            }
+            else {
+                countL = 0;
+            }
+        }
+        return true;
+    }
+}
+```
 
+
+```java
+public class Solution {
+    public boolean checkRecord(String s) {
+        return !s.matches(".*A.*A.*|.*LLL.*");
+    }
+}
 ```
