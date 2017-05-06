@@ -353,4 +353,5 @@
   * [551 Student Attendance Record I](solutions-551-600/551-student-attendance-record-i.md)
   * [552 Student Attendance Record II](solutions-551-600/552-student-attendance-record-ii.md)
   * [560 Subarray Sum Equals K](solutions-551-600/560-subarray-sum-equals-k.md)
+  * [562 Longest Line of Consecutive One in Matrix](solutions-551-600/562-longest-line-of-consecutive-one-in-matrix.md)
 
