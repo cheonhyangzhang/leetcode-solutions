@@ -1,4 +1,4 @@
-# 165 LeetCode Java: Compare Version Numbers 
+# 165 Compare Version Numbers 
 
 ### Problem:
 Compare two version numbers version1 and version2.

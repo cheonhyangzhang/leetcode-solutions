@@ -143,6 +143,7 @@
   * [162 Find Peak Element – Medium](162-find-peak-element-–-medium.md)
   * [163 LeetCode Java: Missing Ranges ](163-leetcode-java-missing-ranges.md)
   * [165 LeetCode Java: Compare Version Numbers ](165-leetcode-java-compare-version-numbers.md)
+  * [166  Fraction to Recurring Decimal ](166-fraction-to-recurring-decimal.md)
 * [Solutions 201 - 250](solutions-201---250.md)
   * [201 LeetCode Java : Bitwise AND of Numbers Range – Medium](201-leetcode-java--bitwise-and-of-numbers-range-–-medium.md)
   * [202 LeetCode Java: Happy Number – Easy](202-leetcode-java-happy-number-–-easy.md)
