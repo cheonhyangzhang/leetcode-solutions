@@ -146,6 +146,7 @@
   * [166  Fraction to Recurring Decimal ](166-fraction-to-recurring-decimal.md)
   * [167 Two Sum II – Input array is sorted – Medium](167-two-sum-ii-input-array-is-sorted-medium.md)
   * [168 Excel Sheet Column Title – Easy](168-excel-sheet-column-title-easy.md)
+  * [169 Majority Element – Easy](169-majority-element-easy.md)
 * [Solutions 201 - 250](solutions-201---250.md)
   * [201 LeetCode Java : Bitwise AND of Numbers Range – Medium](201-leetcode-java--bitwise-and-of-numbers-range-–-medium.md)
   * [202 LeetCode Java: Happy Number – Easy](202-leetcode-java-happy-number-–-easy.md)
