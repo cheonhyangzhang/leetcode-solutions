@@ -1,4 +1,4 @@
-# 163 LeetCode Java: Missing Ranges 
+# 163 Missing Ranges 
 
 ### Problem
 Given a sorted integer array where the range of elements are in the inclusive range [lower, upper], return its missing ranges.
