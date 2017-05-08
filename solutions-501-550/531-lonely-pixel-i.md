@@ -48,7 +48,3 @@ public class Solution {
     }
 }
 ```
-
-```java
-
-```
