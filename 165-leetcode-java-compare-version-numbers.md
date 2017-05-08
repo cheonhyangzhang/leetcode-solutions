@@ -64,7 +64,7 @@ public class Solution {
     }//compareVersion
 }
 ```
-
+#### Updated: 12/27/2016
 Improve logic:
 ```java
 public class Solution {
