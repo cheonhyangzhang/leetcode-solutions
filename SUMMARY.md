@@ -155,6 +155,7 @@
   * [186 Reverse Words in a String II – Medium](186-reverse-words-in-a-string-ii-medium.md)
   * [187 Repeated DNA Sequences – Medium](187-repeated-dna-sequences-medium.md)
   * [189 Rotate Array – Easy](189-rotate-array-easy.md)
+  * [190 Java: Reverse Bits – Easy](190-java-reverse-bits-easy.md)
 * [Solutions 201 - 250](solutions-201---250.md)
   * [201 LeetCode Java : Bitwise AND of Numbers Range – Medium](201-leetcode-java--bitwise-and-of-numbers-range-–-medium.md)
   * [202 LeetCode Java: Happy Number – Easy](202-leetcode-java-happy-number-–-easy.md)
