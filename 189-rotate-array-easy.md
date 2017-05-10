@@ -22,6 +22,8 @@ Solution 3: Replace the element step by step. Start with element with index 0, k
 
 ### Solutions:
 
+Three solutions are rotate1, rotate2 and rotate3 functions.
+
 ```java
 public class Solution {
     public void rotate(int[] nums, int k) {
