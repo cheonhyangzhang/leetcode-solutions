@@ -149,6 +149,7 @@
   * [169 Majority Element – Easy](169-majority-element-easy.md)
   * [170 Two Sum III – Data structure design – Easy](170-two-sum-iii-data-structure-design-easy.md)
   * [171 Excel Sheet Column Number – Easy](171-excel-sheet-column-number-easy.md)
+  * [172 Factorial Trailing Zeroes – Easy](172-factorial-trailing-zeroes-easy.md)
 * [Solutions 201 - 250](solutions-201---250.md)
   * [201 LeetCode Java : Bitwise AND of Numbers Range – Medium](201-leetcode-java--bitwise-and-of-numbers-range-–-medium.md)
   * [202 LeetCode Java: Happy Number – Easy](202-leetcode-java-happy-number-–-easy.md)
