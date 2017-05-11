@@ -173,6 +173,7 @@
   * [210 LeetCode Java: Course Schedule II – Medium](210-leetcode-java-course-schedule-ii-–-medium.md)
   * [211 LeetCode Java: Add and Search Word – Data structure design – Medium](211-leetcode-java-add-and-search-word-–-data-structure-design-–-medium.md)
   * [212 Word Search II](212-word-search-ii.md)
+  * [213 House Robber II – Medium](213-house-robber-ii-medium.md)
   * [214 Shortest Palindrome](212-word-search-ii/214-shortest-palindrome.md)
   * [224 Basic Calculator](218-the-skyline-problem/224-basic-calculator.md)
   * [218 The Skyline Problem](218-the-skyline-problem.md)
