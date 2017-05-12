@@ -17,7 +17,13 @@ Some examples:
 Note: Do not use the eval built-in library function.
 
 ### Thoughts:
+The idea is to always calculate * and / first, I am using regular expression to extract numbers and operators.
+Notice that when you have String s= ".ab.", then call s.split("\\.") will end up with a String[] which is {“”,”ab”}.
 
+When iterating over the operators, when meet a ‘+’ or ‘-‘, then we can pass the next number into stack, notice that if we meet ‘-‘, we push the negative value of that number.
+When meet a ‘*’ or ‘/’ it means we need to calculate this first, pop one element from the stack and use it to calculate with the next number. Then push the result back to the stack. If the popped element is <0, then the result of * or / is still negative which keeps everything correct.
+
+Extracting numbers and ops can be done by iterating instead of using regex as well.
 
 ### Solutions:
 
