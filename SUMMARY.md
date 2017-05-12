@@ -190,6 +190,7 @@
   * [248 LeetCode Java: Different Ways to Add Parentheses – Hard](248-leetcode-java-different-ways-to-add-parentheses-–-hard.md)
   * [249 LeetCode Java: Group Shifted Strings – Easy](249-leetcode-java-group-shifted-strings-–-easy.md)
   * [250 LeetCode Java: Count Univalue Subtrees – Medium](250-leetcode-java-count-univalue-subtrees-–-medium.md)
+  * [225 Implement Stack using Queues – Easy](225-implement-stack-using-queues-easy.md)
 * [Solutions 251 - 300](solutions-251---300.md)
   * [251 LeetCode Java: Count Univalue Subtrees – Medium](251-leetcode-java-count-univalue-subtrees-–-medium.md)
   * [252 LeetCode Java: Meeting Rooms – Easy](252-leetcode-java-meeting-rooms-–-easy.md)
