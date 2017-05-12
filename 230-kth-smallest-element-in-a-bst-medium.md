@@ -98,3 +98,41 @@ public class Solution {
     }
 }
 ```
+
+Min heap and max heap.
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    PriorityQueue<Integer> min = new PriorityQueue<Integer>();
+    PriorityQueue<Integer> max = new PriorityQueue<Integer>(11, Collections.reverseOrder());
+ 
+    public int kthSmallest(TreeNode root, int k) {
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        TreeNode p = root;
+        while (p != null || stack.size() > 0) {
+            if (p != null) {
+                stack.push(p);
+                p = p.left;
+            } else {
+                TreeNode node = stack.pop();
+                if (max.size() < k) {
+                    max.add(node.val);
+                }
+                else {
+                    min.add(node.val);
+                }
+                p = node.right;
+            }
+        }
+        return max.peek();
+    }
+}
+```
