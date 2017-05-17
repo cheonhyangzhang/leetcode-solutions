@@ -204,6 +204,7 @@
   * [249 LeetCode Java: Group Shifted Strings – Easy](249-leetcode-java-group-shifted-strings-–-easy.md)
   * [250 LeetCode Java: Count Univalue Subtrees – Medium](250-leetcode-java-count-univalue-subtrees-–-medium.md)
   * [240 Search a 2D Matrix II – Medium](240-search-a-2d-matrix-ii-medium.md)
+  * [241 Different Ways to Add Parentheses – Medium](241-different-ways-to-add-parentheses-medium.md)
 * [Solutions 251 - 300](solutions-251---300.md)
   * [251 LeetCode Java: Count Univalue Subtrees – Medium](251-leetcode-java-count-univalue-subtrees-–-medium.md)
   * [252 LeetCode Java: Meeting Rooms – Easy](252-leetcode-java-meeting-rooms-–-easy.md)
