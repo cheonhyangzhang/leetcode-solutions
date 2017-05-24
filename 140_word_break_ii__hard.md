@@ -63,7 +63,7 @@ public class Solution {
 }
 ```
 
-First verision:
+First version:
 
 ```java
 public class Solution {
