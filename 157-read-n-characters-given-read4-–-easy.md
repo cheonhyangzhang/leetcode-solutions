@@ -21,7 +21,7 @@ So read() function is reading at most n characters from a file ( we don’t know
 ```java
 /* The read4 API is defined in the parent class Reader4.
       int read4(char[] buf); */
- 
+
 public class Solution extends Reader4 {
     /**
      * @param buf Destination buffer
@@ -31,15 +31,19 @@ public class Solution extends Reader4 {
     public int read(char[] buf, int n) {
         int offset = 0;
         char[] buf4 = new char[4];
+        int buf4index = 0;
+        int buf4size = 0;
         while(offset < n) {
-            int count = read4(buf4);
-            if (count == 0) {
-                break;
+            if (buf4index >= buf4size) {
+                buf4size = read4(buf4);
+                buf4index = 0;
+                if (buf4size == 0) {
+                    break;
+                }
             }
-            for (int i = 0; i < count && offset < n; i ++) {
-                buf[offset] = buf4[i];
-                offset ++;
-            }
+            buf[offset] = buf4[buf4index];
+            offset ++;
+            buf4index ++;
         }
         return offset;
     }
