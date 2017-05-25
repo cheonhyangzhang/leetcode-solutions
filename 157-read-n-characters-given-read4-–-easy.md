@@ -31,7 +31,7 @@ public class Solution extends Reader4 {
     public int read(char[] buf, int n) {
         int offset = 0;
         char[] buf4 = new char[4];
-        while(true) {
+        while(offset < n) {
             int count = read4(buf4);
             if (count == 0) {
                 break;
