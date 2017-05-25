@@ -13,7 +13,7 @@ Because, when using a recursive solution, it uses stack to store the state of th
 In the second solution, it’s using a iterative way, but still we need to deal with the integer overflow case.
 
 ### Solutions:
-Recursion:
+
 ```java
 public class Solution {
     public List<String> findMissingRanges(int[] nums, int lower, int upper) {
