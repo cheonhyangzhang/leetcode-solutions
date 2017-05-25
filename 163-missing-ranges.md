@@ -22,7 +22,7 @@ public class Solution {
             findRange(result, lower, upper);
             return result;
         }
-        if (nums[0] - 1 != Integer.MAX_VALUE) {
+        if (nums[0] != Integer.MIN_VALUE) {
             findRange(result, lower, nums[0] - 1);
         }
         for (int i = 0; i < nums.length - 1; i ++) {
@@ -31,10 +31,10 @@ public class Solution {
             }
             findRange(result, nums[i] + 1, nums[i+1] - 1);
         }
-        if (nums[nums.length - 1] + 1 != Integer.MIN_VALUE) {
+        if (nums[nums.length - 1] != Integer.MAX_VALUE) {
             findRange(result, nums[nums.length - 1] + 1, upper);
         }
-         
+
         return result;
     }
     private void findRange(List<String> result, int low, int up) {
