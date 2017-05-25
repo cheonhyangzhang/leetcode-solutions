@@ -48,7 +48,7 @@ public class Solution {
 }
 ```
 Updated: 12/24/2016
-Alternative recursion solution:
+Alternative solution:
 
 ```java
 public class Solution {
