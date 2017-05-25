@@ -1,4 +1,4 @@
-# 248 LeetCode Java: Different Ways to Add Parentheses – Hard
+# 248 Different Ways to Add Parentheses – Hard
 
 ### Problem:
 
