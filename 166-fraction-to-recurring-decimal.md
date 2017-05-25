@@ -46,7 +46,7 @@ public class Solution {
                 break;
             }
             index.put(n, result.length());
-            result += Math.abs(n*10/d);
+            result += n*10/d;
             n = n*10 % d;
         }
         if (neg == true) {
