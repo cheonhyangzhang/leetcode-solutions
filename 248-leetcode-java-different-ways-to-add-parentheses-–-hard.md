@@ -1,4 +1,4 @@
-# 248 Different Ways to Add Parentheses – Hard
+# 248 Strobogrammatic Number III
 
 ### Problem:
 
