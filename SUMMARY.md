@@ -205,7 +205,6 @@
   * [243 Shortest Word Distance – Easy](243-shortest-word-distance-easy.md)
   * [244 Shortest Word Distance II – Medium](244-shortest-word-distance-ii-medium.md)
   * [246 Strobogrammatic Number – Easy](246-strobogrammatic-number-easy.md)
-  * [247 LeetCode Java: Strobogrammatic Number II – Medium](247-strobogrammatic-number-ii-medium.md)
   * [247 Strobogrammatic Number II](247-strobogrammatic-number-ii.md)
   * [248 LeetCode Java: Different Ways to Add Parentheses – Hard](248-leetcode-java-different-ways-to-add-parentheses-–-hard.md)
   * [249 LeetCode Java: Group Shifted Strings – Easy](249-leetcode-java-group-shifted-strings-–-easy.md)
