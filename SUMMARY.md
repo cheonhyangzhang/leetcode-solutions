@@ -341,6 +341,7 @@
   * [397 Integer Replacement](397-integer-replacement.md)
   * [399 Evaluate Division](399-evaluate-division.md)
   * [400 Nth Digit](400-nth-digit.md)
+  * [380 Insert Delete GetRandom O\(1\)](380-insert-delete-getrandom-o1.md)
 * Solutions 401 - 450
   * [401 Binary Watch](401-binary-watch.md)
   * [402 Remove K Digits](402-remove-k-digits.md)
