@@ -38,7 +38,11 @@ public class Solution {
             return true;
         }
         int mask = 1 << 31;
-        for (int i = 0; i >> 1;
+        for (int i = 0; i < 31; i ++) {
+            if ((mask&n) != 0) {
+                break;
+            }
+            mask = mask >>> 1;
         }
         if ((n&(~mask)) == 0) {
             return true;
