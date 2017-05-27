@@ -331,7 +331,7 @@
   * [377 Combination Sum IV](377-combination-sum-iv.md)
   * [378 Kth Smallest Element in a Sorted Matrix](378-kth-smallest-element-in-a-sorted-matrix.md)
   * [379 Design Phone Directory](379-design-phone-directory.md)
-  * [380 Insert Delete GetRandom O\(1\).md\)](380-insert-delete-getrandom-o%281)
+  * [380 Insert Delete GetRandom O\(1\)](380-insert-delete-getrandom-o1.md)
   * [382 Linked List Random Node](382-linked-list-random-node.md)
   * [388 Longest Absolute File Path](388-longest-absolute-file-path.md)
   * [389 Find the Difference](389-find-the-difference.md)
@@ -341,7 +341,6 @@
   * [397 Integer Replacement](397-integer-replacement.md)
   * [399 Evaluate Division](399-evaluate-division.md)
   * [400 Nth Digit](400-nth-digit.md)
-  * [380 Insert Delete GetRandom O\(1\)](380-insert-delete-getrandom-o1.md)
 * Solutions 401 - 450
   * [401 Binary Watch](401-binary-watch.md)
   * [402 Remove K Digits](402-remove-k-digits.md)
