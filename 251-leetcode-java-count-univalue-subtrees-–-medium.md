@@ -41,7 +41,7 @@ public class Vector2D implements Iterator<Integer> {
     private void check() {
         if (hi == null || !hi.hasNext()) {
             while (vi.hasNext()) {
-            hi = vi.next().iterator();
+                hi = vi.next().iterator();
                 if (hi.hasNext()) {
                     return;
                 }
