@@ -1,5 +1,6 @@
 # 248 Strobogrammatic Number III
 
+
 ### Problem:
 
 A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).
@@ -99,6 +100,35 @@ public class Solution {
             n = n - 2;
         }     
         return result;
+    }
+}
+```
+
+```java
+public class Solution {
+    private int res = 0;
+    public int strobogrammaticInRange(String low, String high) {
+        for (int i = low.length(); i <= high.length(); ++i) {
+            find(low, high, "", i);
+            find(low, high, "0", i);
+            find(low, high, "1", i);
+            find(low, high, "8", i);
+        }
+        return res;
+    }
+    void find(String low, String high, String path, int len) {
+        if (path.length() >= len) {
+            if (path.length() != len || (len != 1 && path.charAt(0) == '0')) return;
+            if ((len == low.length() && path.compareTo(low) < 0) || (len == high.length() && path.compareTo(high) > 0)) {
+                return;
+            }
+            ++res;
+        }
+        find(low, high, "0" + path + "0", len);
+        find(low, high, "1" + path + "1", len);
+        find(low, high, "6" + path + "9", len);
+        find(low, high, "8" + path + "8", len);
+        find(low, high, "9" + path + "6", len);
     }
 }
 ```
