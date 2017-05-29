@@ -1,7 +1,6 @@
 # 257 Binary Tree Paths - Easy
 
 ### Problem
-<pre>
 Given a binary tree, return all root-to-leaf paths.
 
 For example, given the following binary tree:
@@ -14,7 +13,6 @@ For example, given the following binary tree:
 All root-to-leaf paths are:
 
 ["1->2->5", "1->3"]
-</pre>
 
 ### Solutions:
 
