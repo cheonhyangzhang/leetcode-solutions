@@ -1,4 +1,4 @@
-# 252LeetCode Java: Meeting Rooms II – Easy
+# 252 LeetCode Java: Meeting Rooms II – Easy
 
 ### Problem:
 
