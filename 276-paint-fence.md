@@ -13,26 +13,18 @@ n and k are non-negative integers.
 
 ### Solutions:
 
-```java
-public class Solution {
+```javapublic class Solution {
     public int numWays(int n, int k) {
-        if (n == 0) {
+        if (n == 0) 
             return 0;
+        int same = 0, diff = k;
+        int res = same + diff;
+        for (int i = 2; i <= n; ++i) {
+            same = diff;
+            diff = res * (k - 1);
+            res = same + diff;
         }
-        if (n == 1) {
-            return k;
-        }
-        if (n == 2) {
-            return k * k;
-        }
-        int one = k, two = k * k;
-        int result = 0;
-        for (int i = 2; i < n; i ++) {
-            result = (k - 1) * (one + two);
-            one = two;
-            two = result;
-        }
-        return result;
+        return res;
     }
 }
 ```
