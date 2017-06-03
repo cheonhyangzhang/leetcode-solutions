@@ -41,11 +41,6 @@ public class Solution {
 public class Solution {
     public void wiggleSort(int[] nums) {
         int median = quickSelect(nums, 0, nums.length - 1, (nums.length + 1)/ 2);
-        System.out.println("median :" + median);
-        for (int i = 0; i < nums.length; i ++) {
-            System.out.print(nums[i] + ", ");
-        }
-        
         int i = 0, j = 0, k = nums.length - 1;
         while (i <= k) {
             int it = index(i, nums.length), jt = index(j, nums.length), kt = index(k, nums.length);
