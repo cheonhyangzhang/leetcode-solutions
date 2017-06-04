@@ -4,7 +4,7 @@
 
 <pre>
 One way to serialize a binary tree is to use pre-order traversal. When we encounter a non-null node, we record the node's value. If it is a null node, we record using a sentinel value such as #.
-
+```
      _9_
     /   \
    3     2
@@ -12,6 +12,7 @@ One way to serialize a binary tree is to use pre-order traversal. When we encoun
  4   1  #  6
 / \ / \   / \
 # # # #   # #
+```
 For example, the above binary tree can be serialized to the string "9,3,4,#,#,1,#,#,2,#,6,#,#", where # represents a null node.
 
 Given a string of comma separated values, verify whether it is a correct preorder traversal serialization of a binary tree. Find an algorithm without reconstructing the tree.
