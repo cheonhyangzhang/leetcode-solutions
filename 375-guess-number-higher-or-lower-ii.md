@@ -54,8 +54,6 @@ public class Solution {
                 else {
                     int min = Integer.MAX_VALUE;
                     for (int j = i + 1; j <= i + k - 1; j ++) {
-                        if (k == 5 && i == 1) {
-                        }
                         min = Math.min(min, Math.max(dp[i][j - 1], dp[j + 1][i + k]) + j);
                     }
                     dp[i][i + k] = min;
