@@ -50,7 +50,7 @@ public class Solution {
 }
 ```
 
-```
+```java
 public class Solution {
     public String removeKdigits(String num, int k) {
         if (num.length() == k) {
