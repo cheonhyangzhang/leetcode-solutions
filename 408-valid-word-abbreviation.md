@@ -49,13 +49,11 @@ public class Solution {
                     count = 0;
                 }
                 if (j >= word.length() || abbr.charAt(i) != word.charAt(j)) {
-                    System.out.println("return in loop");
                     return false;
                 }
                 j ++;
             }
         }
-        System.out.println("return last i: " + i + " and j: " + j);
         
         return i == abbr.length() && j + count == word.length();
     }
