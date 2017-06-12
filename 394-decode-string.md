@@ -84,7 +84,7 @@ public class Solution {
                 res += s.charAt(i);
             }
         }
-        return strs.empty() ? res : strs.peek();
+        return res;
     }
 }
 ```
