@@ -88,7 +88,7 @@ public class Solution {
                 k ++;
             }
         }
-        return count * (rows / i);
+        return count;
     }
 }
 ```
