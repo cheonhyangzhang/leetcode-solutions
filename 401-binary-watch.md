@@ -69,7 +69,7 @@ public class Solution {
 }
 ```
 
-```
+```java
 public class Solution {
     public List<String> readBinaryWatch(int num) {
         List<String> result = new ArrayList<String>();
