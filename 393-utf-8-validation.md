@@ -40,3 +40,34 @@ The first 3 bits are all one's and the 4th bit is 0 means it is a 3-bytes charac
 The next byte is a continuation byte which starts with 10 and that's correct.
 But the second continuation byte does not start with 10, so it is invalid.
 ```
+
+```java
+public class Solution {
+    public boolean validUtf8(int[] data) {
+        int count = 0;
+        for (int i = 0; i < data.length; i ++) {
+            if (count == 0) {
+                if (data[i]>>>5 == 0b110) {
+                    count = 1;
+                }
+                else if (data[i]>>>4 == 0b1110) {
+                    count = 2;
+                }
+                else if (data[i]>>>3 == 0b11110) {
+                    count = 3;
+                }
+                else if (data[i]>>>7 == 1) {
+                    return false;
+                }
+            }
+            else {
+                if (data[i]>>>6 != 2) {
+                    return false;
+                }
+                count --;
+            }
+        }
+        return count == 0;
+    }
+}
+```
