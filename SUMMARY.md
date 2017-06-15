@@ -389,6 +389,7 @@
   * [465 Optimal Account Balancing](solutions-451-500/465-optimal-account-balancing.md)
   * [469 Convex Polygon](solutions-451-500/469-convex-polygon.md)
   * [471 Encode String with Shortest Length ](solutions-451-500/471-encode-string-with-shortest-length.md)
+  * 474 Ones and Zeroes
 * [Solutions 551 - 600](solutions-551-600.md)
   * [551 Student Attendance Record I](solutions-551-600/551-student-attendance-record-i.md)
   * [552 Student Attendance Record II](solutions-551-600/552-student-attendance-record-ii.md)
