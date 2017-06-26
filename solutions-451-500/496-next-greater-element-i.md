@@ -54,3 +54,25 @@ public class Solution {
 }
 ```
 
+```java
+public class Solution {
+    public int[] nextGreaterElement(int[] findNums, int[] nums) {
+        HashMap<Integer, Integer> nextgreat = new HashMap<Integer, Integer>();
+        Stack<Integer> stack = new Stack<Integer>();
+        int[] result = new int[findNums.length];
+        for (int i = 0; i < nums.length; i ++) {
+            while (!stack.isEmpty() && stack.peek() < nums[i]) {
+                nextgreat.put(stack.pop(), nums[i]);
+            }
+            stack.push(nums[i]);
+        }
+        for (int i = 0; i < findNums.length; i ++) {
+            result[i] = -1;
+            if (nextgreat.containsKey(findNums[i])) {
+                result[i] = nextgreat.get(findNums[i]);
+            }
+        }
+        return result;
+    }
+}
+```
