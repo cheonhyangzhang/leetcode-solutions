@@ -1,4 +1,4 @@
-# 498. Diagonal Traverse
+# 498 Diagonal Traverse
 
 ### Problem
 
