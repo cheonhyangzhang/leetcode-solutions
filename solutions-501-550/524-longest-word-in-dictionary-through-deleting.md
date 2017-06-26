@@ -65,3 +65,28 @@ public class Solution {
     }
 }
 ```
+
+```java
+public class Solution {
+    public String findLongestWord(String s, List<String> d) {
+        String result = "";
+        for (String str:d) {
+            if (str.length() > s.length()) {
+                continue;
+            }
+            int i = 0;
+            for (int j = 0; j < s.length(); j ++) {
+                if (i < str.length() && s.charAt(j) == str.charAt(i)) {
+                    i ++;
+                }
+            }
+            if (i == str.length() && str.length() >= result.length()) {
+                if (str.length() > result.length() || str.compareTo(result) < 0) {
+                    result = str;
+                }
+            }
+        }
+        return result;
+    }
+}
+```
