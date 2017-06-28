@@ -72,6 +72,7 @@ public class Codec {
         int id = nextid;
         for (int i = 0; i < 6; i ++) {
             int j = id % 62;
+            id = id / 62;
             sb.insert(0, seed.charAt(j));
         }
         String res = sb.toString();
