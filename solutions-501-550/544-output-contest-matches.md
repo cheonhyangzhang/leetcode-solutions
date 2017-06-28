@@ -59,3 +59,25 @@ public class Solution {
     }
 }
 ```
+
+```java
+public class Solution {
+    public String findContestMatch(int n) {
+        String[] match = new String[n];
+        for (int i = 0; i < n; i ++) {
+            match[i] = (i + 1) + "";
+        }
+        process(n, match);
+        return match[0];
+    }
+    private void process(int n, String[] match) {
+        if (n == 1) {
+            return;
+        }
+        for (int i = 0; i < n/2; i ++) {
+            match[i] = "(" + match[i] + "," + match[n - i - 1] + ")";
+        }
+        process(n/2, match);
+    }
+}
+```
