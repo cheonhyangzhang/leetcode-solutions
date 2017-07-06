@@ -65,7 +65,7 @@ public class Solution {
                     if (j < n - 1) {
                         dp[i][j][3] = dp[i - 1][j + 1][3] + 1;
                     }
-                    res = Math.max(res, dp[i][j][0])https://www.gitbook.com/book/cheonhyangzhang/leetcode-solutions/edit#;
+                    res = Math.max(res, dp[i][j][0]);
                     res = Math.max(res, dp[i][j][1]);
                     res = Math.max(res, dp[i][j][2]);
                     res = Math.max(res, dp[i][j][3]);
