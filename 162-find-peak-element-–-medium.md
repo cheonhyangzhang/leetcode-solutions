@@ -19,7 +19,7 @@ Note:Your solution should be in logarithmic complexity.
 
 Trivial way is to use a O(n) iteration, then a peak element could be found.
 
-However, a better solution with O(nlogn) exists. A modified binary search. When hit the mid, move to the lower half.
+However, a better solution with O(nlogn) exists. A modified binary search. When hit the mid, move to the higher half.
 
 Binary search could be implemented in a recursion way or in an iterative way. Below is using an iterative way.
 
