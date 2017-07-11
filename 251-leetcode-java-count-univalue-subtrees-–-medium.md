@@ -1,4 +1,4 @@
-# 251 LeetCode Java: Count Univalue Subtrees – Medium
+# 251 Flatten 2D Vector
 
 #Problem:
 
@@ -6,18 +6,17 @@ Implement an iterator to flatten a 2d vector.
 
 For example,
 Given 2d vector =
-
+```
 [
   [1,2],
   [3],
   [4,5,6]
 ]
+```
 By calling next repeatedly until hasNext returns false, the order of elements returned by next should be: [1,2,3,4,5,6].
 
-Hint:
-
-How many variables do you need to keep track?
- 
+Follow up:
+As an added challenge, try to code it using only iterators in C++ or iterators in Java. 
 
 # Thoughts:
 
@@ -41,7 +40,7 @@ public class Vector2D implements Iterator<Integer> {
     private void check() {
         if (hi == null || !hi.hasNext()) {
             while (vi.hasNext()) {
-                hi = vi.next().iterator();
+            hi = vi.next().iterator();
                 if (hi.hasNext()) {
                     return;
                 }
@@ -53,7 +52,7 @@ public class Vector2D implements Iterator<Integer> {
         check();
         return hi.next();
     }
- 
+
     @Override
     public boolean hasNext() {
         check();
@@ -63,7 +62,7 @@ public class Vector2D implements Iterator<Integer> {
         return hi.hasNext();
     }
 }
- 
+
 /**
  * Your Vector2D object will be instantiated and called as such:
  * Vector2D i = new Vector2D(vec2d);
