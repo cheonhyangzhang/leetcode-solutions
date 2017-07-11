@@ -1,4 +1,4 @@
-# 250 LeetCode Java: Count Univalue Subtrees – Medium
+# 250 Count Univalue Subtrees – Medium
 
 ### Problem:
 
