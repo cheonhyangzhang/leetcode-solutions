@@ -254,6 +254,7 @@
   * [298 Binary Tree Longest Consecutive Sequence](298-binary-tree-longest-consecutive-sequence.md)
   * [299 Bulls and Cows](299-bulls-and-cows.md)
   * [300 Longest Increasing Subsequence](300-longest-increasing-subsequence.md)
+  * [259 3Sum Smaller](259-3sum-smaller.md)
 * Solutions 301 - 350
   * [302 Smallest Rectangle Enclosing Black Pixels](303-range-sum-query---immutable/302-smallest-rectangle-enclosing-black-pixels.md)
   * [303 Range Sum Query - Immutable](303-range-sum-query---immutable.md)
