@@ -219,6 +219,7 @@
   * [256 Paint House - Medium](256-paint-house---medium.md)
   * [257 Binary Tree Paths - Easy](257-binary-tree-paths---easy.md)
   * [258 Add Digits - Easy](258-add-digits---easy.md)
+  * [259 3Sum Smaller](259-3sum-smaller.md)
   * [260 Single Number III](260-single-number-iii.md)
   * [261 Graph Valid Tree](261-graph-valid-tree.md)
   * [263 Ugly Number](263-ugly-number.md)
@@ -253,7 +254,6 @@
   * [297 Serialize and Deserialize Binary Tree](298-binary-tree-longest-consecutive-sequence/297-serialize-and-deserialize-binary-tree.md)
   * [298 Binary Tree Longest Consecutive Sequence](298-binary-tree-longest-consecutive-sequence.md)
   * [299 Bulls and Cows](299-bulls-and-cows.md)
-  * [300 Longest Increasing Subsequence](300-longest-increasing-subsequence.md)
   * [259 3Sum Smaller](259-3sum-smaller.md)
 * Solutions 301 - 350
   * [302 Smallest Rectangle Enclosing Black Pixels](303-range-sum-query---immutable/302-smallest-rectangle-enclosing-black-pixels.md)
