@@ -158,7 +158,7 @@ public class Solution {
             }
         }
         while (k > 0) {
-            if (suc.isEmpty() || !pre.isEmpty() && target - pre.peek().val < suc.peek().val - target) {
+            if (suc.isEmpty() || (!pre.isEmpty() && target - pre.peek().val < suc.peek().val - target)) {
                 result.add(pre.peek().val);
                 getPre(pre);
             }
