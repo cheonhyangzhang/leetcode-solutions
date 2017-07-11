@@ -211,7 +211,7 @@
   * [249 LeetCode Java: Group Shifted Strings – Easy](249-leetcode-java-group-shifted-strings-–-easy.md)
   * [250 LeetCode Java: Count Univalue Subtrees – Medium](250-leetcode-java-count-univalue-subtrees-–-medium.md)
 * [Solutions 251 - 300](solutions-251---300.md)
-  * [251 LeetCode Java: Count Univalue Subtrees – Medium](251-leetcode-java-count-univalue-subtrees-–-medium.md)
+  * [251 Flatten 2D Vector](251-flatten-2d-vector.md)
   * [252 LeetCode Java: Meeting Rooms – Easy](252-leetcode-java-meeting-rooms-–-easy.md)
   * [253 Meeting Rooms II - Medium](253-meeting-rooms-ii---medium.md)
   * [254 Factor Combinations - Medium](254-factor-combinations---medium.md)
@@ -254,7 +254,6 @@
   * [298 Binary Tree Longest Consecutive Sequence](298-binary-tree-longest-consecutive-sequence.md)
   * [299 Bulls and Cows](299-bulls-and-cows.md)
   * [300 Longest Increasing Subsequence](300-longest-increasing-subsequence.md)
-  * [251 Flatten 2D Vector](251-flatten-2d-vector.md)
 * Solutions 301 - 350
   * [302 Smallest Rectangle Enclosing Black Pixels](303-range-sum-query---immutable/302-smallest-rectangle-enclosing-black-pixels.md)
   * [303 Range Sum Query - Immutable](303-range-sum-query---immutable.md)
