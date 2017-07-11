@@ -8,10 +8,10 @@ Given an array of n integers nums and a target, find the number of index triplet
 For example, given nums = [-2, 0, 1, 3], and target = 2.
 
 Return 2. Because there are two triplets which sums are less than 2:
-<pre>
+```
 [-2, 0, 1]
 [-2, 0, 3]
-</pre>
+```
 Follow up:
 Could you solve it in O(n2) runtime?
 
