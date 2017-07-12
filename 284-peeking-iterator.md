@@ -96,12 +96,7 @@ class PeekingIterator implements Iterator<Integer> {
 	public Integer next() {
 	    if (peek != null) {
 	        Integer res = peek;
-	        if (it.hasNext()) {
-	            peek = it.next();
-	        }
-	        else {
-	            peek = null;
-	        }
+            peek = null;
 	        return res;
 	    }
 	    return it.next();
