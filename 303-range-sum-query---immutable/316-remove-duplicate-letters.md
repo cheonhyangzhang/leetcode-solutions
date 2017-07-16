@@ -24,7 +24,6 @@ public class Solution {
         }
         int start = 0;
         while (start < s.length()) {
-            System.out.println("Current string start at " + start);
             int min = 26;
             int index = -1;
             for (int i = start; i < s.length(); i ++) {
