@@ -9,7 +9,14 @@ Given a / b = 2.0, b / c = 3.0.
 queries are: a / c = ?, b / a = ?, a / e = ?, a / a = ?, x / x = ? . 
 return [6.0, 0.5, -1.0, 1.0, -1.0 ].
 
-The input is: vector <pair<string, string>> equations, vector<double>& values, vector<pair<string, string>> queries , where equations.size() == values.size(), and the values are positive. This represents the equations. Return vector<double>.
+The input is: 
+```
+vector <pair<string, string>> equations, vector<double>& values, vector<pair<string, string>> queries
+``` 
+where 
+```equations.size() == values.size()```
+
+, and the values are positive. This represents the equations. Return vector<double>.
 
 According to the example above:
 ```
