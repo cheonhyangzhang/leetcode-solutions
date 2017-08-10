@@ -1,16 +1,15 @@
 # 465 Optimal Account Balancing
 
 ### Problem:
+
 A group of friends went on holiday and sometimes lent each other money. For example, Alice paid for Bill's lunch for $10. Then later Chris gave Alice $5 for a taxi ride. We can model each transaction as a tuple (x, y, z) which means person x gave person y $z. Assuming Alice, Bill, and Chris are person 0, 1, and 2 respectively (0, 1, 2 are the person's ID), the transactions can be represented as [[0, 1, 10], [2, 0, 5]].
 
 Given a list of transactions between a group of people, return the minimum number of transactions required to settle the debt.
 
 Note:
 
-1. A transaction will be given as a tuple (x, y, z). Note that x ≠ y and z > 0.
-
-2. Person's IDs may not be linear, e.g. we could have the persons 0, 1, 2 or we could also have the persons 0, 2, 6.
-
+A transaction will be given as a tuple (x, y, z). Note that x ≠ y and z > 0.
+Person's IDs may not be linear, e.g. we could have the persons 0, 1, 2 or we could also have the persons 0, 2, 6.
 Example 1:
 ```
 Input:
@@ -25,7 +24,6 @@ Person #2 gave person #0 $5.
 
 Two transactions are needed. One way to settle the debt is person #1 pays person #0 and #2 $5 each.
 ```
-
 Example 2:
 ```
 Input:
@@ -42,6 +40,8 @@ Person #2 gave person #0 $5.
 
 Therefore, person #1 only need to give person #0 $4, and all debt is settled.
 ```
+
+### Solutions:
 
 ```java
 public class Solution {
@@ -66,10 +66,11 @@ public class Solution {
         for (Integer no:debts.keySet()) {
             debtsArr[index ++] = debts.get(no);
         }
-        return process(debtsArr, 0, 0);
+        return process(debtsArr, 0);
     }
-    private int process(int[] debts, int start, int count) {
+    private int process(int[] debts, int start) {
         int min = Integer.MAX_VALUE;
+        int count = 0;
         while (start < debts.length && debts[start] == 0) {
             start ++;
         }
@@ -79,14 +80,14 @@ public class Solution {
             }
             if ((debts[start] > 0 && debts[i] < 0) || (debts[start] < 0 && debts[i] > 0)) {
                 debts[i] += debts[start];
-                min = Math.min(min, process(debts, start + 1, count + 1));
+                min = Math.min(min, process(debts, start + 1) + 1);
                 debts[i] -= debts[start];
             }
         }
-        if (min == Integer.MAX_VALUE) {
-            return count;
+        if (min != Integer.MAX_VALUE) {
+            count += min;
         }
-        return min;
+        return count;
     }
 }
 ```
