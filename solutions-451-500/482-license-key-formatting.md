@@ -61,3 +61,38 @@ public class Solution {
     }
 }
 ```
+
+```java
+public class Solution {
+    public String licenseKeyFormatting(String S, int K) {
+        Stack<Character> stack = new Stack<Character>();
+        for (char c: S.toCharArray()) {
+            if (c == '-') {
+                continue;
+            }
+            if (c >= 'a' && c <= 'z') {
+                c = (char)(c + ('A' - 'a'));
+            }
+            stack.push(c);
+        }
+        if (stack.isEmpty()) {
+            return "";
+        }
+        int i = 0;
+        StringBuilder sb = new StringBuilder();
+        while (!stack.isEmpty()) {
+            if (i == 0) {
+                sb.insert(0, '-');
+            }
+            if (i == K) {
+                i = 0;
+                continue;
+            }
+            sb.insert(0, stack.pop());
+            i ++;
+        }
+        sb.deleteCharAt(sb.length() - 1);
+        return sb.toString();
+    }
+}
+```
