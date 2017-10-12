@@ -29,26 +29,26 @@ This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
 public class Solution {
     public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
         List<Interval> result = new LinkedList<Interval>();
+        boolean inserted = false;
         for (Interval inter:intervals) {
-            if (newInterval.start > inter.end || newInterval.end < inter.start) {
+            if (inserted) {
+                result.add(inter);
+            }
+            else if (newInterval.start > inter.end) {
                 //no overlap
                 result.add(inter);
-                continue;
             }
-            newInterval.start = Math.min(newInterval.start, inter.start);
-            newInterval.end = Math.max(newInterval.end, inter.end);
-        }
-        int i = 0;
-        for (Interval inter:result) {
-            if (newInterval.start < inter.start) {
-                break;
+            else if (newInterval.end < inter.start) {
+                inserted = true;
+                result.add(newInterval);
+                result.add(inter);
             }
-            i ++;
+            else {
+                newInterval.start = Math.min(newInterval.start, inter.start);
+                newInterval.end = Math.max(newInterval.end, inter.end);
+            }
         }
-        if (i < result.size()) {
-            result.add(i, newInterval);
-        }
-        else {
+        if (!inserted) {
             result.add(newInterval);
         }
         
