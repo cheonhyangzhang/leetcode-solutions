@@ -40,16 +40,16 @@ public class Solution {
                 continue;
             }
             int left = 0, right = sorted.size() - 1;
-            while (left < right) {
+            while (left <= right) {
                 int mid = left + (right - left) / 2;
                 if (sorted.get(mid) < data.get(i).h) {
                     left = mid + 1;
                 }
                 else {
-                    right = mid;
+                    right = mid - 1;
                 }
             }
-            sorted.set(left, data.get(i).h);
+            sorted.set(right + 1, data.get(i).h);
         }
         return sorted.size();
     }
