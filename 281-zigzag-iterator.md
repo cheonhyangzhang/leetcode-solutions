@@ -24,7 +24,8 @@ It should return [1,4,8,2,5,9,3,6,7].
 
 ### Solutions:
 
-```javapublic class ZigzagIterator {
+```java
+public class ZigzagIterator {
     Queue<Iterator<Integer>> its = new LinkedList<Iterator<Integer>>();
     public ZigzagIterator(List<Integer> v1, List<Integer> v2) {
         if (v1.size() > 0) {
