@@ -24,45 +24,28 @@ It should return [1,4,8,2,5,9,3,6,7].
 
 ### Solutions:
 
-```java
-public class ZigzagIterator {
-    private Iterator<Integer> i1;
-    private Iterator<Integer> i2;
-    private Iterator<Integer> next;
+```javapublic class ZigzagIterator {
+    Queue<Iterator<Integer>> its = new LinkedList<Iterator<Integer>>();
     public ZigzagIterator(List<Integer> v1, List<Integer> v2) {
-        i1 = v1.iterator();
-        i2 = v2.iterator();
-        next = i1;
+        if (v1.size() > 0) {
+            its.add(v1.iterator());
+        }
+        if (v2.size() > 0) {
+            its.add(v2.iterator());
+        }
     }
 
     public int next() {
-        if (next.hasNext()) {
-            int tmp = next.next();
-            next = getNext();
-            return tmp;
+        Iterator<Integer> it = its.poll();
+        int res = it.next();
+        if (it.hasNext()) {
+            its.add(it);
         }
-        else {
-            next = getNext();
-            return next.next();
-        }
-    }
-    private Iterator<Integer> getNext() {
-        if (next == i1) {
-            if (i2.hasNext()) {
-                return i2;
-            }
-            return i1;
-        }
-        else {
-            if (i1.hasNext()) {
-                return i1;
-            }
-            return i2;
-        }
+        return res;
     }
 
     public boolean hasNext() {
-        return (i1.hasNext() || i2.hasNext());
+        return its.size() > 0;
     }
 }
 
