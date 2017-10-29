@@ -69,3 +69,53 @@ public class Vector2D implements Iterator<Integer> {
  * while (i.hasNext()) v[f()] = i.next();
  */
  ```
+ 
+ ```java
+ public class Vector2D implements Iterator<Integer> {
+    Integer next = null;
+    Iterator<List<Integer>> vi = null;
+    Iterator<Integer> hi = null;
+    public Vector2D(List<List<Integer>> vec2d) {
+        vi = vec2d.iterator();
+        if (vi.hasNext()) {
+            hi = vi.next().iterator();
+        }
+        findNext();
+    }
+    private void findNext() {
+        if (hi == null) {
+            return;
+        }
+        next = null;
+        if (hi.hasNext()) {
+            next = hi.next();
+            return;
+        }
+        while (vi.hasNext()) {
+            hi = vi.next().iterator();
+            if (hi.hasNext()) {
+                next = hi.next();
+                break;
+            }
+        }
+    }
+
+    @Override
+    public Integer next() {
+        Integer res = next;
+        findNext();
+        return res;
+    }
+
+    @Override
+    public boolean hasNext() {
+        return next != null;
+    }
+}
+
+/**
+ * Your Vector2D object will be instantiated and called as such:
+ * Vector2D i = new Vector2D(vec2d);
+ * while (i.hasNext()) v[f()] = i.next();
+ */
+ ```
