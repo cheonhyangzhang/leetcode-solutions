@@ -73,11 +73,9 @@ public class Solution {
     private int partition(int[] nums, int left, int right) {
         int x = nums[right];
         int i = left;
-        int q = left;
         int j = right - 1;
         while (i <= j) {
             if (nums[i] <= x) {
-                q ++;
                 i ++;
             }
             else {
@@ -88,15 +86,14 @@ public class Solution {
                     int tmp = nums[i];
                     nums[i] = nums[j];
                     nums[j] = tmp;
-                    q ++;
                     i ++;
                     j --;
                 }
             }
         }
-        nums[right] = nums[q];
-        nums[q] = x;
-        return q;
+        nums[right] = nums[i];
+        nums[i] = x;
+        return i;
     }
     private int quickSelect(int[] nums, int left, int right, int i) {
         if (left == right) {
