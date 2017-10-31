@@ -42,13 +42,7 @@ public class Solution {
         for (int i = 0; i < points.length; i ++) {
             int x = points[i][0];
             int y = points[i][1];
-            int mx = 0;
-            if (2 * x < doublebar) {
-                mx = x + (doublebar - 2 * x);
-            }
-            else {
-                mx = x - (2 * x - doublebar);
-            }
+            int mx = doublebar - x;
             if (!ys.containsKey(mx)) {
                 return false;
             }
@@ -57,6 +51,36 @@ public class Solution {
             }
         }
         
+        return true;
+    }
+}
+```
+
+```java
+class Solution {
+    public boolean isReflected(int[][] points) {
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        HashMap<Integer, HashSet<Integer>> ys = new HashMap<Integer, HashSet<Integer>>();
+        for (int i = 0; i < points.length; i ++) {
+            int x = points[i][0];
+            int y = points[i][1];
+            min = Math.min(min, x);
+            max = Math.max(max, x);
+            if (!ys.containsKey(y)) {
+                ys.put(y, new HashSet<Integer>());
+            }
+            ys.get(y).add(x);
+        }
+        int doublebar = (min + max);
+        for (Integer y:ys.keySet()) {
+            for (Integer x:ys.get(y)) {
+                int mx = doublebar - x;
+                if (!ys.get(y).contains(mx)) {
+                    return false;
+                }
+            }
+        }
         return true;
     }
 }
