@@ -30,33 +30,12 @@ public class Solution {
         // dp[x][y][1] is for vertical
         // dp[x][y][2] is for diagonal
         // dp[x][y][3] is for anti-diagonal
-        dp[0][0][0] = dp[0][0][1] = dp[0][0][2] = M[0][0];
-        dp[0][n - 1][3] = M[0][n - 1];
+        dp[0][0][0] = dp[0][0][1] = dp[0][0][2] = dp[0][0][3]= M[0][0];
         res = Math.max(res, M[0][0]);
-        for (int i = 1; i < m; i ++) {
-            if (M[i][0] == 1) {
-                dp[i][0][0] = 1;
-                dp[i][0][1] = dp[i - 1][0][1] + 1;
-                dp[i][0][2] = 1;
-                res = Math.max(res, dp[i][0][1]);
-            }
-            if (M[i][n - 1] == 1) {
-                dp[i][n - 1][3] = 1;
-                res = Math.max(res, 1);
-            }
-        }
-        for (int j = 1; j < n; j ++) {
-            if (M[0][j] == 1) {
-                dp[0][j][0] = dp[0][j - 1][0] + 1;
-                dp[0][j][1] = 1;
-                dp[0][j][2] = 1;
-                dp[0][j][3] = 1;
-                res = Math.max(res, dp[0][j][0]);
-            }
-        }
         for (int i = 0; i < m; i ++) {
             for (int j = 0; j < n; j ++) {
                 if (M[i][j] == 1) {
+                    dp[i][j][0] = dp[i][j][1] = dp[i][j][2] = dp[i][j][3] = 1;
                     if (j > 0) {
                         dp[i][j][0] = dp[i][j - 1][0] + 1;
                     }
@@ -66,7 +45,7 @@ public class Solution {
                     if (i > 0 && j > 0) {
                         dp[i][j][2] = dp[i - 1][j - 1][2] + 1;
                     }
-                    if (j < n - 1 && i > 0) {
+                    if (j + 1 < n && i > 0) {
                         dp[i][j][3] = dp[i - 1][j + 1][3] + 1;
                     }
                     res = Math.max(res, dp[i][j][0]);
