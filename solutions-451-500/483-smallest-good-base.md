@@ -39,7 +39,7 @@ public class Solution {
         long num = Long.parseLong(n);
         for (long length = (long)(Math.log(num) / Math.log(2)) + 1; length >= 2; length --) {
             // System.out.println(length);
-            long left = 2, right = (long)Math.pow(num, 1.0 / (double)(length - 1)) + 1;
+            long left = 2, right = (long)Math.pow(num + 1, 1.0 / (double)(length - 1));
             while (left <= right) {
                 long mid = (right - left) / 2 + left;
                 long sum = 0;
