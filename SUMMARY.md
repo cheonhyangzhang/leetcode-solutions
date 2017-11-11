@@ -305,6 +305,7 @@
   * [348 Design Tic-Tac-Toe](348-design-tic-tac-toe.md)
   * [349 Intersection of Two Arrays](349-intersection-of-two-arrays.md)
   * [350 Intersection of Two Arrays II](350-intersection-of-two-arrays-ii.md)
+  * [301 Remove Invalid Parentheses](303-range-sum-query---immutable/301-remove-invalid-parentheses.md)
 * [Solutions 351 - 400](solutions-351---400.md)
   * [351 Android Unlock Patterns](351-android-unlock-patterns.md)
   * [353 Design Snake Game](353-design-snake-game.md)
