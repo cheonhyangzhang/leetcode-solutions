@@ -231,6 +231,7 @@
   * [270 Closest Binary Search Tree Value](270-closest-binary-search-tree-value.md)
   * [271 Encode and Decode Strings](271-encode-and-decode-strings.md)
   * [272 Closest Binary Search Tree Value II](271-encode-and-decode-strings/272-closest-binary-search-tree-value-ii.md)
+  * [273 Integer to English Words](273-integer-to-english-words.md)
   * [274 H-Index](274-h-index.md)
   * [275 H-Index II](275-h-index-ii.md)
   * [276 Paint Fence](276-paint-fence.md)
@@ -255,7 +256,6 @@
   * [298 Binary Tree Longest Consecutive Sequence](298-binary-tree-longest-consecutive-sequence.md)
   * [299 Bulls and Cows](299-bulls-and-cows.md)
   * [259 3Sum Smaller](259-3sum-smaller.md)
-  * [273 Integer to English Words](273-integer-to-english-words.md)
 * Solutions 301 - 350
   * [302 Smallest Rectangle Enclosing Black Pixels](303-range-sum-query---immutable/302-smallest-rectangle-enclosing-black-pixels.md)
   * [303 Range Sum Query - Immutable](303-range-sum-query---immutable.md)
