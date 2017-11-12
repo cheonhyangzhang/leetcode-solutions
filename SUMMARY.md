@@ -362,6 +362,7 @@
   * [444 Sequence Reconstruction](444-sequence-reconstruction.md)
   * [447 Number of Boomerangs](447-number-of-boomerangs.md)
   * [448 Find All Numbers Disappeared in an Array](448-find-all-numbers-disappeared-in-an-array.md)
+  * [477 Total Hamming Distance](477-total-hamming-distance.md)
 * [Solutions 451 - 500](solutions-451-500.md)
   * [451 Sort Characters By Frequency](solutions-451-500/451-sort-characters-by-frequency.md)
   * [459 Repeated Substring Pattern](solutions-451-500/459-repeated-substring-pattern.md)
