@@ -86,6 +86,7 @@
   * [95 Unique Binary Search Trees II – Medium](95_unique_binary_search_trees_ii__medium.md)
   * [96Unique Binary Search Trees – Medium](96unique_binary_search_trees__medium.md)
   * [56 Merge Intervals](56-merge-intervals.md)
+  * [76 Minimum Window Substring](76-minimum-window-substring.md)
 * [Solutions 101 - 150](solutions_101_-_150.md)
   * [101 Symmetric Tree – Easy](101_symmetric_tree__easy.md)
   * [102 Binary Tree Level Order Traversal – Easy](102_binary_tree_level_order_traversal__easy.md)
