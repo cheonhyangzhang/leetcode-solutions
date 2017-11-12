@@ -13,6 +13,7 @@ Examples:
 ```
 
 ### Solutions
+BFS
 ```java
 class Solution {
     public List<String> removeInvalidParentheses(String s) {
@@ -62,6 +63,51 @@ class Solution {
             }
         }
         return count == 0;
+    }
+}
+```
+
+DFS
+```java
+public class Solution {
+    ArrayList<String> res = new ArrayList<String>();
+    int max = 0; 
+    public List<String> removeInvalidParentheses(String s) {
+        if(s == null) {
+            return res;
+        }
+        dfs(s, "", 0);
+        if(res.size() == 0) {
+            res.add("");
+        }
+        return res;
+    }
+    public void dfs(String s, String cand, int left) {
+        if(s.length() == 0){
+            if(left == 0 && cand.length() != 0) {
+                if (cand.length() > max) {
+                    max = cand.length();
+                    res.clear();
+                }
+                if(cand.length() == max && !res.contains(cand)) {
+                    res.add(cand);
+                }
+            }
+            return;
+        }
+        
+        if (s.charAt(0) == '(') {
+            dfs(s.substring(1), cand + "(", left + 1);
+            dfs(s.substring(1), cand, left);
+        }
+        else if (s.charAt(0) == ')') {
+            if (left > 0) {
+                dfs(s.substring(1), cand + ")", left - 1);
+            }
+            dfs(s.substring(1), cand, left);
+        }else{
+            dfs(s.substring(1), cand + s.charAt(0), left);
+        }
     }
 }
 ```
