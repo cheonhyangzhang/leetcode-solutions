@@ -417,9 +417,9 @@
   * [568 Maximum Vacation Days](solutions-551-600/568-maximum-vacation-days.md)
   * [569 Median Employee Salary](solutions-551-600/569-median-employee-salary.md)
 * Solutions 601 - 650
+  * [621 Task Scheduler](621-task-scheduler.md)
   * [636 Exclusive Time of Functions](636-exclusive-time-of-functions.md)
   * [642 Design Search Autocomplete System](642-design-search-autocomplete-system.md)
-* [621 Task Scheduler](621-task-scheduler.md)
 * Solutions 651 - 700
   * [689 Maximum Sum of 3 Non-Overlapping Subarrays](689-maximum-sum-of-3-non-overlapping-subarrays.md)
   * [670 Maximum Swap](670-maximum-swap.md)
