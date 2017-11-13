@@ -387,6 +387,7 @@
   * [494 Target Sum](solutions-451-500/494-target-sum.md)
   * [496 Next Greater Element I](solutions-451-500/496-next-greater-element-i.md)
   * [498 Diagonal Traverse](solutions-451-500/498-diagonal-traverse.md)
+  * [461 Hamming Distance](solutions-451-500/461-hamming-distance.md)
 * [Solutions 501 - 550](solutions-501-550.md)
   * [501 Find Mode in Binary Search Tree](solutions-501-550/501-find-mode-in-binary-search-tree.md)
   * [503 Next Greater Element II](solutions-501-550/503-next-greater-element-ii.md)
