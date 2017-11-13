@@ -418,6 +418,7 @@
   * [562 Longest Line of Consecutive One in Matrix](solutions-551-600/562-longest-line-of-consecutive-one-in-matrix.md)
   * [568 Maximum Vacation Days](solutions-551-600/568-maximum-vacation-days.md)
   * [569 Median Employee Salary](solutions-551-600/569-median-employee-salary.md)
+  * [554 Brick Wall](solutions-551-600/554-brick-wall.md)
 * Solutions 601 - 650
   * [621 Task Scheduler](621-task-scheduler.md)
   * [636 Exclusive Time of Functions](636-exclusive-time-of-functions.md)
