@@ -20,8 +20,35 @@ Input:
  [1,3,1,1]]
 Output: 2
 Explanation: 
-
+![](/assets/brick_wall.png)
 ```
 Note:
 The width sum of bricks in different rows are the same and won't exceed INT_MAX.
 The number of bricks in each row is in range [1,10,000]. The height of wall is in range [1,10,000]. Total number of bricks of the wall won't exceed 20,000.
+
+### Solutions
+
+```java
+class Solution {
+    public int leastBricks(List<List<Integer>> wall) {
+        HashMap<Integer, Integer> count = new HashMap<Integer, Integer>();
+        int n = wall.size();
+        int max = 0;
+        for (List<Integer> row:wall) {
+            Iterator<Integer> it = row.iterator();
+            int sum = 0;
+            while (it.hasNext()) {
+                sum += it.next();
+                if (it.hasNext()) {
+                    if (!count.containsKey(sum)) {
+                        count.put(sum, 0);
+                    }
+                    count.put(sum, count.get(sum) + 1);
+                    max = Math.max(max, count.get(sum));
+                }
+            }
+        }
+        return n - max;
+    }
+}
+```
