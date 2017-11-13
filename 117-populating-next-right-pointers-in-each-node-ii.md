@@ -75,3 +75,36 @@ public class Solution {
     }
 }
 ```
+
+```java
+/**
+ * Definition for binary tree with next pointer.
+ * public class TreeLinkNode {
+ *     int val;
+ *     TreeLinkNode left, right, next;
+ *     TreeLinkNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public void connect(TreeLinkNode root) {
+        TreeLinkNode fakeHead = new TreeLinkNode(0);
+        TreeLinkNode node = fakeHead;
+        while (root != null) {
+            if (root.left != null) {
+                node.next = root.left;
+                node = node.next;
+            }
+            if (root.right != null) {
+                node.next = root.right;
+                node = node.next;
+            }
+            root = root.next;
+            if (root == null) {
+                node = fakeHead;
+                root = fakeHead.next;
+                fakeHead.next = null;
+            }
+        }
+    }
+}
+```
