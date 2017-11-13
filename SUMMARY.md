@@ -345,6 +345,7 @@
   * [397 Integer Replacement](397-integer-replacement.md)
   * [399 Evaluate Division](399-evaluate-division.md)
   * [400 Nth Digit](400-nth-digit.md)
+  * [398 Random Pick Index](398-random-pick-index.md)
 * Solutions 401 - 450
   * [401 Binary Watch](401-binary-watch.md)
   * [402 Remove K Digits](402-remove-k-digits.md)
