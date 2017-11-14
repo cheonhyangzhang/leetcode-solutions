@@ -86,3 +86,24 @@ This solution will work because of the assumption:
 You may assume that each input would have exactly one solution.
 
 This makes sure that there will be at most 2 elements that has the same value. ( Actually it can have more than 2, but the element will never be part of the output. )
+
+
+### Best
+```java
+public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        int[] result = new int[2];
+       
+        HashMap<Integer, Integer> index = new HashMap<Integer, Integer>();
+        for (int i = 0; i < nums.length; i ++) {
+            if (index.containsKey(target - nums[i])) {
+                result[0] = index.get(target - nums[i]);
+                result[1] = i;
+                return result;
+            }
+            index.put(nums[i], i);
+        }
+        return result;
+    }
+}
+```
