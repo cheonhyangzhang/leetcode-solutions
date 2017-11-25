@@ -422,6 +422,7 @@
 * Solutions 601 - 650
   * [621 Task Scheduler](621-task-scheduler.md)
   * [636 Exclusive Time of Functions](636-exclusive-time-of-functions.md)
+  * [639 Decode Ways II](639-decode-ways-ii.md)
   * [642 Design Search Autocomplete System](642-design-search-autocomplete-system.md)
   * [647 Palindromic Substrings](647-palindromic-substrings.md)
 * Solutions 651 - 700
