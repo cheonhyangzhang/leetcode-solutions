@@ -32,3 +32,67 @@ The input string will only contain the character '*' and digits '0' - '9'.
 
 ### Solutions
 
+```java
+class Solution {
+    public int numDecodings(String s) {
+        long mod = (int)Math.pow(10, 9) + 7;
+        long prepre = 1, pre = 1, curr = 0;
+        for (int i = 0; i < s.length(); i ++) {
+            if (i == 0) {
+                if (s.charAt(i) == '0') {
+                    return 0;
+                }
+                else if (s.charAt(i) == '*') {
+                    curr = 9;
+                }
+                else {
+                    curr = 1;
+                }
+            }
+            else {
+                curr = 0;
+                if (s.charAt(i) != '*') {
+                    if (s.charAt(i) != '0') {
+                        curr += pre;
+                    }
+                }
+                else {
+                    curr += pre * 9;
+                }
+                if (i - 1 >= 0) {
+                    if (s.charAt(i) != '*') {
+                        if (s.charAt(i - 1) == '1' || (s.charAt(i - 1) == '2' && s.charAt(i) <= '6')) {
+                            curr += prepre;
+                        }
+                        else if (s.charAt(i - 1) == '*') {
+                            if (s.charAt(i) <= '6') {
+                                curr += prepre * 2;
+                            }
+                            else {
+                                curr += prepre;
+                            }
+                        }
+                    }
+                    else {
+                        if (s.charAt(i - 1) == '1') {
+                            curr += prepre * 9;
+                        }
+                        else if (s.charAt(i - 1) == '2') {
+                            curr += prepre * 6;
+                        }
+                        else if (s.charAt(i - 1) == '*') {
+                            curr += prepre * 15;
+                        }
+                    }
+                }
+                
+            }
+            
+            curr = curr % mod;
+            prepre = pre;
+            pre = curr;
+        }
+        return (int)curr;
+    }
+}
+```
