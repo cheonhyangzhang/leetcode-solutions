@@ -46,6 +46,7 @@
   * [48 Rotate Image – Medium](48_rotate_image__medium.md)
   * [49  Group Anagrams – Medium](49_group_anagrams__medium.md)
   * [50 Pow\(x, n\) – Medium](50_powx,_n__medium.md)
+  * [25 Reverse Nodes in k-Group](25-reverse-nodes-in-k-group.md)
 * [Solutions 51 - 100](solutions_51_-_100.md)
   * [53 Maximum Subarray – Medium](53_maximum_subarray__medium.md)
   * [54 Spiral Matrix – Medium](54_spiral_matrix__medium.md)
@@ -350,6 +351,7 @@
 * Solutions 401 - 450
   * [401 Binary Watch](401-binary-watch.md)
   * [402 Remove K Digits](402-remove-k-digits.md)
+  * [404 Sum of Left Leaves](404-sum-of-left-leaves.md)
   * [406 Queue Reconstruction by Height](406-queue-reconstruction-by-height.md)
   * [407 Trapping Rain Water II](408-valid-word-abbreviation/407-trapping-rain-water-ii.md)
   * [408 Valid Word Abbreviation](408-valid-word-abbreviation.md)
@@ -364,7 +366,6 @@
   * [444 Sequence Reconstruction](444-sequence-reconstruction.md)
   * [447 Number of Boomerangs](447-number-of-boomerangs.md)
   * [448 Find All Numbers Disappeared in an Array](448-find-all-numbers-disappeared-in-an-array.md)
-  * [477 Total Hamming Distance](477-total-hamming-distance.md)
   * [404 Sum of Left Leaves](404-sum-of-left-leaves.md)
 * [Solutions 451 - 500](solutions-451-500.md)
   * [451 Sort Characters By Frequency](solutions-451-500/451-sort-characters-by-frequency.md)
