@@ -85,6 +85,7 @@
   * [94 Binary Tree Inorder Traversal – Medium](94_binary_tree_inorder_traversal__medium.md)
   * [95 Unique Binary Search Trees II – Medium](95_unique_binary_search_trees_ii__medium.md)
   * [98 Validate Binary Search Tree](98-validate-binary-search-tree.md)
+  * [85 Maximal Rectangle](85-maximal-rectangle.md)
 * [Solutions 101 - 150](solutions_101_-_150.md)
   * [101 Symmetric Tree – Easy](101_symmetric_tree__easy.md)
   * [102 Binary Tree Level Order Traversal – Easy](102_binary_tree_level_order_traversal__easy.md)
