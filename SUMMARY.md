@@ -433,4 +433,6 @@
   * [689 Maximum Sum of 3 Non-Overlapping Subarrays](689-maximum-sum-of-3-non-overlapping-subarrays.md)
   * [670 Maximum Swap](670-maximum-swap.md)
   * [680 Valid Palindrome II](680-valid-palindrome-ii.md)
+* Solutions 701 - 750
+  * [714 Best Time to Buy and Sell Stock with Transaction Fee](714-best-time-to-buy-and-sell-stock-with-transaction-fee.md)
 
