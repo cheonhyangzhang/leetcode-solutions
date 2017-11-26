@@ -20,7 +20,7 @@ class Solution {
     public int maximalRectangle(char[][] matrix) {
         int m = matrix.length;
         int n = m == 0 ? 0 : matrix[0].length;
-        int[][] height = new int[m][n + 1];
+        int[][] height = new int[m][n + 1];//last element needs to be 0 
 
         int maxArea = 0;
         for (int i = 0; i < m; i++) {
