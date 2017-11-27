@@ -429,6 +429,7 @@
   * [639 Decode Ways II](639-decode-ways-ii.md)
   * [642 Design Search Autocomplete System](642-design-search-autocomplete-system.md)
   * [647 Palindromic Substrings](647-palindromic-substrings.md)
+  * [637 Average of Levels in Binary Tree](637-average-of-levels-in-binary-tree.md)
 * Solutions 651 - 700
   * [689 Maximum Sum of 3 Non-Overlapping Subarrays](689-maximum-sum-of-3-non-overlapping-subarrays.md)
   * [670 Maximum Swap](670-maximum-swap.md)
