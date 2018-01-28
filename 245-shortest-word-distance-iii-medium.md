@@ -20,38 +20,18 @@ You may assume word1 and word2 are both in the list.
 ### Solutions:
 
 ```java
-public class Solution {
+class Solution {
     public int shortestWordDistance(String[] words, String word1, String word2) {
-        int index1 = -1;
-        int index2 = -1;
-        int min = Integer.MAX_VALUE;
-        boolean same = false;
-        if (word1.equals(word2)) {
-            same = true;
-        }
-        for (int i = 0; i < words.length; i ++) {
-            if (words[i].equals(word1)) {
-                if (index2 != -1) {
-                    min = Math.min(i - index2, min);
+        int idx = -1, res = Integer.MAX_VALUE;
+        for (int i = 0; i < words.length; ++i) {
+            if (words[i].equals(word1) || words[i].equals(word2)) {
+                if (idx != -1 && (word1.equals(word2) || !words[i].equals(words[idx]))) {
+                    res = Math.min(res, i - idx);
                 }
-                index1 = i;
-                if (same) {
-                    index2 = i;
-                }
-                continue;
-            }
-            if (words[i].equals(word2)) {
-                if (index1 != -1) {
-                    min = Math.min(i - index1, min);
-                }
-                index2 = i;
-                if (same) {
-                    index1 = i;
-                }
-                continue;
+                idx = i;
             }
         }
-        return min;
+        return res;
     }
 }
 ```
