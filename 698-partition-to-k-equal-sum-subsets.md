@@ -55,3 +55,44 @@ class Solution {
 }
 ```
 
+
+greedy:
+```java
+class Solution {
+    public boolean canPartitionKSubsets(int[] nums, int k) {
+        int sum = 0;
+        for (int i = 0; i < nums.length; i ++) {
+            sum += nums[i];
+        }
+        if (sum % k != 0) {
+            return false;
+        }
+        Arrays.sort(nums);
+        int[] bucket = new int[k];
+        return process(bucket, nums, sum/k, nums.length - 1);
+    }
+    private boolean process(int[] bucket, int[] nums, int target, int index) {
+        if (index == -1) {
+            for (int i = 0; i < bucket.length; i ++) {
+                if (bucket[i] != target) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        int num = nums[index];
+        for (int i = 0; i < bucket.length; i ++) {
+            if (bucket[i] + num > target) {
+                continue;
+            }
+            bucket[i] += num;
+            if (process(bucket, nums, target, index - 1)) {
+                return true;
+            }
+            bucket[i] -= num;
+        }
+        return false;
+    }
+    
+}
+```
