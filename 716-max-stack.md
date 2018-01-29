@@ -48,7 +48,7 @@ class MaxStack {
         head.next = tail;
         tail.pre = head;
     }
-    
+    // O(lgn)
     public void push(int x) {
         Node n = new Node(x);
         n.pre = tail.pre;
@@ -61,7 +61,7 @@ class MaxStack {
         }
         index.get(x).add(n);
     }
-    
+    // O(lgn)
     public int pop() {
         int res = tail.pre.val;
         tail.pre.pre.next = tail;
@@ -70,15 +70,15 @@ class MaxStack {
         index.get(res).pollLast();
         return res;
     }
-    
+    // O(1)
     public int top() {
         return tail.pre.val;
     }
-    
+    // O(1)
     public int peekMax() {
         return q.peek();
     }
-    
+    // O(lgn)
     public int popMax() {
         int res = q.poll();
         Node toRemove = index.get(res).pollLast();
@@ -98,3 +98,62 @@ class MaxStack {
  * int param_5 = obj.popMax();
  */
 ```
+
+```java
+class MaxStack {
+    Stack<Integer> data = new Stack<Integer>();
+    Stack<Integer> max = new Stack<Integer>();
+    /** initialize your data structure here. */
+    public MaxStack() {
+        
+    }
+    //O(1);
+    public void push(int x) {
+        data.push(x);
+        if (max.isEmpty()) {
+            max.push(x);
+        }
+        else {
+            max.push(Math.max(x, max.peek()));
+        }
+    }
+    //O(1);
+    public int pop() {
+        max.pop();
+        return data.pop();
+    }
+    //O(1);
+    public int top() {
+        return data.peek();
+    }
+    //O(1);
+    public int peekMax() {
+        return max.peek();
+    }
+    //O(n);
+    public int popMax() {
+        int res = max.peek();
+        Stack<Integer> tmp = new Stack<Integer>();
+        while (data.peek() != res) {
+            tmp.push(data.pop());
+            max.pop();
+        }
+        data.pop();
+        max.pop();
+        while (!tmp.isEmpty()) {
+            push(tmp.pop());
+        }
+        return res;
+    }
+}
+
+/**
+ * Your MaxStack object will be instantiated and called as such:
+ * MaxStack obj = new MaxStack();
+ * obj.push(x);
+ * int param_2 = obj.pop();
+ * int param_3 = obj.top();
+ * int param_4 = obj.peekMax();
+ * int param_5 = obj.popMax();
+ */
+ ```
