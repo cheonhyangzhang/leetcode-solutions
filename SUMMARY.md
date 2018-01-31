@@ -251,6 +251,7 @@
   * [288 Unique Word Abbreviation](288-unique-word-abbreviation.md)
   * [289 Game of Life](289-game-of-life.md)
   * [290 Word Pattern](290-word-pattern.md)
+  * [291 Word Pattern II](291-word-pattern-ii.md)
   * [292 Nim Game](292-nim-game.md)
   * [293 Flip Game](293-flip-game.md)
   * [294 Flip Game II](294-flip-game-ii.md)
@@ -258,7 +259,6 @@
   * [297 Serialize and Deserialize Binary Tree](298-binary-tree-longest-consecutive-sequence/297-serialize-and-deserialize-binary-tree.md)
   * [298 Binary Tree Longest Consecutive Sequence](298-binary-tree-longest-consecutive-sequence.md)
   * [299 Bulls and Cows](299-bulls-and-cows.md)
-  * [259 3Sum Smaller](259-3sum-smaller.md)
 * Solutions 301 - 350
   * [301 Remove Invalid Parentheses](303-range-sum-query---immutable/301-remove-invalid-parentheses.md)
   * [302 Smallest Rectangle Enclosing Black Pixels](303-range-sum-query---immutable/302-smallest-rectangle-enclosing-black-pixels.md)
