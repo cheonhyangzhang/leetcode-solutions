@@ -65,7 +65,7 @@ public class Solution {
                 q.remove((Integer)(-w.height));
             }
             int maxHeight = q.peek();
-            if (Math.abs(w.height) >= maxHeight && preHeight != maxHeight) {
+            if (preHeight != maxHeight) {
                 result.add(new int[]{w.x, maxHeight});
             }
             preHeight = maxHeight;
