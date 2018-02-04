@@ -13,9 +13,6 @@ Given s = "leetcode", return "leotcede".
 Note:
 The vowels does not include the letter "y".
 
-Show Company Tags
-Show Tags
-Show Similar Problems
 
 
 ### Solutions:
