@@ -13,7 +13,8 @@ n and k are non-negative integers.
 
 ### Solutions:
 
-```javapublic class Solution {
+```java
+public class Solution {
     public int numWays(int n, int k) {
         if (n == 0) 
             return 0;
