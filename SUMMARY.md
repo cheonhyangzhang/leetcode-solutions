@@ -440,4 +440,5 @@
 * Solutions 701 - 750
   * [714 Best Time to Buy and Sell Stock with Transaction Fee](714-best-time-to-buy-and-sell-stock-with-transaction-fee.md)
   * [716 Max Stack](716-max-stack.md)
+* [Best Time to Buy and Sell Stock](best-time-to-buy-and-sell-stock.md)
 
