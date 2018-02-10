@@ -41,7 +41,7 @@ public class Solution {
             if (start == w.length()) {
                 return;
             }
-            int i = 0;
+            int i = start;
             if (start > 0) {
                 i = start + 1;
             }
@@ -51,7 +51,7 @@ public class Solution {
                     dfs(result,  next + j, i + j, w);
                 }
             }
-         
+
       }
 }
 ```
