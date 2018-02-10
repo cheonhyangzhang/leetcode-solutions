@@ -38,3 +38,17 @@ public class Solution {
     }
 }
 ```
+
+```java
+class Solution {
+    public boolean PredictTheWinner(int[] nums) {
+        return process(nums, 0, nums.length - 1) >= 0;
+    }
+    private int process(int[] nums, int start, int end) {
+        if (start == end) {
+            return nums[start];
+        }
+        return Math.max(nums[start] - process(nums, start + 1, end), nums[end] - process(nums, start, end - 1));
+    }
+}
+```
