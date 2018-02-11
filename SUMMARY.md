@@ -442,5 +442,6 @@
 * Solutions 701 - 750
   * [714 Best Time to Buy and Sell Stock with Transaction Fee](714-best-time-to-buy-and-sell-stock-with-transaction-fee.md)
   * [716 Max Stack](716-max-stack.md)
+  * [744 Find Smallest Letter Greater Than Target](744-find-smallest-letter-greater-than-target.md)
 * [Best Time to Buy and Sell Stock](best-time-to-buy-and-sell-stock.md)
 
