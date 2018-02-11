@@ -19,20 +19,15 @@ public class Solution {
         s = s.trim();
         if (s.indexOf("e") != -1) {
             int cut = s.indexOf("e");
-            return validNumber(s.substring(0, cut), false, true) && validNumber(s.substring(cut + 1), false, false);
+            return validNumber(s.substring(0, cut), true) && validNumber(s.substring(cut + 1), false);
         }
         else {
-            return validNumber(s, false, true);
+            return validNumber(s, true);
         }
     }
-    private boolean validNumber(String s, boolean canBeEmpty, boolean canBeDouble) {
+    private boolean validNumber(String s, boolean canBeDouble) {
         if (s.length() == 0) {
-            if (canBeEmpty) {
-                return true;
-            }
-            else {
-                return false;
-            }
+            return false;
         }
         if (s.charAt(0) == '-' || s.charAt(0) == '+') {
             s = s.substring(1);
@@ -54,9 +49,6 @@ public class Solution {
         }
         for (int i = 0; i < s.length(); i ++) {
             char c = s.charAt(i);
-            // if (c == '0' && i == 0) {
-            //     return false;
-            // }
             if (c < '0' || c > '9') {
                 return false;
             }
