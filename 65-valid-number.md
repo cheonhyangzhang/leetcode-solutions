@@ -16,63 +16,50 @@ Note: It is intended for the problem statement to be ambiguous. You should gathe
 ```java
 public class Solution {
     public boolean isNumber(String s) {
-        boolean dot = false;
-        boolean num = false;
-        boolean exp = false;
-        boolean expcmp = false;
-        boolean expbf = false;
         s = s.trim();
-        if (s.length() == 0){
-            return false;
+        if (s.indexOf("e") != -1) {
+            int cut = s.indexOf("e");
+            return validNumber(s.substring(0, cut), false, true) && validNumber(s.substring(cut + 1), false, false);
         }
-        if (s.charAt(0) == '-'){
-            s = s.substring(1);
+        else {
+            return validNumber(s, false, true);
         }
-        else if (s.charAt(0) == '+'){
-            s = s.substring(1);
-        }
-        for (int i = 0; i < s.length(); i ++){
-            char c = s.charAt(i);
-            if (c == '.'){
-                if (dot == true || exp == true){
-                    return false;
-                }
-                else{
-                    dot = true;
-                }
+    }
+    private boolean validNumber(String s, boolean canBeEmpty, boolean canBeDouble) {
+        if (s.length() == 0) {
+            if (canBeEmpty) {
+                return true;
             }
-            else if (c == 'e'){
-                if (expbf == false){
-                    return false;
-                }
-                if (exp == true){
-                    return false;
-                }
-                else{
-                    exp = true;
-                    if (i + 1 < s.length() &&(s.charAt(i+1) == '-' || s.charAt(i+1) == '+')){
-                        i ++;
-                    }
-                }
-            }
-            else if (c >= '0' && c <='9'){
-                num = true;
-                expbf = true;
-                if (exp == true){
-                    expcmp = true;
-                }
-                continue;
-            }
-            else{
+            else {
                 return false;
             }
         }
-        if (exp == true && expcmp == false){
+        if (s.charAt(0) == '-' || s.charAt(0) == '+') {
+            s = s.substring(1);
+        }
+        if (s.indexOf(".") != -1) {
+            if (canBeDouble == false) {
+                return false;
+            }
+            int cut = s.indexOf(".");
+            return (validInteger(s.substring(0, cut), true) && validInteger(s.substring(cut + 1), false)) || (validInteger(s.substring(0, cut), false) && validInteger(s.substring(cut + 1), true));
+        }
+        else {
+            return validInteger(s, false);
+        }
+    }
+    private boolean validInteger(String s, boolean canBeEmpty) {
+        if (!canBeEmpty && s.length() == 0) {
             return false;
         }
-        
-        if (num == false){
-            return false;
+        for (int i = 0; i < s.length(); i ++) {
+            char c = s.charAt(i);
+            // if (c == '0' && i == 0) {
+            //     return false;
+            // }
+            if (c < '0' || c > '9') {
+                return false;
+            }
         }
         return true;
     }
