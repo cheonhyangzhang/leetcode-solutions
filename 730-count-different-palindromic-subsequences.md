@@ -34,5 +34,47 @@ Each character S[i] will be in the set {'a', 'b', 'c', 'd'}.
 ### Solutions
 
 ```java
-
+class Solution {
+    public int countPalindromicSubsequences(String S) {
+        int base = 1000000007;
+        long[][] dp = new long[S.length()][S.length()];
+        for (int l = 1; l <= S.length(); l ++) {
+            for (int i = 0; i + l - 1 < S.length(); i ++) {
+                int j = i + l - 1;
+                if (l == 1) {
+                    dp[i][j] = 1;
+                    continue;
+                }
+                if (l == 2) {
+                    dp[i][j] = 2;
+                    continue;
+                }
+                if (S.charAt(i) == S.charAt(j)) {
+                    int left = i + 1, right = j - 1;
+                    while (left <= right && S.charAt(left) != S.charAt(i)) {
+                        left ++;
+                    }
+                    while (left <= right && S.charAt(right) != S.charAt(i)) {
+                        right --;
+                    }
+                    if (left > right) {
+                        dp[i][j] = dp[i + 1][j - 1] * 2 + 2;
+                    }
+                    else if (left == right) {
+                        dp[i][j] = dp[i + 1][j - 1] * 2 + 1;
+                    }
+                    else {
+                        dp[i][j] = dp[i + 1][j - 1] * 2 - dp[left + 1][right - 1];
+                    }
+                }
+                else {
+                    dp[i][j] = dp[i][j - 1] + dp[i + 1][j] - dp[i + 1][j - 1] ;
+                }
+                // dp[i][j] = dp[i][j] % base;
+                dp[i][j] = dp[i][j] < 0? dp[i][j] + base:dp[i][j]% base;
+            }
+        }
+        return (int)dp[0][S.length() - 1];
+    }
+}
 ```
