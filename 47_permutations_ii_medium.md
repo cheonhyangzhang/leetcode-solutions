@@ -97,3 +97,32 @@ public class Solution {
     }
 }
 ```
+
+```java
+public class Solution {
+    public List<List<Integer>> permuteUnique(int[] nums) {
+        Arrays.sort(nums);
+        boolean[] visited = new boolean[nums.length];
+        List<List<Integer>> result = new LinkedList<List<Integer>>();
+        List<Integer> tmp = new LinkedList<Integer>();
+        process(nums, visited, result, tmp);
+        return result;
+    }
+    private void process(int[] nums, boolean[] visited, List<List<Integer>> result, List<Integer> curr) {
+        if (curr.size() == nums.length) {
+            result.add(new LinkedList<Integer>(curr));
+            return;
+        }
+        for (int i = 0; i < nums.length; i ++) {
+            if (visited[i] == true || ( i > 0 && nums[i] == nums[i - 1] && visited[i - 1] == false)) {
+                continue;
+            }
+            visited[i] = true;
+            curr.add(nums[i]);
+            process(nums, visited, result, curr);
+            visited[i] = false;
+            curr.remove(curr.size() -1); 
+        }
+    }
+}
+```
