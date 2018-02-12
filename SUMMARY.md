@@ -419,6 +419,7 @@
   * [542 01 Matrix](solutions-501-550/542-01-matrix.md)
   * [543 Diameter of Binary Tree](solutions-501-550/543-diameter-of-binary-tree.md)
   * [544 Output Contest Matches](solutions-501-550/544-output-contest-matches.md)
+  * [515 Find Largest Value in Each Tree Row](solutions-501-550/515-find-largest-value-in-each-tree-row.md)
 * [Solutions 551 - 600](solutions-551-600.md)
   * [551 Student Attendance Record I](solutions-551-600/551-student-attendance-record-i.md)
   * [552 Student Attendance Record II](solutions-551-600/552-student-attendance-record-ii.md)
