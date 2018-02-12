@@ -429,18 +429,19 @@
   * [554 Brick Wall](solutions-551-600/554-brick-wall.md)
 * Solutions 601 - 650
   * [621 Task Scheduler](621-task-scheduler.md)
+  * [633 Sum of Square Numbers](633-sum-of-square-numbers.md)
   * [636 Exclusive Time of Functions](636-exclusive-time-of-functions.md)
+  * [637 Average of Levels in Binary Tree](637-average-of-levels-in-binary-tree.md)
   * [639 Decode Ways II](639-decode-ways-ii.md)
   * [642 Design Search Autocomplete System](642-design-search-autocomplete-system.md)
   * [647 Palindromic Substrings](647-palindromic-substrings.md)
-  * [637 Average of Levels in Binary Tree](637-average-of-levels-in-binary-tree.md)
 * Solutions 651 - 700
   * [653 Two Sum IV - Input is a BST](653-two-sum-iv-input-is-a-bst.md)
   * [689 Maximum Sum of 3 Non-Overlapping Subarrays](689-maximum-sum-of-3-non-overlapping-subarrays.md)
   * [670 Maximum Swap](670-maximum-swap.md)
+  * [671 Second Minimum Node In a Binary Tree](671-second-minimum-node-in-a-binary-tree.md)
   * [680 Valid Palindrome II](680-valid-palindrome-ii.md)
   * [698 Partition to K Equal Sum Subsets](698-partition-to-k-equal-sum-subsets.md)
-  * [671 Second Minimum Node In a Binary Tree](671-second-minimum-node-in-a-binary-tree.md)
 * Solutions 701 - 750
   * [714 Best Time to Buy and Sell Stock with Transaction Fee](714-best-time-to-buy-and-sell-stock-with-transaction-fee.md)
   * [716 Max Stack](716-max-stack.md)
