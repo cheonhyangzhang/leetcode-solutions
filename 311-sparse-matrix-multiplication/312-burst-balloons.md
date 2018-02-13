@@ -22,61 +22,6 @@ Return 167
 
 ### Solutions:
 
-Not working solution:
-```java
-public class Solution {
-    public int maxCoins(int[] nums) {
-        HashMap<String, Integer> solutions = new HashMap<String, Integer>();
-        int[] left = new int[nums.length];
-        int[] right = new int[nums.length];
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < nums.length; i ++) {
-            sb.append("0");
-            left[i] = i - 1;
-            right[i] = i + 1;
-        }
-        return findMax(nums, sb, solutions, left, right);
-    }
-    private int findMax(int[] nums, StringBuilder sb, HashMap<String, Integer> solutions, int[] left, int[] right) {
-        String s = sb.toString();
-        if (solutions.containsKey(s)) {
-            return solutions.get(s);
-        }
-        int max = 0;
-        for (int i = 0; i < sb.length(); i ++) {
-            if (sb.charAt(i) == '0') {
-                sb.setCharAt(i, '1');
-                int leftIndex = left[i];
-                int rightIndex = right[i];
-                int leftValue = leftIndex >= 0 ? nums[leftIndex] : 1;
-                int rightValue = rightIndex < nums.length ? nums[rightIndex] : 1;
-                if (leftIndex >= 0) {
-                    right[leftIndex] = rightIndex;
-                }
-                if (rightIndex < nums.length) {
-                    left[rightIndex] = leftIndex;
-                }
-                
-                int tmp = findMax(nums, sb, solutions, left, right);
-                tmp += leftValue * nums[i] * rightValue;
-                max = Math.max(max, tmp);
-                if (leftIndex >= 0) {
-                    right[leftIndex] = i;
-                }
-                if (rightIndex < nums.length) {
-                    left[rightIndex] = i;
-                }
-                sb.setCharAt(i, '0');
-            }
-        }
-        
-        
-        solutions.put(s, max);
-        return max;
-    }
-}
-```
-
 ```
 public class Solution {
     public int maxCoins(int[] nums) {
