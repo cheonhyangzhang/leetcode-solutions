@@ -44,3 +44,30 @@ public class Solution {
 }
 ```
 
+```java
+class Solution {
+    public int maxProfit(int[] prices) {
+        int[][][] dp = new int[prices.length+1][3][2];
+        int res = 0;
+        dp[0][0][0] = dp[0][1][0] = dp[0][2][0] = 0 ;
+        dp[0][0][1] = dp[0][1][1] = dp[0][2][1] = Integer.MIN_VALUE;
+        
+        for (int i = 1; i <= prices.length; i ++) {
+            dp[i][0][0] = 0;
+            dp[i][0][1] = Integer.MIN_VALUE;
+            dp[i][1][0] = Math.max(dp[i-1][1][0], dp[i-1][1][1] + prices[i-1]);
+            dp[i][1][1] = Math.max(dp[i-1][1][1], dp[i-1][0][0] - prices[i-1]);
+            dp[i][2][0] = Math.max(dp[i-1][2][0], dp[i-1][2][1] + prices[i-1]);
+            dp[i][2][1] = Math.max(dp[i-1][2][1], dp[i-1][1][0] - prices[i-1]);
+            System.out.println(dp[i][1][0] +", " + dp[i][1][1] + ", " + dp[i][2][0] + ", " + dp[i][2][1]);
+            for (int j = 0; j < 3; j ++) {
+                for (int k = 0; k < 2; k ++) {
+                    res = Math.max(res, dp[i][j][k]);
+                }
+            }
+        }
+        return res;
+    }
+}
+```
+
