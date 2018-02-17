@@ -88,3 +88,31 @@ public class Solution {
     }
 }
 ```
+
+```java
+class Solution {
+    public List<String> findMissingRanges(int[] nums, int lower, int upper) {
+        List<String> res = new LinkedList<String>();
+        long low = lower;
+        long up = upper;
+        for (int i = 0; i < nums.length; i ++) {
+            if (low < nums[i]) {
+                res.add(getRange(low, nums[i] - 1));
+            }
+            low = (long)nums[i] + 1;
+        }
+        if (low <= up) {
+            res.add(getRange(low, up));
+        }
+        return res;
+    }
+    private String getRange(long a, long b) {
+        if (a == b) {
+            return a+"";
+        }
+        else {
+            return a + "->" + b;
+        }
+    }
+}
+```
