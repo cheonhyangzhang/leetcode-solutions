@@ -18,57 +18,6 @@ Output:
 
 ### Solutions:
 
-```java
-public class Solution {
-    private class People implements Comparable<People> {
-        private int h;
-        private int k;
-        public People(int h, int k) {
-            this.h = h;
-            this.k = k;
-        }
-        public int compareTo(People p) {
-            return this.h - p.h;
-        }
-    }
-    public int[][] reconstructQueue(int[][] people) {
-        int[][] result = new int[people.length][2];
-        PriorityQueue<People> q = new PriorityQueue<People>();
-        for (int i = 0; i < people.length; i ++) {
-            q.add(new People(people[i][0], people[i][1]));
-        }
-        boolean[] filled = new boolean[result.length];
-        while (!q.isEmpty()) {
-            People p = q.poll();
-            int i = 0;
-            int k = p.k;
-            while (i < result.length) {
-                if (filled[i] == true) {
-                    if (result[i][0] >= p.h) {
-                        k --;
-                    }
-                    i ++;
-                    continue;
-                }
-                else {
-                    if (k == 0) {
-                        result[i][0] = p.h;
-                        result[i][1] = p.k;
-                        filled[i] = true;
-                        break;
-                    }
-                    else {
-                        k --;
-                        i ++;
-                        continue;
-                    }
-                }
-            }
-        }
-        return result;
-    }
-}
-```
 
 ```java
 public class Solution {
