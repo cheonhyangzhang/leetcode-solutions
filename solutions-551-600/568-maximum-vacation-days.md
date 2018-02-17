@@ -109,3 +109,36 @@ public class Solution {
     }
 }
 ```
+
+```java
+class Solution {
+    public int maxVacationDays(int[][] flights, int[][] days) {
+        int sizeCities = days.length;
+        int sizeWeeks = days[0].length;
+        int[][] dp = new int[sizeCities][sizeWeeks + 1];
+        int res = 0;
+        for (int i = 0; i < dp.length; i ++) {
+            for (int j = 0; j < dp[i].length; j ++) {
+                dp[i][j] = Integer.MIN_VALUE;
+            }
+        }
+        dp[0][0] = 0;
+        for (int i = 0; i < sizeWeeks; i ++) {
+            for (int j = 0; j < sizeCities; j ++) {
+                if (dp[j][i] >= 0) {
+                    for (int k = 0; k < sizeCities; k ++) {
+                        if (flights[j][k] != 0) {
+                            dp[k][i + 1] = Math.max(dp[k][i + 1], dp[j][i] + days[k][i]);
+                        }
+                    }
+                    dp[j][i + 1] = Math.max(dp[j][i + 1], dp[j][i] + days[j][i]);
+                }
+            }
+        }
+        for (int j = 0; j < sizeCities; j ++) {
+            res = Math.max(res, dp[j][sizeWeeks]);
+        }
+        return res;
+    }
+}
+```
