@@ -73,3 +73,41 @@ public class Solution {
     }
 }
 ```
+
+```java
+class Solution {
+    public int[][] reconstructQueue(int[][] people) {
+        if (people.length == 0 || people[0].length == 0) {
+            return people;
+        }
+        int[][] res = new int[people.length][people[0].length];
+        boolean[] filled = new boolean[people.length];
+        Arrays.sort(people, new Comparator<int[]>(){
+           public int compare(int[] p1, int[] p2) {
+               if (p1[0] == p2[0]) {
+                   return p2[1] - p1[1];
+               }
+               else {
+                   return p1[0] - p2[0];
+               }
+           } 
+        });
+        for (int i = 0; i < people.length; i ++) {
+            int[] p = people[i];
+            int count = 0;
+            for (int j = 0; j < people.length; j ++) {
+                if (filled[j] == false) {
+                    count ++;
+                    if (count == p[1] + 1) {
+                        filled[j] = true;
+                        res[j][0] = p[0];
+                        res[j][1] = p[1];
+                        break;
+                    }
+                }
+            }
+        }
+        return res;
+    }
+}
+```
