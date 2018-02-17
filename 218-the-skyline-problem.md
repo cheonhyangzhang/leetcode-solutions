@@ -56,7 +56,7 @@ public class Solution {
         Collections.sort(bds);
         PriorityQueue<Integer> q = new PriorityQueue<Integer>(Collections.reverseOrder());
         q.add(0);
-        int preHeight = -1;
+        int preHeight = 0;
         for (Node w:bds) {
             if (w.height > 0) {
                 q.add(w.height);
@@ -72,6 +72,6 @@ public class Solution {
         }
         return result;
     }
-    
+
 }
 ```
