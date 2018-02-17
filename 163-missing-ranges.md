@@ -93,20 +93,25 @@ public class Solution {
 class Solution {
     public List<String> findMissingRanges(int[] nums, int lower, int upper) {
         List<String> res = new LinkedList<String>();
-        long low = lower;
-        long up = upper;
+        int low = lower;
+        int up = upper;
+        boolean overflow = false;
         for (int i = 0; i < nums.length; i ++) {
             if (low < nums[i]) {
                 res.add(getRange(low, nums[i] - 1));
             }
-            low = (long)nums[i] + 1;
+            low = nums[i] + 1;
+            if (low == Integer.MIN_VALUE) {
+                overflow = true;
+                break;
+            }
         }
-        if (low <= up) {
+        if (low <= up && overflow == false) {
             res.add(getRange(low, up));
         }
         return res;
     }
-    private String getRange(long a, long b) {
+    private String getRange(int a, int b) {
         if (a == b) {
             return a+"";
         }
