@@ -35,7 +35,7 @@ public class Solution {
         HashMap<String, List<String>> adj = new HashMap<String, List<String>>();
         HashMap<String, Double> vals = new HashMap<String, Double>();
         init(equations, values, adj, vals);
-        
+
         double[] result = new double[queries.length];
         for (int i = 0; i < queries.length; i ++) {
             result[i] = process(queries[i][0], queries[i][1], adj, vals);
@@ -55,9 +55,6 @@ public class Solution {
         while (!q.isEmpty()) {
             String s = q.poll();
             Double v = data.poll();
-            if (visited.contains(s)) {
-                continue;
-            }
             visited.add(s);
             if (s.equals(down)) {
                 return v;
