@@ -22,53 +22,6 @@ Follow up: How would you extend your design to be generic and work with all type
 
 ### Solutions:
 
-```java
-// Java Iterator interface reference:
-// https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html
-class PeekingIterator implements Iterator<Integer> {
-    Integer peek = 0;
-    boolean peeked = false;
-    Iterator<Integer> it;
-	public PeekingIterator(Iterator<Integer> iterator) {
-	    // initialize any member here.
-	    it = iterator;
-	    peek = 0;
-	    peeked = false;
-	}
-
-    // Returns the next element in the iteration without advancing the iterator.
-	public Integer peek() {
-        if (peeked) {
-            return peek;
-        }
-        peek = it.next();
-        peeked = true;
-        return peek;
-	}
-
-	// hasNext() and next() should behave the same as in the Iterator interface.
-	// Override them if needed.
-	@Override
-	public Integer next() {
-	    if (peeked) {
-	        int tmp = peek;
-	        if (it.hasNext()) {
-	            peek = it.next();
-	        }
-	        else {
-	            peeked = false;
-	        }
-	        return tmp;
-	    }
-	    return it.next();
-	}
-
-	@Override
-	public boolean hasNext() {
-	    return peeked || it.hasNext();
-	}
-}
-```
 
 ```java
 // Java Iterator interface reference:
