@@ -48,11 +48,7 @@ public class Solution {
             if (match(s, p, s1, s2 + 2)) {
                 return true;
             }
-            // * as one character
-            if (s1 < s.length() && ((p.charAt(s2) == '.' ||s.charAt(s1) == p.charAt(s2)) && match(s, p, s1 + 1, s2 + 2))) {
-                return true;
-            }
-            // * as more character
+            // * as not zero
             if (s1 < s.length() && ((p.charAt(s2) == '.' ||s.charAt(s1) == p.charAt(s2)) && match(s, p, s1 + 1, s2))) {
                 return true;
             }
