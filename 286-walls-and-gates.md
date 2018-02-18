@@ -88,3 +88,29 @@ public class Solution {
     }
 }
 ```
+
+```java
+public class Solution {
+    public void wallsAndGates(int[][] rooms) {
+        for (int i = 0; i < rooms.length; i ++) {
+            for (int j = 0; j < rooms[0].length; j ++) {
+                if (rooms[i][j] == 0) {
+                    visit(rooms, i, j);
+                }
+            }
+        }
+    }
+    private void visit(int[][] rooms, int i, int j) {
+        int[][] dir = new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+        for (int k = 0; k < dir.length; k ++) {
+            int ni = i + dir[k][0];
+            int nj = j + dir[k][1];
+            if (ni < 0 || nj < 0 || ni >= rooms.length || nj >= rooms[0].length || rooms[i][j] + 1 >= rooms[ni][nj] ) {
+                continue;
+            }
+            rooms[ni][nj] = rooms[i][j] + 1;
+            visit(rooms, ni, nj);
+        }
+    }
+}
+```
