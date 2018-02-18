@@ -54,3 +54,39 @@ public class Solution {
    
 }
 ```
+
+```java
+class Solution {
+    public List<String> findStrobogrammatic(int n) {
+        List<String> res = new LinkedList<String>();
+        if (n == 0) {
+            return res;
+        }
+        return fs(n, n);
+    }
+    private List<String> fs(int n, int target) {
+        List<String> res = new LinkedList<String>();
+        if (n == 0) {
+            res.add("");
+            return res;
+        }
+        if (n == 1) {
+            res.add("0");
+            res.add("1");
+            res.add("8");
+            return res;
+        }
+        List<String> tmp = fs(n - 2, target);
+        for (String str:tmp) {
+            res.add("1" + str + "1");
+            res.add("8" + str + "8");
+            res.add("6" + str + "9");
+            res.add("9" + str + "6");
+            if (n != target) {
+                res.add("0" + str + "0");
+            }
+        }
+        return res;
+    }
+}
+```
