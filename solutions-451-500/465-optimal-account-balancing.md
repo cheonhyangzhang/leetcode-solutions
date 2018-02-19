@@ -70,7 +70,6 @@ public class Solution {
     }
     private int process(int[] debts, int start) {
         int min = Integer.MAX_VALUE;
-        int count = 0;
         while (start < debts.length && debts[start] == 0) {
             start ++;
         }
@@ -85,9 +84,9 @@ public class Solution {
             }
         }
         if (min != Integer.MAX_VALUE) {
-            count += min;
+            return min;
         }
-        return count;
+        return 0;
     }
 }
 ```
