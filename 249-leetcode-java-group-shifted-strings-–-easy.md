@@ -1,4 +1,4 @@
-# 249 LeetCode Java: Group Shifted Strings – Easy
+# 249 LeetCode Java: Group Shifted Strings
 
 ### Problem:
 
