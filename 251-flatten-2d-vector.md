@@ -29,46 +29,6 @@ It’s similar to two Integer index, we might need to update the two Iterator wh
 E.g [[1],[],[2,3]].
 
 # Solutions:
-
-```java
-public class Vector2D implements Iterator<Integer> {
-    Iterator<List<Integer>> vi;
-    Iterator<Integer> hi;
-    public Vector2D(List<List<Integer>> vec2d) {
-        vi = vec2d.iterator();
-    }
-    private void check() {
-        if (hi == null || !hi.hasNext()) {
-            while (vi.hasNext()) {
-                hi = vi.next().iterator();
-                if (hi.hasNext()) {
-                    return;
-                }
-            }
-        }
-    }
-    @Override
-    public Integer next() {
-        check();
-        return hi.next();
-    }
-
-    @Override
-    public boolean hasNext() {
-        check();
-        if (hi == null) {
-            return false;
-        }
-        return hi.hasNext();
-    }
-}
-
-/**
- * Your Vector2D object will be instantiated and called as such:
- * Vector2D i = new Vector2D(vec2d);
- * while (i.hasNext()) v[f()] = i.next();
- */
- ```
  
  ```java
  public class Vector2D implements Iterator<Integer> {
