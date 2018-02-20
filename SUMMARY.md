@@ -394,6 +394,7 @@
   * [490 The Maze](solutions-451-500/490-the-maze.md)
   * [493 Reverse Pairs](solutions-451-500/493-reverse-pairs.md)
   * [494 Target Sum](solutions-451-500/494-target-sum.md)
+  * [498 Diagonal Traverse](solutions-451-500/498-diagonal-traverse.md)
 * [Solutions 551 - 600](solutions-551-600.md)
   * [551 Student Attendance Record I](solutions-551-600/551-student-attendance-record-i.md)
   * [552 Student Attendance Record II](solutions-551-600/552-student-attendance-record-ii.md)
