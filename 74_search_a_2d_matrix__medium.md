@@ -44,50 +44,6 @@ It’s lgm + lgn vs log(m*n).
 
 ### Solutions:
 
-Two-way binary search, O(log(m)) + O(log(n)), for a m x n matrix.
-
-```java
-public class Solution {
-    public boolean searchMatrix(int[][] matrix, int target) {
-        if (matrix == null || matrix.length == 0 || matrix[0] == null || matrix[0].length == 0) {
-            return false;
-        }
-        int m = matrix.length, n = matrix[0].length;
-        int up = 0, down = m -1, left = 0, right = n - 1;
-        int i = -1;
-        while (up <= down) {
-            int mid = (up + down) / 2;
-            if (matrix[mid][0] > target) {
-                down = mid - 1;
-                continue;
-            }
-            if (matrix[mid][n-1] < target) {
-                up = mid + 1;
-                continue;
-            }
-            i = mid;
-            break;
-        }
-        if (i == -1) {
-            return false;
-        }
-        while (left <= right) {
-            int mid = (left + right) / 2;
-            if (matrix[i][mid] > target) {
-                right = mid - 1;
-                continue;
-            }
-            if (matrix[i][mid] < target) {
-                left = mid + 1;
-                continue;
-            }
-            return true;
-        }
-        return false;
-    }
- 
-}
-```
 Simplified version which is one binary search, actually this is log(m*n) but since log(m*n) = log(m) + log(n), so the time complexity is the same as above solution.
 
 ```java
