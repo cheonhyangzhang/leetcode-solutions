@@ -85,3 +85,41 @@ public class Solution {
     }
 }
 ```
+
+```java
+class Solution {
+    public String removeKdigits(String num, int k) {
+        if (num == null || num.length() == 0) {
+            return "";
+        }
+        if (k >= num.length()) {
+            return "0";
+        }
+        LinkedList<Character> cands = new LinkedList<>();
+        for (int i = 0; i < num.length(); i ++) {
+            char c = num.charAt(i);
+            while (cands.size() > 0 && c < cands.peekLast() && k > 0) {
+                cands.pollLast();
+                k --;
+            }
+            cands.add(c);
+        }
+        while (k > 0) {
+            cands.pollLast();
+            k --;
+        }
+        //remove leading 0
+        while (cands.size() > 0 && cands.peekFirst() == '0') {
+            cands.pollFirst();
+        }
+        if (cands.size() == 0) {
+            return "0";
+        }
+        StringBuilder sb = new StringBuilder();
+        while (cands.size() > 0) {
+            sb.append(cands.pollFirst());
+        }
+        return sb.toString();
+    }
+}
+```
