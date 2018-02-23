@@ -134,3 +134,54 @@ public class Solution {
     }
 }
 ```
+
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    int max = 0;
+    int curr = Integer.MIN_VALUE;
+    int count = 0;
+    List<Integer> res = new LinkedList<>();
+    public int[] findMode(TreeNode root) {
+        countNode(root);
+        
+        int[] resArray = new int[res.size()];
+        int index = 0;
+        for (Integer ele:res) {
+            resArray[index++] = ele;
+        }
+        return resArray;
+    }
+    private void countNode(TreeNode node) {
+        if (node == null) {
+            return;
+        }
+        countNode(node.left);
+        if (node.val == curr) {
+            count ++;
+            
+        }
+        else {
+            curr = node.val;
+            count = 1;
+        }
+        if (count > max) {
+            res.clear();
+            max = count;
+            res.add(node.val);
+        }
+        else if (count == max) {
+            res.add(node.val);
+        }
+        countNode(node.right);
+    }
+}
+```
