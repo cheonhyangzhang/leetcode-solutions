@@ -85,3 +85,58 @@ public class Solution {
     }
 }
 ```
+
+```java
+class Solution {
+    public int findBlackPixel(char[][] picture, int N) {
+        char[][] pic = picture;
+        if (pic == null || pic.length == 0 || pic[0].length == 0) {
+            return 0;
+        }
+        int[] row = new int[pic.length];
+        int[] col = new int[pic[0].length];
+        for (int i = 0; i < pic.length; i ++) {
+            for (int j = 0; j < pic[0].length; j ++) {
+                if (pic[i][j] == 'B') {
+                    row[i] ++;
+                    col[j] ++;
+                }
+            }
+        }
+        boolean[] invalidCol = new boolean[pic[0].length];
+        for (int j = 0; j < invalidCol.length; j ++) {
+            if (col[j] != N) {
+                invalidCol[j] = true;
+            }
+        }
+        for (int j = 0; j < pic[0].length; j ++) {
+            String samerow = null;
+            System.out.println("checking col " + j);
+            for (int i = 0; i < pic.length; i ++) {
+                if (pic[i][j] == 'B') {
+                    if (row[i] != N) {
+                        invalidCol[j] = true;
+                        break;
+                    }
+                    if (samerow == null) {
+                        samerow = new String(pic[i]);
+                    }
+                    else {
+                        if (!samerow.equals(new String(pic[i]))) {
+                            invalidCol[j] = true;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        int count = 0;
+        for (int j = 0; j < invalidCol.length; j ++) {
+            if (invalidCol[j] == false) {
+                count += N;
+            }
+        }
+        return count;
+    }
+}
+```
