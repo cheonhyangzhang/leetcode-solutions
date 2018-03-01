@@ -18,28 +18,23 @@ The solution is very easy. Keep two index to remember the last appear index for 
 ### Solutions:
 
 ```java
-public class Solution {
+class Solution {
     public int shortestDistance(String[] words, String word1, String word2) {
-        int index1 = -1;
-        int index2 = -1;
-        int min = Integer.MAX_VALUE;
+        Integer i1 = null;
+        Integer i2 = null;
+        int max = Integer.MAX_VALUE;
         for (int i = 0; i < words.length; i ++) {
             if (words[i].equals(word1)) {
-                if (index2 != -1) {
-                    min = Math.min(i - index2, min);
-                }
-                index1 = i;
-                continue;
+                i1 = i;
             }
             if (words[i].equals(word2)) {
-                if (index1 != -1) {
-                    min = Math.min(i - index1, min);
-                }
-                index2 = i;
-                continue;
+                i2 = i;
+            }
+            if (i1 != null && i2 != null) {
+                max = Math.min(max, Math.abs(i1 - i2));
             }
         }
-        return min;
+        return max;
     }
 }
 ```
