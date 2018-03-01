@@ -22,7 +22,7 @@ class Solution {
     public int shortestDistance(String[] words, String word1, String word2) {
         Integer i1 = null;
         Integer i2 = null;
-        int max = Integer.MAX_VALUE;
+        int min = Integer.MAX_VALUE;
         for (int i = 0; i < words.length; i ++) {
             if (words[i].equals(word1)) {
                 i1 = i;
@@ -31,10 +31,10 @@ class Solution {
                 i2 = i;
             }
             if (i1 != null && i2 != null) {
-                max = Math.min(max, Math.abs(i1 - i2));
+                min = Math.min(min, Math.abs(i1 - i2));
             }
         }
-        return max;
+        return min;
     }
 }
 ```
