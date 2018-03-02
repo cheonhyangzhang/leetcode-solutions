@@ -57,20 +57,25 @@ This is similar to the first solution – recursion. The difference is that if w
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class Solution {
+class Solution {
     public TreeNode upsideDownBinaryTree(TreeNode root) {
-            if (root == null)
-                return null;
-            TreeNode left = root.left, right = root.right;
-            if (left != null) {
-                TreeNode ret = upsideDownBinaryTree(left);
-                left.left = right;
-                left.right = root;
-                root.left = null;
-                root.right = null;
-                return ret;
-            }
-            return root;
+        return process(root);
+    }
+    private TreeNode process(TreeNode node) {
+        if (node == null) {
+            return null;
+        }
+        if (node.left == null && node.right == null) {
+            return node;
+        }
+        TreeNode left = node.left;
+        TreeNode right = node.right;
+        TreeNode root = process(node.left);
+        node.left = null;
+        node.right = null;
+        left.left = right;
+        left.right = node;
+        return root;
     }
 }
 ```
