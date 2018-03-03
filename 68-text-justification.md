@@ -116,3 +116,80 @@ public class Solution {
     }
 }
 ```
+
+```java
+class Solution {
+    public List<String> fullJustify(String[] words, int maxWidth) {
+        List<String> line = new LinkedList<>();
+        List<String> res = new LinkedList<>();
+        int count = 0;
+        for (int i = 0; i < words.length; i ++) {
+            String s = words[i];
+            int newCount = 0;
+            if (count == 0) {
+                newCount = s.length();
+            }
+            else {
+                newCount = count + 1 + s.length();
+            }
+            if (newCount <= maxWidth) {
+                line.add(s);
+                count = newCount;
+            }
+            else {
+                String newLine = getLine(line, count, maxWidth);
+                res.add(newLine);
+                line.clear();
+                count = s.length();
+                line.add(s);
+            }
+        }
+        
+        String newLine = getLastLine(line, maxWidth);
+        res.add(newLine);
+        
+        
+        return res;
+    }
+    private String getLastLine(List<String> line, int width) {
+        StringBuilder sb = new StringBuilder();
+        for (String word:line) {
+            sb.append(word + " ");
+        }
+        sb.deleteCharAt(sb.length() - 1);
+        while (sb.length() < width) {
+            sb.append(" ");
+        }
+        return sb.toString();
+    }
+    private String getLine(List<String> line, int count, int width) {
+        int numOfSpace = line.size() - 1;
+        int addSpaceCount = width - count;
+        String equalSpace = "";
+        int bonusCount = 0;
+        if (numOfSpace != 0) {
+            int equalSpaceCount = addSpaceCount / numOfSpace;
+            bonusCount = addSpaceCount % numOfSpace;
+            for (int i = 0; i < equalSpaceCount; i ++) {
+                equalSpace += " ";
+            }
+        }
+        StringBuilder sb = new StringBuilder();
+        int index = 0;
+        for (String word:line) {
+            sb.append(word);
+            if (index < bonusCount) {
+                sb.append(" " + equalSpace + " ");
+            }
+            else if (index != line.size() - 1) {
+                sb.append(" " + equalSpace);
+            }
+            index ++;
+        }
+        while (sb.length() < width) {
+            sb.append(" ");
+        }
+        return sb.toString();
+    }
+}
+```
