@@ -73,3 +73,58 @@ class Solution {
     }
 }
 ```
+
+```java
+class Solution {
+    public String minWindow(String s, String t) {
+        if (s == null || t == null || s.length() == 0 || t.length() == 0) {
+            return "";
+        }
+        HashMap<Character, Integer> chars = new HashMap<>();
+        for (int i = 0; i < t.length(); i ++) {
+            char c = t.charAt(i);
+            if (!chars.containsKey(c)) {
+                chars.put(c, 0);
+            }
+            chars.put(c, chars.get(c) + 1);
+        }
+        HashMap<Character, Integer> appr = new HashMap<>();
+        String cand = "";
+        int start = 0;
+        int miss = t.length();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < s.length(); i ++) {
+            char c = s.charAt(i);
+            System.out.println(c);
+            sb.append(c);
+            if (chars.containsKey(c)) {
+                if (!appr.containsKey(c)) {
+                    appr.put(c, 0);
+                }
+                appr.put(c, appr.get(c) + 1);
+                if (appr.get(c) <= chars.get(c)) {
+                    miss --;
+                }
+            }   
+            while (sb.length() > 0 && !chars.containsKey(sb.charAt(0))) {
+                sb.deleteCharAt(0);
+            }
+            while (miss == 0) {
+                if (cand.equals("") || sb.length() < cand.length()) {
+                    cand = sb.toString();
+                }
+                char remove = sb.charAt(0);
+                sb.deleteCharAt(0);
+                appr.put(remove, appr.get(remove) - 1);
+                if (appr.get(remove) < chars.get(remove)) {
+                    miss ++;
+                }
+                while (sb.length() > 0 && !chars.containsKey(sb.charAt(0))) {
+                    sb.deleteCharAt(0);
+                }
+            }
+        }
+        return cand;
+    }
+}
+```
