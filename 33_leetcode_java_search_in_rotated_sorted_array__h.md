@@ -1,4 +1,4 @@
-# 33 LeetCode Java: Search in Rotated Sorted Array – Hard
+# 33 LeetCode Java: Search in Rotated Sorted Array
 
 ### Problem:
 
