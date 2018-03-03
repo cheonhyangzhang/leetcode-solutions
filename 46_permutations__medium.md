@@ -27,32 +27,28 @@ The idea it so start with empty set. Each time , one number is introduced, for e
 DFS:
 
 ```java
-public class Solution {
-    public List<List<Integer>> permute(int[] num) {
-        List<List<Integer>> result = new ArrayList<List<Integer>>();
-        Boolean[] visited = new Boolean[num.length];
-        for (int i = 0; i < visited.length; i ++){
-            visited[i] = false;
-        }
-        DFS(num, 0, result, new LinkedList<Integer>(), visited);
-        return result;
+class Solution {
+    public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> res = new LinkedList<>();
+        boolean[] visited = new boolean[nums.length];
+        dfs(nums, res, new LinkedList<Integer>(), visited);
+        return res;
     }
-    private void DFS(int[] num, int togo, List<List<Integer>> result, List<Integer> current, Boolean[] visited ){
-        if (togo == visited.length){
-            result.add(new LinkedList(current));
+    private void dfs(int[] nums, List<List<Integer>> res, List<Integer> curr, boolean[] visited) {
+        if (curr.size() == nums.length) {
+            res.add(new LinkedList<Integer>(curr));
+            return;
         }
-        else{
-            for (int i = 0; i < num.length; i ++){
-                if (visited[i] == false){
-                    current.add(num[i]);
-                    visited[i] = true;
-                    DFS(num, togo + 1, result, current, visited);
-                    current.remove(current.size() - 1);
-                    visited[i] = false;
-                }
-            }//for i
-        }//else
-    }//
+        for (int i = 0; i < nums.length; i ++) {
+            if (visited[i] == false) {
+                visited[i] = true;
+                curr.add(nums[i]);
+                dfs(nums, res, curr, visited);
+                curr.remove(curr.size() - 1);
+                visited[i] = false;
+            }
+        }
+    }
 }
 ```
 Non-DFS version:
