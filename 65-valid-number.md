@@ -57,3 +57,47 @@ public class Solution {
     }
 }
 ```
+
+```java
+class Solution {
+    public boolean isNumber(String s) {
+        s = s.trim();
+        int cut = s.indexOf("e");
+        if (cut != -1) {
+            return isRealNumber(s.substring(0, cut), true) && isRealNumber(s.substring(cut + 1), false);
+        }
+        else {
+            return isRealNumber(s, true);
+        }
+    }
+    
+    // assume 0001 is valid
+    private boolean isRealNumber(String s, boolean canBeDouble) {
+        if (s.length() > 0 && (s.charAt(0) == '-' || s.charAt(0) == '+')) {
+            s = s.substring(1);
+        }
+        int cut = s.indexOf(".");
+        if ( cut != -1) {
+            if (canBeDouble == false) {
+                return false;
+            }
+            return (isPureNumber(s.substring(0, cut), true) && isPureNumber(s.substring(cut + 1), false)) || (isPureNumber(s.substring(0, cut), false) && isPureNumber(s.substring(cut + 1), true));
+        }
+        else {
+            return isPureNumber(s, false);
+        }
+    }
+    private boolean isPureNumber(String s, boolean canBeEmpty) {
+        if (canBeEmpty == false && s.length() == 0) {
+            return false;
+        }
+        for (int i = 0; i < s.length(); i ++) {
+            char c = s.charAt(i);
+            if (c < '0' || c > '9') {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+```
