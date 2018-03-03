@@ -27,25 +27,31 @@ According to the requirement, the mapping has to be two direction. The mapping h
 ### Solution:
 
 ```java
-public class Solution {
+class Solution {
     public boolean isIsomorphic(String s, String t) {
-        if (s.length() != t.length())
+        HashMap<Character, Character> stot = new HashMap<>();
+        HashMap<Character, Character> ttos = new HashMap<>();
+        if ((s == null && t != null) || (s != null && t == null)) {
             return false;
-        HashMap<Character, Character> stot = new HashMap<Character, Character>();
-        HashMap<Character, Character> ttos = new HashMap<Character, Character>();
-        for (int i = 0; i < s.length(); i ++){ 
-            if (stot.containsKey(s.charAt(i))){
-                if (stot.get(s.charAt(i)) != t.charAt(i)){
+        }
+        if (s.length() != t.length()) {
+            return false;
+        }
+        for (int i = 0; i < s.length(); i ++) {
+            char a = s.charAt(i);
+            char b = t.charAt(i);
+            if (stot.containsKey(a)) {
+                if (!ttos.containsKey(b) || ttos.get(b) != a) {
                     return false;
                 }
             }
-            if (ttos.containsKey(t.charAt(i))){
-                if (ttos.get(t.charAt(i)) != s.charAt(i)){
+            else {
+                if (ttos.containsKey(b)) {
                     return false;
                 }
+                stot.put(a, b);
+                ttos.put(b, a);
             }
-            stot.put(s.charAt(i), t.charAt(i));
-            ttos.put(t.charAt(i), s.charAt(i));
         }
         return true;
     }
