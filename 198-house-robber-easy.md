@@ -16,22 +16,17 @@ This is a little bit like DP, but no need to have an array because all previous 
 ### Solutions:
 
 ```java
-public class Solution {
-    public int rob(int[] num) {
-        if (num.length == 0){
-            return 0;
+class Solution {
+    public int rob(int[] nums) {
+        int rob = 0;
+        int norob = 0;
+        for (int i = 0; i < nums.length; i ++) {
+            int newRob = norob + nums[i];
+            int newNoRob = Math.max(norob, rob);
+            rob = newRob;
+            norob = newNoRob;
         }
-        else{
-            int with = num[0];
-            int without = 0;
-            for (int i = 1; i < num.length; i ++){
-                int newWith = without + num[i];
-                int newWithout = Math.max(with, without);
-                with = newWith;
-                without = newWithout;
-            }
-            return Math.max(with, without);
-        }
+        return Math.max(rob, norob);
     }
 }
 ```
