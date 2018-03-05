@@ -36,6 +36,7 @@
   * [34 Search for a Range – Medium](34_search_for_a_range__medium.md)
   * [35 Search Insert Position – Medium](35_search_insert_position__medium.md)
   * [36 Valid Sudoku – Easy](36_valid_sudoku__easy.md)
+  * [37 Sudoku Solver](37-sudoku-solver.md)
   * [38 Count and Say – Easy](38_count_and_say__easy.md)
   * [39  Combination Sum – Medium](39_combination_sum__medium.md)
   * [40 Combination Sum II – Medium](40_combination_sum_ii__medium.md)
