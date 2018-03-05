@@ -124,6 +124,7 @@
   * [134 Gas Station – Medium](134_gas_station__medium.md)
   * [136 Single Number – Medium](136_single_number__medium.md)
   * [137 Single Number II – Medium](137_single_number_ii__medium.md)
+  * [138 Copy List with Random Pointer](138-copy-list-with-random-pointer.md)
   * [139 Word Break – Medium](139_word_break__medium.md)
   * [140 Word Break II – Hard](140_word_break_ii__hard.md)
   * [141 Linked List Cycle – Medium](141_linked_list_cycle__medium.md)
