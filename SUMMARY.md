@@ -439,6 +439,7 @@
   * [639 Decode Ways II](639-decode-ways-ii.md)
   * [642 Design Search Autocomplete System](642-design-search-autocomplete-system.md)
   * [647 Palindromic Substrings](647-palindromic-substrings.md)
+  * [648 Replace Words](648-replace-words.md)
 * Solutions 651 - 700
   * [653 Two Sum IV - Input is a BST](653-two-sum-iv-input-is-a-bst.md)
   * [689 Maximum Sum of 3 Non-Overlapping Subarrays](689-maximum-sum-of-3-non-overlapping-subarrays.md)
