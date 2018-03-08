@@ -95,7 +95,6 @@ class Solution {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < s.length(); i ++) {
             char c = s.charAt(i);
-            System.out.println(c);
             sb.append(c);
             if (chars.containsKey(c)) {
                 if (!appr.containsKey(c)) {
