@@ -77,53 +77,47 @@ class Solution {
 ```java
 class Solution {
     public String minWindow(String s, String t) {
-        if (s == null || t == null || s.length() == 0 || t.length() == 0) {
-            return "";
-        }
-        HashMap<Character, Integer> chars = new HashMap<>();
+        HashMap<Character, Integer> count = new HashMap<>();
+        HashMap<Character, Integer> has = new HashMap<>();
+        int miss = t.length();
         for (int i = 0; i < t.length(); i ++) {
             char c = t.charAt(i);
-            if (!chars.containsKey(c)) {
-                chars.put(c, 0);
+            if (!count.containsKey(c)) {
+                count.put(c, 0);
             }
-            chars.put(c, chars.get(c) + 1);
+            count.put(c, count.get(c) + 1);
         }
-        HashMap<Character, Integer> appr = new HashMap<>();
-        String cand = "";
-        int start = 0;
-        int miss = t.length();
+        String min = "";
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < s.length(); i ++) {
             char c = s.charAt(i);
             sb.append(c);
-            if (chars.containsKey(c)) {
-                if (!appr.containsKey(c)) {
-                    appr.put(c, 0);
-                }
-                appr.put(c, appr.get(c) + 1);
-                if (appr.get(c) <= chars.get(c)) {
-                    miss --;
-                }
-            }   
-            while (sb.length() > 0 && !chars.containsKey(sb.charAt(0))) {
-                sb.deleteCharAt(0);
+            if (!count.containsKey(c)) {
+                continue;
+            }
+            if (!has.containsKey(c)) {
+                has.put(c, 0);
+            }
+            has.put(c, has.get(c) + 1);
+            if (has.get(c) <= count.get(c)) {
+                miss --;
             }
             while (miss == 0) {
-                if (cand.equals("") || sb.length() < cand.length()) {
-                    cand = sb.toString();
+                if (min.equals("") || min.length() > sb.length()) {
+                    min = sb.toString();
                 }
                 char remove = sb.charAt(0);
                 sb.deleteCharAt(0);
-                appr.put(remove, appr.get(remove) - 1);
-                if (appr.get(remove) < chars.get(remove)) {
-                    miss ++;
-                }
-                while (sb.length() > 0 && !chars.containsKey(sb.charAt(0))) {
-                    sb.deleteCharAt(0);
+                if (has.containsKey(remove)) {
+                    has.put(remove, has.get(remove) - 1);
+                    if (has.get(remove) < count.get(remove)) {
+                        miss ++;
+                    }
                 }
             }
         }
-        return cand;
+        
+        return min;
     }
 }
 ```
