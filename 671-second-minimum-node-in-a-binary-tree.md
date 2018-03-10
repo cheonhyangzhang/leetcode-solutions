@@ -64,3 +64,38 @@ class Solution {
     }
 }
 ```
+
+```java
+class Solution {
+  /**
+  * This should return the second minimum
+  * int value in the given tree
+  */
+  public static Integer secondMin(Node root) {
+    // Fill this up
+    Integer[] res = new Integer[1]; // keep the curent min
+    res[0] = null;
+    process(root, res);
+    return res[0];
+  }
+  private void process(Node node, int[] res) {
+    if (node == null || (node.left == null && node.right == null)) {
+        return;
+    }
+    // two children
+    if (node.left.value != node.value) {
+        if (res[0] == null || node.left.value < res[0]) {
+            res[0] = node.left.value;
+        }
+        process(node.right, res);
+    }
+    // node.right.value == node.value
+    else {
+        if (res[0] == null || node.right.value < res[0]) {
+            res[0] = node.right.value;
+        }
+        process(node.left, res);
+    }
+  }
+}
+```
