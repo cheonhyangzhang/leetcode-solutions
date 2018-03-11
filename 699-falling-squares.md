@@ -54,3 +54,60 @@ Input: [[100, 100], [200, 100]]
 Output: [100, 100]
 Explanation: Adjacent squares don't get stuck prematurely - only their bottom edge can stick to surfaces.
 ```
+
+Note:
+
+1 <= positions.length <= 1000.
+1 <= positions[i][0] <= 10^8.
+1 <= positions[i][1] <= 10^6.
+
+
+```java
+class Solution {
+    public List<Integer> fallingSquares(int[][] positions) {
+        List<Integer> res = new LinkedList<>();
+        TreeMap<Integer, int[]> ranges = new TreeMap<>();
+        int max = 0;
+        ranges.put(0, new int[]{0, 0});
+        for (int i = 0; i < positions.length; i ++) {
+            int start = positions[i][0];
+            int len = positions[i][1];
+            int end = positions[i][0] + len;
+            int belowHeight = 0;
+            Integer key = ranges.lowerKey(start + 1);
+            HashMap<Integer, int[]> add = new HashMap<>();
+            while (key != null && (key == 0 || key < end)) {
+                if (key == 0) {
+                    key = ranges.higherKey(key);
+                    continue;
+                }
+                int itstart = key;
+                int itend = ranges.get(key)[0];
+                int itheight = ranges.get(key)[1];
+                if (itend <= start || itstart >= end) {
+                    key = ranges.higherKey(key);
+                    continue;
+                }
+                if (itstart < start && itend > start) {
+                    add.put(itstart, new int[]{start, itheight});
+                }
+                if (itstart < end && itend > end) {
+                    add.put(end, new int[]{ itend, itheight});
+                }
+                
+                ranges.remove(key);
+                belowHeight = Math.max(belowHeight, itheight);
+                key = ranges.higherKey(key);
+            }
+            ranges.put(start, new int[]{end, belowHeight + len});
+            for (Integer addkey:add.keySet()) {
+                ranges.put(addkey, add.get(addkey));
+            }
+            max = Math.max(max, belowHeight + len);
+            res.add(max);
+        }
+        
+        return res;
+    }
+}
+```
