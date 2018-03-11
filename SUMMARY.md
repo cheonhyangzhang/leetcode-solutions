@@ -449,6 +449,7 @@
   * [670 Maximum Swap](670-maximum-swap.md)
   * [671 Second Minimum Node In a Binary Tree](671-second-minimum-node-in-a-binary-tree.md)
   * [680 Valid Palindrome II](680-valid-palindrome-ii.md)
+  * [690 Employee Importance](690-employee-importance.md)
   * [692 Top K Frequent Words](692-top-k-frequent-words.md)
   * [698 Partition to K Equal Sum Subsets](698-partition-to-k-equal-sum-subsets.md)
   * [699 Falling Squares](699-falling-squares.md)
