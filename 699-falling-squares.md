@@ -62,6 +62,38 @@ Note:
 1 <= positions[i][1] <= 10^6.
 ```
 
+### Solutions
+```java
+class Solution {
+    public List<Integer> fallingSquares(int[][] positions) {
+        int[] height = new int[positions.length];
+        List<Integer> res = new LinkedList<>();
+        for (int i = 0; i < positions.length; i ++) {
+            int start = positions[i][0];
+            int len = positions[i][1];
+            int end = start + len;
+            height[i] += len;
+            for (int j = i + 1; j < positions.length; j ++) {
+                int itstart = positions[j][0];
+                int itlen = positions[j][1];
+                int itend = itstart + itlen;
+                if (itend <= start || itstart >= end) {
+                    continue;
+                }
+                height[j] = Math.max(height[j], height[i]);
+            }
+        }
+        int curr = 0;
+        for (int i = 0; i < height.length; i ++) {
+            curr = Math.max(curr, height[i]);
+            res.add(curr);
+        }
+        return res;
+    }
+}
+```
+
+
 ```java
 class Solution {
     public List<Integer> fallingSquares(int[][] positions) {
