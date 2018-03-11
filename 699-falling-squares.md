@@ -48,3 +48,9 @@ The maximum height of any square is still 5.
 
 Thus, we return an answer of [2, 5, 5].
 ```
+Example 2:
+```
+Input: [[100, 100], [200, 100]]
+Output: [100, 100]
+Explanation: Adjacent squares don't get stuck prematurely - only their bottom edge can stick to surfaces.
+```
