@@ -56,11 +56,11 @@ Explanation: Adjacent squares don't get stuck prematurely - only their bottom ed
 ```
 
 Note:
-
+```
 1 <= positions.length <= 1000.
 1 <= positions[i][0] <= 10^8.
 1 <= positions[i][1] <= 10^6.
-
+```
 
 ```java
 class Solution {
