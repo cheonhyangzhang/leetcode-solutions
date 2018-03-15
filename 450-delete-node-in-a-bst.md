@@ -40,6 +40,8 @@ Another valid answer is [5,2,6,null,4,null,7].
 ```
 
 ### Solutions
+
+
 ```java
 /**
  * Definition for a binary tree node.
@@ -52,33 +54,58 @@ Another valid answer is [5,2,6,null,4,null,7].
  */
 class Solution {
     public TreeNode deleteNode(TreeNode root, int key) {
-        if (root == null) {
-            return null;
-        }
-        if (root.val == key) {
-            if (root.left == null && root.right == null) {
-                return null;
+        TreeNode pre = null;
+        TreeNode node = root;
+        while (node != null) {
+            if (node.val == key) {
+                break;
             }
-            if (root.left == null && root.right != null) {
-                return root.right;
-            }
-            if (root.left != null && root.right == null) {
-                return root.left;
-            }
-            TreeNode node = root.right;
-            while (node.left != null) {
+            pre = node;
+            if (node.val > key) {
                 node = node.left;
             }
-            root.val = node.val;
-            root.right = deleteNode(root.right, node.val);
+            else {
+                node = node.right;
+            }
         }
-        else if (root.val < key) {
-            root.right = deleteNode(root.right, key);
+        if (node == null) {
+            return root;
+        }
+        if (pre == null) {
+            return del(node);
+        }
+        if (pre.left == node) {
+            pre.left = del(node);
         }
         else {
-            root.left = deleteNode(root.left, key);
+            pre.right = del(node);
         }
         return root;
+    }
+    private TreeNode del(TreeNode node) {
+        if (node.left == null && node.right == null) {
+            return null;
+        }
+        if (node.left == null) {
+            return node.right;
+        }
+        if (node.right == null) {
+            return node.left;
+        }
+        TreeNode pre = node;
+        TreeNode curr = node.right;
+        while (curr.left != null) {
+            pre = curr;
+            curr = curr.left;
+        }
+        node.val = curr.val;
+        if (pre.left == curr) {
+            pre.left = curr.right;
+        }
+        else {
+            pre.right = curr.right;
+        }
+        return node;
     }
 }
 ```
