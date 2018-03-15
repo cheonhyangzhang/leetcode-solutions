@@ -35,49 +35,48 @@ The solution below is based on a DFS.
 ### Solutions:
 ```java
 public class Solution {
-    private int next = 0;
-    public int[] findOrder(int numCourses, int[][] prerequisites) {
-        HashMap<Integer, LinkedList<Integer>> adj = new HashMap<Integer, LinkedList<Integer>>();
-        next = numCourses - 1;
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        HashMap<Integer, List<Integer>> adj = new HashMap<Integer, List<Integer>>();
+        int[] color = new int[numCourses];//0 is white, 1 is gray 2, is black
         initAdj(adj, prerequisites);
-        int[] result = new int[numCourses];
-        int[] color = new int[numCourses]; // 0 is white, 1 is gray, 2 is black
-        for (int i = 0; i < color.length; i ++) {
-            if (color[i] == 0) {
-                if (!dfsVisit(adj, i,color, result)) {
-                    return new int[0];
-                }
+        for (int i = 0; i < numCourses; i ++) {
+            if (color[i] == 1) {
+                return false;
             }
-        }
-        return result;
-    }
-    private boolean dfsVisit(HashMap<Integer, LinkedList<Integer>> adj, int index, int[] color, int[] result) {
-        color[index] = 1;
-        if (adj.containsKey(index)) {
-            for (Integer j:adj.get(index)) {
-                if (color[j] == 1) {
+            if (color[i] == 0) {
+                //DFS visit
+                if (dfsVisit(adj, color, i) == false) {
                     return false;
                 }
-                if (color[j] == 0) {
-                    if (!dfsVisit(adj, j, color, result)) {
-                        return false;
-                    }
-                }
-                 
             }
         }
-        result[next] = index;
-        next --;
-        color[index] = 2;
         return true;
     }
-    private void initAdj(HashMap<Integer, LinkedList<Integer>> adj, int[][] pre) {
+    private boolean dfsVisit(HashMap<Integer, List<Integer>> adj, int[] color, int i) {
+        if (!adj.containsKey(i)) {
+            color[i] = 2;
+            return true;
+        }
+        color[i] = 1;
+        for (Integer j:adj.get(i)) {
+            if (color[j] == 1) {
+                return false;
+            }
+            if (color[j] == 0) {
+                if (dfsVisit(adj, color, j) == false) {
+                    return false;
+                }
+            }
+        }
+        color[i] = 2;
+        return true;
+    }
+    private void initAdj(HashMap<Integer, List<Integer>> adj , int[][] pre) {
         for (int i = 0; i < pre.length; i ++) {
             if (!adj.containsKey(pre[i][1])) {
-                adj.put(pre[i][1], new LinkedList<Integer>());
+                adj.put(pre[i][1], new LinkedList());
             }
             adj.get(pre[i][1]).add(pre[i][0]);
         }
     }
-}
-```
+}```
