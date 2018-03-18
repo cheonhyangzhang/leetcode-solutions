@@ -106,49 +106,40 @@ class Solution {
 class Solution {
     public boolean isNumber(String s) {
         s = s.trim();
-        if (s.length() == 0) {
-            return false;
-        }
-        
         int cut = s.indexOf("e");
-        if (cut != -1) {
-            String first = s.substring(0, cut);
-            String second = s.substring(cut + 1);
-            return isRealNumber(first) && isPureNumber(second, false, true);
+        if (cut != - 1) {
+            return isRational(s.substring(0, cut)) && isInteger(s.substring(cut + 1), false, true);
         }
         else {
-            return isRealNumber(s);
+            return isRational(s);
         }
     }
-    
-    private boolean isRealNumber(String s) {
-        if (s.length() == 0) {
-            return false;
-        }
+    private boolean isRational(String s) {
         int cut = s.indexOf(".");
         if (cut != -1) {
             String first = s.substring(0, cut);
             String second = s.substring(cut + 1);
-            return (isPureNumber(first, true, true) && isPureNumber(second, false, false)) || (isPureNumber(first, false, true) && isPureNumber(second, true, false));
+            return (isInteger(first, true, true) && isInteger(second, false, false)) || (isInteger(first, false, true) && isInteger(second, true, false));
         }
         else {
-            return isPureNumber(s, false, true);
+            return isInteger(s, false, true);
         }
     }
-    private boolean isPureNumber(String s, boolean canBeEmpty, boolean canHaveSign) {
+    private boolean isInteger(String s, boolean canBeEmpty, boolean canHaveSign) {
         if (s.length() == 0) {
             return canBeEmpty;
         }
-        if (s.charAt(0) == '+' || s.charAt(0) == '-') {
-            if (canHaveSign == false) {
+        if (s.charAt(0) == '-' || s.charAt(0) == '+') {
+            if (canHaveSign == true) {
+                s = s.substring(1);
+            }
+            else {
                 return false;
             }
-            s = s.substring(1);
         }
         if (s.length() == 0) {
             return canBeEmpty;
         }
-        
         for (int i = 0; i < s.length(); i ++) {
             char c = s.charAt(i);
             if (c < '0' || c > '9') {
